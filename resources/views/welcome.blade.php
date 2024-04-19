@@ -100,7 +100,7 @@
                     <h3 class="title tajawal">
                         Nouvelle collection</h3>
                     <div class="subtitle tajawal">
-                        Découvrez les derniers produits de notre boutique en ligne <strong>RawaaBeauty</strong>
+                        Découvrez les derniers produits de notre boutique en ligne <strong>Basma</strong>
                     </div>
                 </div>
             </div>

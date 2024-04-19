@@ -9,13 +9,15 @@
             <div class="slide-info" style="mix-blend-mode: difference !important;">
                 <div class="container">
                     <div class="slide-inner">
-                        <h2 class="slide-title" style="color: #fff !important">REIMAGINING THE WAY WE DRESS
+                        <h2 class="slide-title" style="color: #fff !important">Osez le style décontracté, où que vous soyez
+
                         </h2>
                     </div>
                 </div>
             </div>
             <div class="slugon d-none">
-                <h2 class="slide-title" style="color: #252525 !important">REIMAGINING THE WAY WE DRESS</h2>
+                <h2 class="slide-title" style="color: #252525 !important">Osez le style décontracté, où que vous soyez
+</h2>
             </div>
         </div>
     </div>

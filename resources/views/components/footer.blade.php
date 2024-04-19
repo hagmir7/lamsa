@@ -32,10 +32,11 @@
             <div class="row">
                 <div class="col-md-12 col-lg-12 d-lg-none">
                     <div class="logo-footer">
-                        <img src="https://rawaabeauty.com/assets/web/images/rb-black.png" style="height: 60px;"
+                        <img src="/assets/imgs/rounded-logo.png" style="height: 60px;"
                             class="az_single_image-img attachment-full" alt="img">
                     </div>
-                    <div class="footer-desc tajawal"> REIMAGINING THE WAY WE DRESS
+                    <div class="footer-desc tajawal"> Osez le style décontracté, où que vous soyez
+
                     </div>
                     <div class="lynessa-socials style-01">
                         <div class="content-socials">
@@ -91,10 +92,11 @@
                 </div>
                 <div class="col-lg-6 d-none d-lg-block">
                     <div class="logo-footer">
-                        <img style="height: 60px;" src="https://rawaabeauty.com/assets/web/images/rb-black.png"
+                        <img style="height: 60px;" src="/assets/imgs/logo.png"
                             class="az_single_image-img attachment-full" alt="img">
                     </div>
-                    <div class="footer-desc tajawal">REIMAGINING THE WAY WE DRESS
+                    <div class="footer-desc tajawal">Osez le style décontracté, où que vous soyez
+
                     </div>
                     <div class="lynessa-socials style-01">
                         <div class="content-socials">
@@ -156,7 +158,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <p class="tajawal">© Copyright 2023 <a href="#">RawaaBeauty</a>.Tous les droits sont réservés..</p>
+                    <p class="tajawal">© Copyright 2024 <a href="/">Lamsa</a>.Tous les droits sont réservés..</p>
                 </div>
                 <div class="col-md-6">
                     <div class="payment">
@@ -167,14 +169,14 @@
             </div>
         </div>
     </div>
-    <div class="container">
+    {{-- <div class="container">
         <div class="separator"></div>
         <div class="powered">
             <span class="tajawal">Crée par</span>
-            <a href="https://digimperial.com/en/" target="_blank">
-                <img src="https://rawaabeauty.com/assets/img/digimperial.png" alt="">
+            <a href="" target="_blank">
+                <img src="" alt="">
             </a>
         </div>
-    </div>
+    </div> --}}
 </footer>
 <x-mobile-footer />

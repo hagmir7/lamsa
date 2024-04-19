@@ -16,8 +16,8 @@
                     <div class="header-logo-nav d-flex align-items-center">
                         <div class="header-logo">
                             <a href="#">
-                                <img alt="rawaaBeauty" style="height: 35px;"
-                                    src="https://rawaabeauty.com/assets/web/images/rb-black.png"
+                                <img alt="rawaaBeauty" style="height: 47px;"
+                                    src="/assets/imgs/rounded-logo.png"
                                     class="logo sticky-logo">
                             </a>
                         </div>
@@ -27,31 +27,28 @@
                                 <li id="menu-item-230"
                                     class="menu-item menu-item-type-post_type menu-item-object-megamenu menu-item-230 parent parent-megamenu item-megamenu ">
                                     <a class="lynessa-menu-item-title black-links tajawal"
-                                        href="https://rawaabeauty.com/fr">Accueil</a>
+                                        href="/">Accueil</a>
                                 </li>
 
                                 <li id="menu-item-230"
                                     class="menu-item menu-item-type-post_type menu-item-object-megamenu menu-item-230 parent parent-megamenu item-megamenu ">
                                     <a class="lynessa-menu-item-title black-links tajawal"
-                                        href="https://rawaabeauty.com/fr/shop">Collection</a>
+                                        href="/">Inspirations</a>
                                 </li>
                                 <li id="menu-item-230"
                                     class="menu-item menu-item-type-post_type menu-item-object-megamenu menu-item-230 parent parent-megamenu item-megamenu ">
-                                    <a class="lynessa-menu-item-title black-links tajawal" title="Collections"
-                                        href="https://rawaabeauty.com/fr/about">À propos</a>
+                                    <a class="lynessa-menu-item-title black-links tajawal" title="Collections"  href="/about">À propos</a>
                                 </li>
-                                <li id="menu-item-230"
-                                    class="menu-item menu-item-type-post_type menu-item-object-megamenu menu-item-230 item-megamenu ">
+                                <li id="menu-item-230" class="menu-item menu-item-type-post_type menu-item-object-megamenu menu-item-230 item-megamenu ">
                                     <a class="lynessa-menu-item-title black-links tajawal"
-                                        href="https://rawaabeauty.com/fr/contact">Contactez nous</a>
-
+                                        href="//contact">Contactez nous</a>
                                 </li>
 
 
                                 <li id="menu-item-230"
                                     class="menu-item menu-item-type-post_type menu-item-object-megamenu menu-item-230 item-megamenu ">
                                     <a class="lynessa-menu-item-title black-links tajawal"
-                                        href="https://rawaabeauty.com/fr/espace-client">Se connecter</a>
+                                        href="//espace-client">Se connecter</a>
 
                                 </li>
 
@@ -113,9 +110,9 @@
                                             </div>
 
                                             <p class="lynessa-mini-cart__buttons buttons">
-                                                <a href="https://rawaabeauty.com/fr/card"
+                                                <a href="//card"
                                                     class="button lynessa-forward tajawal">Panier</a>
-                                                <a href="https://rawaabeauty.com/fr/card/checkout"
+                                                <a href="//card/checkout"
                                                     class="button checkout lynessa-forward tajawal">Commander
                                                     maintenant</a>
                                             </p>
@@ -162,7 +159,15 @@
                         id="">
                         <div class="shopcart-dropdown block-cart-link" data-lynessa="lynessa-dropdown">
                             <a class="block-link link-dropdown" href="#">
-                                <span class="pe-7s-shopbag"></span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#272626"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                    class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                                    <path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                                    <path d="M17 17h-11v-14h-2" />
+                                    <path d="M6 5l14 1l-1 7h-13" />
+                                </svg>
                                 <span class="count">0</span>
                             </a>
                         </div>
@@ -192,9 +197,9 @@
                                 </div>
 
                                 <p class="lynessa-mini-cart__buttons buttons">
-                                    <a href="https://rawaabeauty.com/fr/card"
+                                    <a href="//card"
                                         class="button lynessa-forward tajawal">Panier</a>
-                                    <a href="https://rawaabeauty.com/fr/card/checkout"
+                                    <a href="//card/checkout"
                                         class="button checkout lynessa-forward tajawal">Commander maintenant</a>
                                 </p>
                             </div>
