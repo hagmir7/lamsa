@@ -44,19 +44,6 @@
                                         href="//contact">Contactez nous</a>
                                 </li>
 
-
-                                <li id="menu-item-230"
-                                    class="menu-item menu-item-type-post_type menu-item-object-megamenu menu-item-230 item-megamenu ">
-                                    <a class="lynessa-menu-item-title black-links tajawal"
-                                        href="//espace-client">Se connecter</a>
-
-                                </li>
-
-
-
-
-
-
                                 <li class="menu-item lynessa-dropdown block-language menu_lang" style="display: none">
                                     <span class="toggle-submenu"></span>
                                     <ul class="sub-menu">

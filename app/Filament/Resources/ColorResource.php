@@ -17,14 +17,22 @@ class ColorResource extends Resource
 {
     protected static ?string $model = Color::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-sparkles';
+
+    protected static ?string $navigationGroup = "Plus d'options";
+
+
+    public static function getModelLabel(): string
+    {
+        return __("couleur");
+    }
 
     public static function form(Form $form): Form
     {
         return $form
             ->schema([
                 Forms\Components\TextInput::make('name')
-                    ->label(__("Colore"))
+                    ->label(__("Couleur"))
                     ->required()
                     ->maxLength(255),
                 Forms\Components\ColorPicker::make('code')
