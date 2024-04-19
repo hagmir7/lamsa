@@ -25,7 +25,7 @@
     <link rel="stylesheet" type="text/css" href="https://rawaabeauty.com/assets/web/css/slick.min.css" />
     <link rel="stylesheet" type="text/css" href="https://rawaabeauty.com/assets/web/css/megamenu.css" />
     <link rel="stylesheet" type="text/css" href="https://rawaabeauty.com/assets/web/css/dreaming-attribute.css" />
-    <link rel="stylesheet" type="text/css" href="https://rawaabeauty.com/assets/web/css/style.css?v=0.0.7" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
     <link rel="stylesheet" type="text/css" href="https://rawaabeauty.com/assets/css/modified.css?v=0.2.4" />
 
     <link rel="stylesheet" href="https://rawaabeauty.com/assets/vendor/libs/toastr/toastr.css" />
@@ -51,6 +51,10 @@
     <style>
         .myslide img {
             width: 100% !important;
+        }
+
+        .slide-info{
+            top: 58% !important;
         }
 
         .slide-inner h5,

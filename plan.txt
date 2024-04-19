@@ -1,2 +1,14 @@
-- logo Demantions
+- Logo Demantions
 854x231
+
+-- Colors
+#166e7a
+#6cafb7
+#e1aeab
+#e7c3c3
+#e5cfc2
+#f5e2db
+
+
+-- Womens images
+https://www.freepik.com/free-photos-vectors/woman-fashion-background

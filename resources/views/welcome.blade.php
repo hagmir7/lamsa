@@ -23,88 +23,36 @@
                 </div>
             </div>
 
-            <div class=" auto-clear lynessa-products">
-                <ul class="row products columns-3">
-                    <x-product-card />
+            @livewire('product-card')
 
-                </ul>
-            </div>
         </div>
     </div>
+
+    {{-- Comuting --}}
+
     <div class="section-025">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 col-lg-12 d-lg-none">
-                        <div class="logo-footer">
-                            <img src="/assets/imgs/rounded-logo.png" style="height: 60px;"
-                                class="az_single_image-img attachment-full" alt="img">
-                        </div>
-                        <div class="footer-desc tajawal"> Osez le style décontracté, où que vous soyez
-
-                        </div>
-                        <div class="lynessa-socials style-01">
-                            <div class="content-socials">
-                                <ul class="socials-list">
-                                    <li>
-                                        <a href="#!" target="_blank">
-                                            <img src="https://rawaabeauty.com/assets/img/pinterest.png"
-                                                style="z-index: 9999999 !important;position: inherit;height: 17px;margin-top: -2px;"
-                                                alt="">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.instagram.com/by_rawaabeauty" target="_blank">
-                                            <i class="fa fa-instagram"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.tiktok.com/@by_rawaabeauty" target="_blank">
-                                            <img src="https://rawaabeauty.com/assets/img/tiktok.png"
-                                                style="z-index: 9999999 !important;position: inherit;height: 17px;margin-top: -2px;"
-                                                alt="">
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                    </div>
-                    <div class="col-lg-6 d-none d-lg-block">
-                        <div class="logo-footer">
-                            <img style="height: 60px;" src="/assets/imgs/logo.png" class="az_single_image-img attachment-full"
-                                alt="img">
-                        </div>
-                        <div class="footer-desc tajawal">Osez le style décontracté, où que vous soyez
-
-                        </div>
-                        <div class="lynessa-socials style-01">
-                            <div class="content-socials">
-                                <ul class="socials-list">
-                                    <li>
-                                        <a href="https://pin.it/7lDxP6jwL" target="_blank">
-                                            <img src="https://rawaabeauty.com/assets/img/pinterest.png"
-                                                style="z-index: 9999999 !important;position: inherit;height: 17px;margin-top: -2px;"
-                                                alt="">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.tiktok.com/@by_rawaabeauty" target="_blank">
-                                            <img src="https://rawaabeauty.com/assets/img/tiktok.png"
-                                                style="z-index: 9999999 !important;position: inherit;height: 17px;margin-top: -2px;"
-                                                alt="">
-                                        </a>
-                                    </li>
-
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                    </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                   <img class="rounded" src="/assets/imgs/image-4.jpg" alt="">
+                </div>
+                <div class="col-lg-4">
+                    <h2 class="text-center h3 tajawal mb-2">Joignez-vous à la communauté</h2>
+                   <p class="h5 text-center tajawal" style="line-height: 40px;">
+                        Rejoignez notre communauté qui embrassent le confort
+                        et le style au quotidien. Partagez vos moments avec nous
+                        sur instagram pour avoir la chance d'être présentée sur
+                        notre page et inspirer d'autres personnes avec votre
+                        style authentique.
+                    </p>
+                </div>
+                <div class="col-md-6 col-lg-4 rounded">
+                    <img class="rounded" src="/assets/imgs/image-3.jpg" alt="">
                 </div>
             </div>
         </div>
+    </div>
+
 
     <div class="section-014 mt-5">
             <div class="container">

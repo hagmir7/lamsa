@@ -4,14 +4,15 @@
         data-responsive="[{&quot;breakpoint&quot;:480,&quot;settings&quot;:{&quot;slidesToShow&quot;:1,&quot;slidesMargin&quot;:&quot;0&quot;}},{&quot;breakpoint&quot;:768,&quot;settings&quot;:{&quot;slidesToShow&quot;:1,&quot;slidesMargin&quot;:&quot;0&quot;}},{&quot;breakpoint&quot;:992,&quot;settings&quot;:{&quot;slidesToShow&quot;:1,&quot;slidesMargin&quot;:&quot;0&quot;}},{&quot;breakpoint&quot;:1200,&quot;settings&quot;:{&quot;slidesToShow&quot;:1,&quot;slidesMargin&quot;:&quot;0&quot;}},{&quot;breakpoint&quot;:1500,&quot;settings&quot;:{&quot;slidesToShow&quot;:1,&quot;slidesMargin&quot;:&quot;0&quot;}}]">
 
         <div class="slide-wrap">
-            <img class="hero" src="https://rawaabeauty.com/assets/img/hero_png.png" alt="image">
-            <img class="hero_mobile d-none" src="https://rawaabeauty.com/assets/img/hero_mobile_2.png" alt="image">
-            <div class="slide-info" style="mix-blend-mode: difference !important;">
+            <img class="hero" src="/assets/imgs/hero.jpg" alt="image">
+            <img class="hero_mobile d-none" src="/assets/imgs/hero.jpg" alt="image">
+            <div class="slide-info">
                 <div class="container">
                     <div class="slide-inner">
-                        <h2 class="slide-title" style="color: #fff !important">Osez le style décontracté, où que vous soyez
-
-                        </h2>
+                        {{-- <h5>Sale up to <span>40%</span> Off</h5> --}}
+                        <h1>Lamsa</h1>
+                        <h2>Osez le style décontracté,<br><br> où que vous soyez</h2>
+                        <a href="#" tabindex="0">Achetez maintenant</a>
                     </div>
                 </div>
             </div>
