@@ -118,7 +118,7 @@
             display: none !important;
         }
     </style>
-    @vite('resources/css/app.css')
+    {{-- @vite('resources/css/app.css') --}}
 </head>
 
 <body class="antialiased">
@@ -128,7 +128,7 @@
 
 
 
-    @vite('resources/js/app.js')
+    {{-- @vite('resources/js/app.js') --}}
     <a href="#" class="backtotop active">
             <img src="https://rawaabeauty.com/assets/img/union.png" alt="">
         </a>
