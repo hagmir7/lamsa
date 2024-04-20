@@ -20,11 +20,14 @@
                             </h2>
                             <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                                <div class="u-column1 col-1">
+                                @if ($errors->any())
+                                    @foreach ($errors->all() as $error)
+                                    <div class="alert alert-danger p-2">
+                                        {{ $error }}
+                                    </div>
+                                    @endforeach
+                                    @endif
                                 <h2 class="tajawal t-start">Se connecter</h2>
-                                @error('email')
-                                <div class="p-1 alert alert-danger">{{ $message }}</div>
-                                @enderror
-
                                 <form wire:submit.prevent='login' method="POST">
                                     <p
                                         class="lynessa-form-row lynessa-form-row--wide form-row form-row-wide fv-row fv-plugins-icon-container fv-plugins-bootstrap5-row-valid">
@@ -57,7 +60,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-danger btn-sm" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-danger btn-sm" data-bs-dismiss="modal">Fermer</button>
                 </div>
             </div>
         </div>

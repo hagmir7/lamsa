@@ -17,7 +17,7 @@ class ProductCard extends Component
 
     public $cart;
 
-    public $amount = 1;
+    public $amount = 8;
     public $userCart = [];
 
     // protected $paginationTheme = 'bootstrap';
@@ -36,7 +36,7 @@ class ProductCard extends Component
 
     public function loadMore()
     {
-        $this->amount += 1;
+        $this->amount += 8;
     }
 
 

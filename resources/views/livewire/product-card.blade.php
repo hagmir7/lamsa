@@ -9,22 +9,22 @@
                     <div class="product-thumb">
                         <a class="thumb-link" href="" tabindex="0">
                             <img class="img-responsive"
-                                src="https://imagedelivery.net/6dvntJzmKU3x3sg1oVGvwA/5ebe3158-04f4-4868-1f0a-83f887232800/public"
+                                src="{{ Storage::url($product->images[0]->path) }}"
                                 loading="lazy" alt="ETOILE DE NUIT" width="270" height="350">
                         </a>
                         <div class="flash">
                             <span class="onsale"><span class="number limited"
-                                    style="letter-spacing: 1px;font-weight: bold;">Édition limitée</span></span>
+                                    style="letter-spacing: 1px;font-weight: bold;">{{ $product->status }}</span></span>
                         </div>
 
                     </div>
                     <div class="product-info">
                         <h3 class="product-name product_title">
-                            <a href="" tabindex="0">ETOILE DE NUIT</a>
+                            <a href="" tabindex="0">{{ $product->name }}</a>
                         </h3>
                         <span class="price">
                             <span class="lynessa-Price-amount amount">
-                                <span class="lynessa-Price-currencySymbol">MAD </span> 899.00
+                                <span class="lynessa-Price-currencySymbol">MAD </span> {{ $product->price }}
                             </span>
                         </span>
                         <br>

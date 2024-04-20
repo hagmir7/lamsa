@@ -35,7 +35,7 @@ class Register extends Component
         // Optionally, authenticate the user
         auth()->login($user);
 
-        redirect('/'); // Or any desired route after registration
+        redirect('/');
     }
     public function render()
     {

@@ -8443,8 +8443,8 @@ body.admin-bar #yith-quick-view-modal {
     }
 
     .product-item .flash {
-        top: 0;
-        left: 0;
+        top: 8px;
+        left: 40%;
     }
 
     .sold-out,

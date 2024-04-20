@@ -23,6 +23,7 @@ class SideCart extends Component
     public function productAdded()
     {
         $this->products = auth()->user()->cart->products;
+        $this->count_products = $this->products->count();
     }
 
     public function render()
