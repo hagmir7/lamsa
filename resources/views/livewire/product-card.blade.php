@@ -57,8 +57,9 @@
     </ul>
 
     <div class="d-flex justify-content-center">
-        <button class="btn btn-success" wire:click='loadMore'>Load more <div wire:loading wire:target='loadMore'>...
-            </div></button>
+        <button class="btn btn-success" wire:click='loadMore'>
+            Voir plus <div wire:loading wire:target='loadMore'>... </div>
+        </button>
     </div>
 
 

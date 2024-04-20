@@ -1,4 +1,4 @@
-<div class="header-control" style="  margin-top: -10px !important">
+<div class="header-control" style="margin-top: -10px !important">
     <div class="header-control-inner">
         <div class="meta-dreaming">
             <div class="block-minicart block-dreaming lynessa-mini-cart lynessa-dropdown card_header_container" id="">
@@ -21,25 +21,25 @@
                         <h3 class="minicart-title tajawal">Mon panier<span class="minicart-number-items">{{ $count_products }}</span></h3>
                         <div class="scroll-wrapper lynessa-mini-cart cart_list product_list_widget"
                             style="position: relative;">
-                            <ul class="lynessa-mini-cart cart_list product_list_widget scroll-content"
-                                style="height: 100vh; margin-bottom: 0px; margin-right: 0px; max-height: none;">
+                            <ul class="lynessa-mini-cart cart_list me-0 mt-0 h-vh product_list_widget scroll-content"  style="0px; max-height: none;">
                                 @foreach ($products as $product)
                                     <li class="lynessa-mini-cart-item mini_cart_item position-relative">
-                                        <a href="#" class="position-absolute" style="right: 10px;">
+                                        <a wire:click='remoteFromCart({{ $product->id }})' href="#" class="position-absolute" style="right: 10px;">
                                             <x-delete-icon/>
                                         </a>
                                         </a>
-                                        <a href="#">
-                                            <img src="https://dreamingtheme.kiendaotac.com/html/lynessa/assets/images/apro134-1-600x778.jpg"
-                                                class="attachment-lynessa_thumbnail size-lynessa_thumbnail" alt="img" width="600" height="778">T-shirt with
-                                            skirt –
-                                            Pink&nbsp;
+                                        @if(isset($product->images[0]))
+                                        <a href="{{ route("product", $product->id) }}">
+                                            <img src="{{ Storage::url($product->images[0]->path) }}" class="attachment-lynessa_thumbnail size-lynessa_thumbnail"
+                                                alt="img" width="600" height="778">
+                                            {{ $product->name }}
                                         </a>
+                                        @else
+                                        <!-- Handle the case where there are no images -->
+                                        @endif
                                         <span class="quantity">1 ×
                                             <span class="lynessa-Price-amount amount">
-                                                <span class="lynessa-Price-currencySymbol">$
-                                                </span>
-                                                150.00
+                                                <span class="lynessa-Price-currencySymbol">MAD {{ $product->price }} </span>
                                             </span>
                                         </span>
                                     </li>
@@ -61,7 +61,9 @@
                                 </div>
                             </div>
                         </div>
-
+                        <p class="lynessa-mini-cart__total total"><strong>Total:</strong>
+                            <span class="lynessa-Price-amount amount"><span class="lynessa-Price-currencySymbol"> MAD </span>{{ $total }}</span>
+                        </p>
                         <p class="lynessa-mini-cart__buttons buttons">
                             <a href="//card" class="button lynessa-forward tajawal">Panier</a>
                             <a href="//card/checkout" class="button checkout lynessa-forward tajawal">Commander
