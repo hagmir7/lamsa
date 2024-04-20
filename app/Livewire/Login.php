@@ -3,32 +3,42 @@
 namespace App\Livewire;
 
 use Illuminate\Support\Facades\Auth;
+use Livewire\Attributes\Validate;
 use Livewire\Component;
 
 class Login extends Component
 {
 
-
-    public $email;
+    #[Validate('required|min:3|email')]
+    public $email = '';
+    #[Validate('required|min:3')]
     public $password;
 
-    protected $rules = [
-        'email' => 'required|email',
-        'password' => 'required',
-    ];
+    public $error = '';
 
     public function login()
     {
         $credentials = $this->validate();
-        dd("Login");
+
         if (Auth::attempt($credentials)) {
-            session()->regenerate();
-
-            return redirect()->intended('/');
+            if (request()->next) {
+                return redirect()->intended(request()->next);
+            } else {
+                return redirect()->intended('/');
+            }
         } else {
-
-            $this->addError('email', 'Invalid email or password');
+            return $this->error = "Les informations d'identification invalides";
         }
+
+
+
+        // if (Auth::attempt($credentials)) {
+        //     session()->regenerate();
+
+        //     return redirect()->intended('/');
+        // } else {
+        //     $this->addError('email', 'Invalid email or password');
+        // }
     }
     public function render()
     {

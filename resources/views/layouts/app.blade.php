@@ -29,7 +29,7 @@
     <link rel="stylesheet" type="text/css" href="https://rawaabeauty.com/assets/css/modified.css?v=0.2.4" />
 
     <link rel="stylesheet" href="https://rawaabeauty.com/assets/vendor/libs/toastr/toastr.css" />
-    <link rel="stylesheet" href="https://rawaabeauty.com/assets/vendor/libs/formvalidation/dist/css/formValidation.min.css" />
+    {{-- <link rel="stylesheet" href="https://rawaabeauty.com/assets/vendor/libs/formvalidation/dist/css/formValidation.min.css" /> --}}
     <meta name="robots" content="noindex">
     <link rel="canonical" href="https://rawaabeauty.com/fr">
 
@@ -163,8 +163,8 @@
         <script src="https://rawaabeauty.com/assets/vendor/libs/toastr/toastr.js"></script>
         {{-- <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script> --}}
         <script src="https://rawaabeauty.com/assets/vendor/libs/block-ui/block-ui.js"></script>
-        <script src="https://rawaabeauty.com/assets/js/controllers/web/NewsLetterController.js"></script>
-        <script src="https://rawaabeauty.com/assets/js/custom/app.js?v=0.1.1"></script>
+        {{-- <script src="https://rawaabeauty.com/assets/js/controllers/web/NewsLetterController.js"></script> --}}
+        <script src="/assets/js/app.js"></script>
 
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
             integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">

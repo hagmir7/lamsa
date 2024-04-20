@@ -7,7 +7,11 @@
                 <div class="modal-body">
                     <div class="u-column1 col-1">
                         <h2 class="tajawal t-start">Se connecter</h2>
-                        <form wire:submit.prevent="login" method="POST" class="lynessa-form lynessa-form-login login form-store fv-plugins-bootstrap5 fv-plugins-framework">
+                        @if($error)
+                            <div class="p-1 alert alert-danger">{{ $error }}</div>
+                        @endif
+
+                        <form wire:submit.prevent="login" method="POST">
                             @csrf
                             <p
                                 class="lynessa-form-row lynessa-form-row--wide form-row form-row-wide fv-row fv-plugins-icon-container fv-plugins-bootstrap5-row-valid">
@@ -21,17 +25,13 @@
                                 @error('password') <span class="text-danger">{{ $message }}</span> @enderror
                             </p>
                             <p class="form-row">
-                                <button type="submit" class="lynessa-Button button tajawal" value="Se connecter">Se connecter </button>
-                            </p>
-                            <p class="lynessa-LostPassword lost_password f-right">
-                                <a href="#" class="tajawal">Mot de passe oublié ?</a>
+                                <button type="submit" class="lynessa-Button button tajawal w-100" value="Se connecter">Se connecter</button>
                             </p>
                         </form>
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-danger btn-sm" data-bs-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>

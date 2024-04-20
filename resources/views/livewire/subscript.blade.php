@@ -9,7 +9,7 @@
                         <p class="desc tajawal">Découvrez les nouveautés et obtenez plus d’informations en vous inscrivant à notre newsletter</p>
                     </div>
                 </div>
-                <form id="newsLetter_form" class="newsletter-form-wrap form-store" data-controller="NewsLetterController" action="#!" method="POST">
+                <form id="newsLetter_form" class="newsletter-form-wrap form-store" action="#!" method="POST">
                     <div class="newsletter-form-inner">
                         <input class="email email-newsletter" name="email" style="text-align: start " placeholder="Votre adresse e-mail" type="email">
                         <button type="submit" class="button btn-submit submit-newsletter tajawal">
