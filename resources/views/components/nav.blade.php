@@ -15,10 +15,8 @@
                     </div>
                     <div class="header-logo-nav d-flex align-items-center">
                         <div class="header-logo">
-                            <a href="#">
-                                <img alt="rawaaBeauty" style="height: 47px;"
-                                    src="/assets/imgs/rounded-logo.png"
-                                    class="logo sticky-logo">
+                            <a href="/">
+                                <img alt="rawaaBeauty" style="height: 47px;" src="/assets/imgs/rounded-logo.png" class="logo sticky-logo">
                             </a>
                         </div>
                         <div class="box-header-nav menu-nocenter" style="margin: auto">

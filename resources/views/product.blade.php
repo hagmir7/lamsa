@@ -1,10 +1,150 @@
-@extends('layouts.app')
+<!DOCTYPE html>
+<html lang="en" dir="">
 
-@section('content')
-<div class="fullwidth-template">
-    <x-header />
+<head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="https://rawaabeauty.com/assets/web/images/fav-icon.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <meta name="csrf-token" content="ZekuFMjCWdPb8guuSFuUkaeSLLQaJZuNc7lAxiKC" />
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://rawaabeauty.com/assets/web/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://rawaabeauty.com/assets/web/css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="https://rawaabeauty.com/assets/web/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://rawaabeauty.com/assets/web/css/chosen.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://rawaabeauty.com/assets/web/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://rawaabeauty.com/assets/web/css/pe-icon-7-stroke.css" />
+    <link rel="stylesheet" type="text/css" href="https://rawaabeauty.com/assets/web/css/jquery.scrollbar.css" />
+    <link rel="stylesheet" type="text/css" href="https://rawaabeauty.com/assets/web/css/lightbox.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://rawaabeauty.com/assets/web/css/magnific-popup.css" />
+    <link rel="stylesheet" type="text/css" href="https://rawaabeauty.com/assets/web/css/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://rawaabeauty.com/assets/web/css/megamenu.css" />
+    <link rel="stylesheet" type="text/css" href="https://rawaabeauty.com/assets/web/css/dreaming-attribute.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
+
+    <link rel="stylesheet" href="https://rawaabeauty.com/assets/vendor/libs/toastr/toastr.css" />
+    <link rel="stylesheet"href="https://rawaabeauty.com/assets/vendor/libs/formvalidation/dist/css/formValidation.min.css" />
+
+    <title> GANDOURA - SAHARA STRIPE | RawaaBeauty </title>
+    <meta name="robots" content="noindex">
+    <link rel="canonical" href="https://rawaabeauty.com/fr/products/gandoura-sahara-stripe">
+
+    <meta name="description"
+        content="GANDOURA - SAHARA STRIPE est une création exclusive de Rawaa Beauty, définie par sa coupe moderne et ses finitions impeccables. Fabriqué à partir de matériaux de haute qualité, ce vêtement offre un équilibre parfait entre tendance et confort.">
+    <title>GANDOURA - SAHARA STRIPE</title>
+    <meta name="image" content="https://rawaabeauty.comhttps://rawaabeauty.com/assets/web/images/rb-black.png">
+    <meta property="og:title" content="GANDOURA - SAHARA STRIPE">
+    <meta property="og:description"
+        content="GANDOURA - SAHARA STRIPE est une création exclusive de Rawaa Beauty, définie par sa coupe moderne et ses finitions impeccables. Fabriqué à partir de matériaux de haute qualité, ce vêtement offre un équilibre parfait entre tendance et confort.">
+    <meta property="og:locale" content="fr">
+    <meta property="og:image" content="https://rawaabeauty.comhttps://rawaabeauty.com/assets/web/images/rb-black.png">
+    <meta property="og:url" content="https://rawaabeauty.com/fr/products/gandoura-sahara-stripe">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="https://rawaabeauty.comhttps://rawaabeauty.com/assets/web/images/rb-black.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://rawaabeauty.comhttps://rawaabeauty.com/assets/web/images/rb-black.png">
+    <meta name="twitter:title" content="GANDOURA - SAHARA STRIPE">
+    <meta name="twitter:description"
+        content="GANDOURA - SAHARA STRIPE est une création exclusive de Rawaa Beauty, définie par sa coupe moderne et ses finitions impeccables. Fabriqué à partir de matériaux de haute qualité, ce vêtement offre un équilibre parfait entre tendance et confort.">
+
+    <style>
+        .my-wrapper img {
+            width: 100%;
+        }
+
+
+
+        .payment__img {
+            background-image: url(https://rawaabeauty.com/assets/img/method.png);
+            height: 40px;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        .variant {
+            width: 40px;
+            height: 20px;
+            background: #f4f4f4;
+            border-radius: 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 4px;
+            color: #000;
+            cursor: pointer;
+        }
+
+        .active-variant {
+            background: #000;
+            color: #fff;
+        }
+
+        .entry-summary form.cart.variations_form .variations {
+            padding-bottom: 0px !important;
+            position: relative;
+        }
+
+        .input-qty.input-text.qty.text {
+            border: none !important;
+        }
+
+        .lynessa-newsletter.style-01 .email-newsletter {
+            width: 100%;
+            height: 40px;
+            line-height: 38px;
+            background-color: #fff;
+            padding-right: 145px;
+            text-align: start !important;
+        }
+
+        .main-container {
+            padding-top: 70px;
+            padding-bottom: 0px !important;
+        }
+
+        .hide-zoom {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            z-index: 9999;
+            background: #87654a;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body class="lynessa-zoom-on-hover">
+
+
+    <x-nav />
+
+
+    <div class="banner-wrapper my-wrapper has_background">
+        <img src="https://imagedelivery.net/6dvntJzmKU3x3sg1oVGvwA/2fe34ef3-fddc-4e73-7ac2-79d8a2189400/public"
+            class="img-responsive attachment-1920x447 size-1920x447" alt="img">
+        <div class="banner-wrapper-inner">
+            <h1 class="page-title">{{ $product->name }}</h1>
+            <div role="navigation" aria-label="Breadcrumbs" class="breadcrumb-trail breadcrumbs">
+                <ul class="trail-items d-flex justify-content-center" style="list-style: none">
+                    <li class="trail-item trail-begin tajawal"><a href="/"><span>Accueil</span></a></li>
+                    <li> &#xa0; > &#xa0;  </li>
+                    <li class="trail-item trail-end active"><span>Détail du produit </span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
     <div class="single-thumb-vertical main-container shop-page no-sidebar">
-        <div class="container mt-6">
+        <div class="container">
             <div class="row">
                 <div class="main-content col-md-12">
                     <div class="lynessa-notices-wrapper"></div>
@@ -36,337 +176,23 @@
                                             </svg>
                                         </span>
                                         <div class="flex-viewport">
-                                            <figure class="lynessa-product-gallery__wrapper slick-initialized slick-slider">
-                                                <div class="slick-list">
-                                                    <div class="slick-track" style="opacity: 1; width: 6072px;">
-                                                        <div class="lynessa-product-gallery__image slick-slide slick-current slick-active first-slick last-slick"
-                                                            style="position: relative; overflow: hidden; margin-right: 0px; width: 506px; left: 0px; top: 0px; z-index: 999; opacity: 1;"
-                                                            data-slick-index="0" aria-hidden="false" tabindex="0">
-                                                            <img class="toZoom" alt="img"
-                                                                src="https://imagedelivery.net/6dvntJzmKU3x3sg1oVGvwA/0c84b14c-7e20-4a78-4410-a8752f022400/public">
-                                                            <img src="https://imagedelivery.net/6dvntJzmKU3x3sg1oVGvwA/0c84b14c-7e20-4a78-4410-a8752f022400/public"
-                                                                class="zoomImg"
-                                                                style="position: absolute; top: -10.6037px; left: -123.521px; opacity: 0; width: 750px; height: 1000px; border: none; max-width: none; max-height: none;">
-                                                        </div>
-                                                        <div class="lynessa-product-gallery__image slick-slide"
-                                                            style="position: relative; overflow: hidden; margin-right: 0px; width: 506px; left: -506px; top: 0px; z-index: 998; opacity: 0;"
-                                                            data-slick-index="1" aria-hidden="true" tabindex="-1">
-                                                            <img class="toZoom" alt="img"
-                                                                src="https://imagedelivery.net/6dvntJzmKU3x3sg1oVGvwA/246798d8-ba7d-417a-0d31-943750df2b00/public">
-                                                            <img src="https://imagedelivery.net/6dvntJzmKU3x3sg1oVGvwA/246798d8-ba7d-417a-0d31-943750df2b00/public"
-                                                                class="zoomImg"
-                                                                style="position: absolute; top: 0px; left: 0px; opacity: 0; width: 750px; height: 1000px; border: none; max-width: none; max-height: none;">
-                                                        </div>
-                                                        <div class="lynessa-product-gallery__image slick-slide"
-                                                            style="position: relative; overflow: hidden; margin-right: 0px; width: 506px; left: -1012px; top: 0px; z-index: 998; opacity: 0;"
-                                                            data-slick-index="2" aria-hidden="true" tabindex="-1">
-                                                            <img class="toZoom" alt="img"
-                                                                src="https://imagedelivery.net/6dvntJzmKU3x3sg1oVGvwA/83ba6976-72f7-41bf-fad6-7d3d86360100/public">
-                                                            <img src="https://imagedelivery.net/6dvntJzmKU3x3sg1oVGvwA/83ba6976-72f7-41bf-fad6-7d3d86360100/public"
-                                                                class="zoomImg"
-                                                                style="position: absolute; top: 0px; left: 0px; opacity: 0; width: 750px; height: 1000px; border: none; max-width: none; max-height: none;">
-                                                        </div>
-                                                        <div class="lynessa-product-gallery__image slick-slide"
-                                                            style="position: relative; overflow: hidden; margin-right: 0px; width: 506px; left: -1518px; top: 0px; z-index: 998; opacity: 0;"
-                                                            data-slick-index="3" aria-hidden="true" tabindex="-1">
-                                                            <img class="toZoom" alt="img"
-                                                                src="https://imagedelivery.net/6dvntJzmKU3x3sg1oVGvwA/e98e7c3a-669e-4ec7-7c41-e652137e7800/public">
-                                                            <img src="https://imagedelivery.net/6dvntJzmKU3x3sg1oVGvwA/e98e7c3a-669e-4ec7-7c41-e652137e7800/public"
-                                                                class="zoomImg"
-                                                                style="position: absolute; top: 0px; left: 0px; opacity: 0; width: 749px; height: 1000px; border: none; max-width: none; max-height: none;">
-                                                        </div>
-                                                        <div class="lynessa-product-gallery__image slick-slide"
-                                                            style="position: relative; overflow: hidden; margin-right: 0px; width: 506px; left: -2024px; top: 0px; z-index: 998; opacity: 0;"
-                                                            data-slick-index="4" aria-hidden="true" tabindex="-1">
-                                                            <img class="toZoom" alt="img"
-                                                                src="https://imagedelivery.net/6dvntJzmKU3x3sg1oVGvwA/08c7d534-f479-498f-af07-4d84785e1000/public">
-                                                            <img src="https://imagedelivery.net/6dvntJzmKU3x3sg1oVGvwA/08c7d534-f479-498f-af07-4d84785e1000/public"
-                                                                class="zoomImg"
-                                                                style="position: absolute; top: 0px; left: 0px; opacity: 0; width: 749px; height: 1000px; border: none; max-width: none; max-height: none;">
-                                                        </div>
-                                                        <div class="lynessa-product-gallery__image slick-slide"
-                                                            style="position: relative; overflow: hidden; margin-right: 0px; width: 506px; left: -2530px; top: 0px; z-index: 998; opacity: 0;"
-                                                            data-slick-index="5" aria-hidden="true" tabindex="-1">
-                                                            <img class="toZoom" alt="img"
-                                                                src="https://imagedelivery.net/6dvntJzmKU3x3sg1oVGvwA/4f066fc4-4e93-4d40-395b-f01f05d8ff00/public">
-                                                            <img src="https://imagedelivery.net/6dvntJzmKU3x3sg1oVGvwA/4f066fc4-4e93-4d40-395b-f01f05d8ff00/public"
-                                                                class="zoomImg"
-                                                                style="position: absolute; top: 0px; left: 0px; opacity: 0; width: 750px; height: 1000px; border: none; max-width: none; max-height: none;">
-                                                        </div>
-                                                        <div class="lynessa-product-gallery__image slick-slide"
-                                                            style="position: relative; overflow: hidden; margin-right: 0px; width: 506px; left: -3036px; top: 0px; z-index: 998; opacity: 0;"
-                                                            data-slick-index="6" aria-hidden="true" tabindex="-1">
-                                                            <img class="toZoom" alt="img"
-                                                                src="https://imagedelivery.net/6dvntJzmKU3x3sg1oVGvwA/43e5c0f2-40ab-4679-70f0-9208b9cbda00/public">
-                                                            <img src="https://imagedelivery.net/6dvntJzmKU3x3sg1oVGvwA/43e5c0f2-40ab-4679-70f0-9208b9cbda00/public"
-                                                                class="zoomImg"
-                                                                style="position: absolute; top: 0px; left: 0px; opacity: 0; width: 749px; height: 1000px; border: none; max-width: none; max-height: none;">
-                                                        </div>
-                                                        <div class="lynessa-product-gallery__image slick-slide"
-                                                            style="position: relative; overflow: hidden; margin-right: 0px; width: 506px; left: -3542px; top: 0px; z-index: 998; opacity: 0;"
-                                                            data-slick-index="7" aria-hidden="true" tabindex="-1">
-                                                            <img class="toZoom" alt="img"
-                                                                src="https://imagedelivery.net/6dvntJzmKU3x3sg1oVGvwA/969dd922-6a5e-4303-3977-8ba552d73a00/public">
-                                                            <img src="https://imagedelivery.net/6dvntJzmKU3x3sg1oVGvwA/969dd922-6a5e-4303-3977-8ba552d73a00/public"
-                                                                class="zoomImg"
-                                                                style="position: absolute; top: 0px; left: 0px; opacity: 0; width: 666px; height: 1000px; border: none; max-width: none; max-height: none;">
-                                                        </div>
-                                                        <div class="lynessa-product-gallery__image slick-slide"
-                                                            style="position: relative; overflow: hidden; margin-right: 0px; width: 506px; left: -4048px; top: 0px; z-index: 998; opacity: 0;"
-                                                            data-slick-index="8" aria-hidden="true" tabindex="-1">
-                                                            <img class="toZoom" alt="img"
-                                                                src="https://imagedelivery.net/6dvntJzmKU3x3sg1oVGvwA/94c84533-ec81-4684-5af7-95938d6bd400/public">
-                                                            <img src="https://imagedelivery.net/6dvntJzmKU3x3sg1oVGvwA/94c84533-ec81-4684-5af7-95938d6bd400/public"
-                                                                class="zoomImg"
-                                                                style="position: absolute; top: 0px; left: 0px; opacity: 0; width: 749px; height: 1000px; border: none; max-width: none; max-height: none;">
-                                                        </div>
-                                                        <div class="lynessa-product-gallery__image slick-slide"
-                                                            style="position: relative; overflow: hidden; margin-right: 0px; width: 506px; left: -4554px; top: 0px; z-index: 998; opacity: 0;"
-                                                            data-slick-index="9" aria-hidden="true" tabindex="-1">
-                                                            <img class="toZoom" alt="img"
-                                                                src="https://imagedelivery.net/6dvntJzmKU3x3sg1oVGvwA/ecef465d-8daa-466e-014e-ed2578700f00/public">
-                                                            <img src="https://imagedelivery.net/6dvntJzmKU3x3sg1oVGvwA/ecef465d-8daa-466e-014e-ed2578700f00/public"
-                                                                class="zoomImg"
-                                                                style="position: absolute; top: 0px; left: 0px; opacity: 0; width: 750px; height: 1000px; border: none; max-width: none; max-height: none;">
-                                                        </div>
-                                                        <div class="lynessa-product-gallery__image slick-slide"
-                                                            style="position: relative; overflow: hidden; margin-right: 0px; width: 506px; left: -5060px; top: 0px; z-index: 998; opacity: 0;"
-                                                            data-slick-index="10" aria-hidden="true" tabindex="-1">
-                                                            <img class="toZoom" alt="img"
-                                                                src="https://imagedelivery.net/6dvntJzmKU3x3sg1oVGvwA/63e5e38a-76bc-494f-cf2e-21e83d90b400/public">
-                                                            <img src="https://imagedelivery.net/6dvntJzmKU3x3sg1oVGvwA/63e5e38a-76bc-494f-cf2e-21e83d90b400/public"
-                                                                class="zoomImg"
-                                                                style="position: absolute; top: 0px; left: 0px; opacity: 0; width: 750px; height: 1000px; border: none; max-width: none; max-height: none;">
-                                                        </div>
-                                                        <div class="lynessa-product-gallery__image slick-slide"
-                                                            style="position: relative; overflow: hidden; margin-right: 0px; width: 506px; left: -5566px; top: 0px; z-index: 998; opacity: 0;"
-                                                            data-slick-index="11" aria-hidden="true" tabindex="-1">
-                                                            <img class="toZoom" alt="img"
-                                                                src="https://imagedelivery.net/6dvntJzmKU3x3sg1oVGvwA/3491ca07-448a-46f9-c494-31c13ea98e00/public">
-                                                            <img src="https://imagedelivery.net/6dvntJzmKU3x3sg1oVGvwA/3491ca07-448a-46f9-c494-31c13ea98e00/public"
-                                                                class="zoomImg"
-                                                                style="position: absolute; top: 0px; left: 0px; opacity: 0; width: 750px; height: 1000px; border: none; max-width: none; max-height: none;">
-                                                        </div>
+                                            <figure class="lynessa-product-gallery__wrapper">
+                                                @foreach ($product->images as $image)
+                                                    <div class="lynessa-product-gallery__image">
+                                                        <img class="toZoom" alt="img" src="{{ Storage::url($image->path) }}">
                                                     </div>
-                                                </div>
-
-
-
-
-
-
-
-
-
-
-
-
+                                                @endforeach
                                             </figure>
                                         </div>
-                                        <ol
-                                            class="flex-control-nav flex-control-thumbs slick-initialized slick-slider slick-vertical">
-                                            <span class="fa fa-angle-up prev slick-arrow"
-                                                style="display: inline-block;"></span>
-                                            <div class="slick-list draggable"
-                                                style="margin-top: -7px; margin-bottom: -7px; height: 561px;">
-                                                <div class="slick-track"
-                                                    style="opacity: 1; height: 5049px; transform: translate3d(0px, -561px, 0px);">
-                                                    <li class="slick-slide slick-cloned" data-slick-index="-3"
-                                                        aria-hidden="true"
-                                                        style="padding-top: 7px; padding-bottom: 7px; width: 90px;"
-                                                        tabindex="-1"><img
-                                                            src="https://imagedelivery.net/6dvntJzmKU3x3sg1oVGvwA/ecef465d-8daa-466e-014e-ed2578700f00/public"
-                                                            alt="img">
-                                                    </li>
-                                                    <li class="slick-slide slick-cloned" data-slick-index="-2"
-                                                        aria-hidden="true"
-                                                        style="padding-top: 7px; padding-bottom: 7px; width: 90px;"
-                                                        tabindex="-1"><img
-                                                            src="https://imagedelivery.net/6dvntJzmKU3x3sg1oVGvwA/63e5e38a-76bc-494f-cf2e-21e83d90b400/public"
-                                                            alt="img">
-                                                    </li>
-                                                    <li class="slick-slide slick-cloned" data-slick-index="-1"
-                                                        aria-hidden="true"
-                                                        style="padding-top: 7px; padding-bottom: 7px; width: 90px;"
-                                                        tabindex="-1"><img
-                                                            src="https://imagedelivery.net/6dvntJzmKU3x3sg1oVGvwA/3491ca07-448a-46f9-c494-31c13ea98e00/public"
-                                                            alt="img">
-                                                    </li>
-                                                    <li class="slick-slide slick-current slick-active first-slick"
-                                                        data-slick-index="0" aria-hidden="false"
-                                                        style="padding-top: 7px; padding-bottom: 7px; width: 90px;"
-                                                        tabindex="0"><img
-                                                            src="https://imagedelivery.net/6dvntJzmKU3x3sg1oVGvwA/0c84b14c-7e20-4a78-4410-a8752f022400/public"
-                                                            alt="img">
-                                                    </li>
-                                                    <li class="slick-slide slick-active" data-slick-index="1"
-                                                        aria-hidden="false"
-                                                        style="padding-top: 7px; padding-bottom: 7px; width: 90px;"
-                                                        tabindex="0"><img
-                                                            src="https://imagedelivery.net/6dvntJzmKU3x3sg1oVGvwA/246798d8-ba7d-417a-0d31-943750df2b00/public"
-                                                            alt="img">
-                                                    </li>
-                                                    <li class="slick-slide slick-active last-slick" data-slick-index="2"
-                                                        aria-hidden="false"
-                                                        style="padding-top: 7px; padding-bottom: 7px; width: 90px;"
-                                                        tabindex="0"><img
-                                                            src="https://imagedelivery.net/6dvntJzmKU3x3sg1oVGvwA/83ba6976-72f7-41bf-fad6-7d3d86360100/public"
-                                                            alt="img">
-                                                    </li>
-                                                    <li class="slick-slide" data-slick-index="3" aria-hidden="true"
-                                                        style="padding-top: 7px; padding-bottom: 7px; width: 90px;"
-                                                        tabindex="-1"><img
-                                                            src="https://imagedelivery.net/6dvntJzmKU3x3sg1oVGvwA/e98e7c3a-669e-4ec7-7c41-e652137e7800/public"
-                                                            alt="img">
-                                                    </li>
-                                                    <li class="slick-slide" data-slick-index="4" aria-hidden="true"
-                                                        style="padding-top: 7px; padding-bottom: 7px; width: 90px;"
-                                                        tabindex="-1"><img
-                                                            src="https://imagedelivery.net/6dvntJzmKU3x3sg1oVGvwA/08c7d534-f479-498f-af07-4d84785e1000/public"
-                                                            alt="img">
-                                                    </li>
-                                                    <li class="slick-slide" data-slick-index="5" aria-hidden="true"
-                                                        style="padding-top: 7px; padding-bottom: 7px; width: 90px;"
-                                                        tabindex="-1"><img
-                                                            src="https://imagedelivery.net/6dvntJzmKU3x3sg1oVGvwA/4f066fc4-4e93-4d40-395b-f01f05d8ff00/public"
-                                                            alt="img">
-                                                    </li>
-                                                    <li class="slick-slide" data-slick-index="6" aria-hidden="true"
-                                                        style="padding-top: 7px; padding-bottom: 7px; width: 90px;"
-                                                        tabindex="-1"><img
-                                                            src="https://imagedelivery.net/6dvntJzmKU3x3sg1oVGvwA/43e5c0f2-40ab-4679-70f0-9208b9cbda00/public"
-                                                            alt="img">
-                                                    </li>
-                                                    <li class="slick-slide" data-slick-index="7" aria-hidden="true"
-                                                        style="padding-top: 7px; padding-bottom: 7px; width: 90px;"
-                                                        tabindex="-1"><img
-                                                            src="https://imagedelivery.net/6dvntJzmKU3x3sg1oVGvwA/969dd922-6a5e-4303-3977-8ba552d73a00/public"
-                                                            alt="img">
-                                                    </li>
-                                                    <li class="slick-slide" data-slick-index="8" aria-hidden="true"
-                                                        style="padding-top: 7px; padding-bottom: 7px; width: 90px;"
-                                                        tabindex="-1"><img
-                                                            src="https://imagedelivery.net/6dvntJzmKU3x3sg1oVGvwA/94c84533-ec81-4684-5af7-95938d6bd400/public"
-                                                            alt="img">
-                                                    </li>
-                                                    <li class="slick-slide" data-slick-index="9" aria-hidden="true"
-                                                        style="padding-top: 7px; padding-bottom: 7px; width: 90px;"
-                                                        tabindex="-1"><img
-                                                            src="https://imagedelivery.net/6dvntJzmKU3x3sg1oVGvwA/ecef465d-8daa-466e-014e-ed2578700f00/public"
-                                                            alt="img">
-                                                    </li>
-                                                    <li class="slick-slide" data-slick-index="10" aria-hidden="true"
-                                                        style="padding-top: 7px; padding-bottom: 7px; width: 90px;"
-                                                        tabindex="-1"><img
-                                                            src="https://imagedelivery.net/6dvntJzmKU3x3sg1oVGvwA/63e5e38a-76bc-494f-cf2e-21e83d90b400/public"
-                                                            alt="img">
-                                                    </li>
-                                                    <li class="slick-slide" data-slick-index="11" aria-hidden="true"
-                                                        style="padding-top: 7px; padding-bottom: 7px; width: 90px;"
-                                                        tabindex="-1"><img
-                                                            src="https://imagedelivery.net/6dvntJzmKU3x3sg1oVGvwA/3491ca07-448a-46f9-c494-31c13ea98e00/public"
-                                                            alt="img">
-                                                    </li>
-                                                    <li class="slick-slide slick-cloned" data-slick-index="12"
-                                                        aria-hidden="true"
-                                                        style="padding-top: 7px; padding-bottom: 7px; width: 90px;"
-                                                        tabindex="-1"><img
-                                                            src="https://imagedelivery.net/6dvntJzmKU3x3sg1oVGvwA/0c84b14c-7e20-4a78-4410-a8752f022400/public"
-                                                            alt="img">
-                                                    </li>
-                                                    <li class="slick-slide slick-cloned" data-slick-index="13"
-                                                        aria-hidden="true"
-                                                        style="padding-top: 7px; padding-bottom: 7px; width: 90px;"
-                                                        tabindex="-1"><img
-                                                            src="https://imagedelivery.net/6dvntJzmKU3x3sg1oVGvwA/246798d8-ba7d-417a-0d31-943750df2b00/public"
-                                                            alt="img">
-                                                    </li>
-                                                    <li class="slick-slide slick-cloned" data-slick-index="14"
-                                                        aria-hidden="true"
-                                                        style="padding-top: 7px; padding-bottom: 7px; width: 90px;"
-                                                        tabindex="-1"><img
-                                                            src="https://imagedelivery.net/6dvntJzmKU3x3sg1oVGvwA/83ba6976-72f7-41bf-fad6-7d3d86360100/public"
-                                                            alt="img">
-                                                    </li>
-                                                    <li class="slick-slide slick-cloned" data-slick-index="15"
-                                                        aria-hidden="true"
-                                                        style="padding-top: 7px; padding-bottom: 7px; width: 90px;"
-                                                        tabindex="-1"><img
-                                                            src="https://imagedelivery.net/6dvntJzmKU3x3sg1oVGvwA/e98e7c3a-669e-4ec7-7c41-e652137e7800/public"
-                                                            alt="img">
-                                                    </li>
-                                                    <li class="slick-slide slick-cloned" data-slick-index="16"
-                                                        aria-hidden="true"
-                                                        style="padding-top: 7px; padding-bottom: 7px; width: 90px;"
-                                                        tabindex="-1"><img
-                                                            src="https://imagedelivery.net/6dvntJzmKU3x3sg1oVGvwA/08c7d534-f479-498f-af07-4d84785e1000/public"
-                                                            alt="img">
-                                                    </li>
-                                                    <li class="slick-slide slick-cloned" data-slick-index="17"
-                                                        aria-hidden="true"
-                                                        style="padding-top: 7px; padding-bottom: 7px; width: 90px;"
-                                                        tabindex="-1"><img
-                                                            src="https://imagedelivery.net/6dvntJzmKU3x3sg1oVGvwA/4f066fc4-4e93-4d40-395b-f01f05d8ff00/public"
-                                                            alt="img">
-                                                    </li>
-                                                    <li class="slick-slide slick-cloned" data-slick-index="18"
-                                                        aria-hidden="true"
-                                                        style="padding-top: 7px; padding-bottom: 7px; width: 90px;"
-                                                        tabindex="-1"><img
-                                                            src="https://imagedelivery.net/6dvntJzmKU3x3sg1oVGvwA/43e5c0f2-40ab-4679-70f0-9208b9cbda00/public"
-                                                            alt="img">
-                                                    </li>
-                                                    <li class="slick-slide slick-cloned" data-slick-index="19"
-                                                        aria-hidden="true"
-                                                        style="padding-top: 7px; padding-bottom: 7px; width: 90px;"
-                                                        tabindex="-1"><img
-                                                            src="https://imagedelivery.net/6dvntJzmKU3x3sg1oVGvwA/969dd922-6a5e-4303-3977-8ba552d73a00/public"
-                                                            alt="img">
-                                                    </li>
-                                                    <li class="slick-slide slick-cloned" data-slick-index="20"
-                                                        aria-hidden="true"
-                                                        style="padding-top: 7px; padding-bottom: 7px; width: 90px;"
-                                                        tabindex="-1"><img
-                                                            src="https://imagedelivery.net/6dvntJzmKU3x3sg1oVGvwA/94c84533-ec81-4684-5af7-95938d6bd400/public"
-                                                            alt="img">
-                                                    </li>
-                                                    <li class="slick-slide slick-cloned" data-slick-index="21"
-                                                        aria-hidden="true"
-                                                        style="padding-top: 7px; padding-bottom: 7px; width: 90px;"
-                                                        tabindex="-1"><img
-                                                            src="https://imagedelivery.net/6dvntJzmKU3x3sg1oVGvwA/ecef465d-8daa-466e-014e-ed2578700f00/public"
-                                                            alt="img">
-                                                    </li>
-                                                    <li class="slick-slide slick-cloned" data-slick-index="22"
-                                                        aria-hidden="true"
-                                                        style="padding-top: 7px; padding-bottom: 7px; width: 90px;"
-                                                        tabindex="-1"><img
-                                                            src="https://imagedelivery.net/6dvntJzmKU3x3sg1oVGvwA/63e5e38a-76bc-494f-cf2e-21e83d90b400/public"
-                                                            alt="img">
-                                                    </li>
-                                                    <li class="slick-slide slick-cloned" data-slick-index="23"
-                                                        aria-hidden="true"
-                                                        style="padding-top: 7px; padding-bottom: 7px; width: 90px;"
-                                                        tabindex="-1"><img
-                                                            src="https://imagedelivery.net/6dvntJzmKU3x3sg1oVGvwA/3491ca07-448a-46f9-c494-31c13ea98e00/public"
-                                                            alt="img">
-                                                    </li>
-                                                </div>
-                                            </div>
+                                        <ol class="flex-control-nav flex-control-thumbs">
+
+                                            @foreach ($product->images as $image)
+                                                <li>
+                                                    <img src="{{ Storage::url($image->path) }}" alt="img">
+                                                </li>
+                                            @endforeach
 
 
-
-
-
-
-
-
-
-
-
-
-                                            <span class="fa fa-angle-down next slick-arrow"
-                                                style="display: inline-block;"></span>
                                         </ol>
                                     </div>
                                 </div>
@@ -374,40 +200,24 @@
                                     <div class="flash">
                                         <span class="onnew"><span class="text">New</span></span>
                                     </div>
-                                    <h1 class="product_title entry-title">GANDOURA - SAHARA STRIPE</h1>
-                                    <p class="price"><span class="lynessa-Price-amount amount"><span
-                                                class="lynessa-Price-currencySymbol"></span>929.00
-                                            MAD</span>
-                                    </p>
-                                    <p class="stock in-stock tajawal">
-                                        Disponibilité : <span>
-                                            En stock</span>
 
+
+                                    <h1 class="product_title entry-title">{{ $product->name }}</h1>
+                                    <p class="price">
+                                        <span class="lynessa-Price-amount amount">
+                                            {{ $product->price }} MAD
+                                        </span>
                                     </p>
+
+                                    <p class="stock in-stock tajawal"> Disponibilité : <span> {{ $product->status
+                                            }}</span></p>
                                     <div class="lynessa-product-details__short-description">
-                                        <p class="tajawal">
-                                        </p>
-                                        <p>Plongez dans la douceur luxueuse du lin beige rayé dégradé de marron avec notre
-                                            gandoura exceptionnelle. Conçue dans une coupe oversize en taille unique, cette
-                                            pièce célèbre votre individualité en offrant un confort et un style
-                                            exceptionnels, adaptés à toutes les femmes. Les manches, à la fois longues et
-                                            ajustables, ajoutent une note charmante et personnalisée à cette création.
-                                            <br>Le col officier, finement travaillé, apporte une distinction subtile,
-                                            accentuant le caractère polyvalent et confortable de la gandoura, pensée pour
-                                            s'adapter à toutes les femmes. Chaque détail est minutieusement pensé pour vous
-                                            offrir une élégance sans effort. Découvrez la gandoura en lin qui vous
-                                            accompagnera avec style dans toutes les occasions.</p>
-                                        <p></p>
-
+                                        <p class="tajawal">{{ $product->description }}</p>
                                     </div>
+
+
                                     <form class="variations_form cart form-store" data-no-controller="true"
                                         data-class-container=".card_header_container" action="#" method="POST">
-                                        <input type="hidden" name="_token" value="ZekuFMjCWdPb8guuSFuUkaeSLLQaJZuNc7lAxiKC">
-                                        <table class="variations">
-                                            <tbody>
-
-                                            </tbody>
-                                        </table>
 
                                         <table class="variations">
                                             <tbody>
@@ -415,217 +225,60 @@
                                                     <td class="label tajawal">
                                                         <label>Taille</label>
                                                     </td>
-                                                    <td class="value d-flex justify-content-center align-items-center">
 
+                                                    <td class="value">
                                                         <div class="data-val attribute-pa_color"
                                                             data-attributetype="box_style"
                                                             style=" display:flex ;margin-right: 4px;">
-
-                                                            <input type="hidden" id="size" name="size" value="TU">
-                                                            <div class="variant active-variant" data-value="TU">
-                                                                TU
+                                                            @foreach ($product->sizes as $size)
+                                                            <div class="variant active-variant"
+                                                                data-value="{{ $size->name }}">
+                                                                {{ $size->name }}
                                                             </div>
+                                                            @endforeach
                                                         </div>
 
                                                     </td>
+
+
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="label tajawal">
+                                                        <label>Colours</label>
+                                                    </td>
+
+                                                    <td class="value">
+                                                        <div class="data-val attribute-pa_color flex me-2"
+                                                            data-attributetype="box_style">
+                                                            @foreach ($product->colors as $color)
+                                                            <div class="variant active-variant"
+                                                                data-value="{{ $color->name }}">
+                                                                {{ $color->name }}
+                                                            </div>
+                                                            @endforeach
+                                                        </div>
+
+                                                    </td>
+
+
                                                 </tr>
 
                                             </tbody>
                                         </table>
-
-
-
-                                        <div class="d-flex justify-content-center align-items-center mb-3  "
-                                            style="border-bottom: 1px solid gray;padding-bottom: 10px;cursor: pointer;">
-                                            <span class="qty-label tajawal">Matière</span>
-                                            <span class="ml-auto">
-                                                <svg fill="#000000" height="15px" width="15px" class="matiere"
-                                                    style="cursor: pointer" version="1.1" id="Layer_1"
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"
-                                                    enable-background="new 0 0 24 24" xml:space="preserve">
-                                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
-                                                        stroke-linejoin="round"></g>
-                                                    <g id="SVGRepo_iconCarrier">
-                                                        <path
-                                                            d="M12,0C5.38,0,0,5.38,0,12c0,6.62,5.38,12,12,12c6.62,0,12-5.38,12-12C24,5.38,18.62,0,12,0z M12,22C6.49,22,2,17.51,2,12 C2,6.49,6.49,2,12,2c5.51,0,10,4.49,10,10C22,17.51,17.51,22,12,22z M20,11v2h-7v7h-2v-7H4v-2h7V4h2v7H20z">
-                                                        </path>
-                                                    </g>
-                                                </svg>
-                                                <svg fill="#000000" height="15px" width="15px" class="hide_matiere d-none"
-                                                    version="1.1" style="cursor: pointer" id="Layer_1"
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"
-                                                    enable-background="new 0 0 24 24" xml:space="preserve">
-                                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
-                                                        stroke-linejoin="round"></g>
-                                                    <g id="SVGRepo_iconCarrier">
-                                                        <path
-                                                            d="M12,0C5.38,0,0,5.38,0,12c0,6.62,5.38,12,12,12c6.62,0,12-5.38,12-12C24,5.38,18.62,0,12,0z M12,22C6.49,22,2,17.51,2,12 C2,6.49,6.49,2,12,2c5.51,0,10,4.49,10,10C22,17.51,17.51,22,12,22z M20,11v2H4v-2H20z">
-                                                        </path>
-                                                    </g>
-                                                </svg>
-                                            </span>
-                                        </div>
-
-                                        <div class="matiere_div d-none">
-                                            <ul>
-                                                <li class="">
-                                                    Le lin
-                                                </li>
-                                            </ul>
-
-                                        </div>
-
-
-                                        <div class="d-flex justify-content-center align-items-center mb-3"
-                                            style="border-bottom: 1px solid gray;padding-bottom: 10px;cursor: pointer;">
-                                            <span class="qty-label tajawal">Entretien du produit</span>
-                                            <span class="ml-auto">
-                                                <svg fill="#000000" height="15px" width="15px" class="schema"
-                                                    style="cursor: pointer" version="1.1" id="Layer_1"
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"
-                                                    enable-background="new 0 0 24 24" xml:space="preserve">
-                                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
-                                                        stroke-linejoin="round"></g>
-                                                    <g id="SVGRepo_iconCarrier">
-                                                        <path
-                                                            d="M12,0C5.38,0,0,5.38,0,12c0,6.62,5.38,12,12,12c6.62,0,12-5.38,12-12C24,5.38,18.62,0,12,0z M12,22C6.49,22,2,17.51,2,12 C2,6.49,6.49,2,12,2c5.51,0,10,4.49,10,10C22,17.51,17.51,22,12,22z M20,11v2h-7v7h-2v-7H4v-2h7V4h2v7H20z">
-                                                        </path>
-                                                    </g>
-                                                </svg>
-                                                <svg fill="#000000" height="15px" width="15px" class="hide_schema d-none"
-                                                    version="1.1" style="cursor: pointer" id="Layer_1"
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"
-                                                    enable-background="new 0 0 24 24" xml:space="preserve">
-                                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
-                                                        stroke-linejoin="round"></g>
-                                                    <g id="SVGRepo_iconCarrier">
-                                                        <path
-                                                            d="M12,0C5.38,0,0,5.38,0,12c0,6.62,5.38,12,12,12c6.62,0,12-5.38,12-12C24,5.38,18.62,0,12,0z M12,22C6.49,22,2,17.51,2,12 C2,6.49,6.49,2,12,2c5.51,0,10,4.49,10,10C22,17.51,17.51,22,12,22z M20,11v2H4v-2H20z">
-                                                        </path>
-                                                    </g>
-                                                </svg>
-                                            </span>
-                                        </div>
-
-                                        <div class="schema_div d-none tajawal">
-                                            <ul>
-                                                <li>Lavage en machine à 30 degrés</li>
-                                                <li>Essorage à basse vitesse</li>
-                                                <li>Repassage à chaleur moyenne</li>
-                                                <li>Ne pas utiliser d'eau de Javel</li>
-                                                <li>Ne pas sécher au sèche-linge</li>
-                                                <li>Séchage à l’air ou à l’ombre</li>
-                                                <li><strong>Note</strong> : privilégiez le lavage à sec pour préserver au
-                                                    mieux la qualité.</li>
-                                            </ul>
-
-                                        </div>
-
-                                        <div class="d-flex justify-content-center align-items-center mt-3 "
-                                            style="border-bottom: 1px solid gray;padding-bottom: 10px;cursor: pointer;">
-                                            <span class="qty-label tajawal">Guide des tailles</span>
-                                            <span class="ml-auto">
-                                                <svg fill="#000000" height="15px" width="15px" class="show_guide"
-                                                    style="cursor: pointer" version="1.1" id="Layer_1"
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"
-                                                    enable-background="new 0 0 24 24" xml:space="preserve">
-                                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
-                                                        stroke-linejoin="round"></g>
-                                                    <g id="SVGRepo_iconCarrier">
-                                                        <path
-                                                            d="M12,0C5.38,0,0,5.38,0,12c0,6.62,5.38,12,12,12c6.62,0,12-5.38,12-12C24,5.38,18.62,0,12,0z M12,22C6.49,22,2,17.51,2,12 C2,6.49,6.49,2,12,2c5.51,0,10,4.49,10,10C22,17.51,17.51,22,12,22z M20,11v2h-7v7h-2v-7H4v-2h7V4h2v7H20z">
-                                                        </path>
-                                                    </g>
-                                                </svg>
-                                                <svg fill="#000000" height="15px" width="15px" class="hide_guide d-none"
-                                                    version="1.1" style="cursor: pointer" id="Layer_1"
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"
-                                                    enable-background="new 0 0 24 24" xml:space="preserve">
-                                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
-                                                        stroke-linejoin="round"></g>
-                                                    <g id="SVGRepo_iconCarrier">
-                                                        <path
-                                                            d="M12,0C5.38,0,0,5.38,0,12c0,6.62,5.38,12,12,12c6.62,0,12-5.38,12-12C24,5.38,18.62,0,12,0z M12,22C6.49,22,2,17.51,2,12 C2,6.49,6.49,2,12,2c5.51,0,10,4.49,10,10C22,17.51,17.51,22,12,22z M20,11v2H4v-2H20z">
-                                                        </path>
-                                                    </g>
-                                                </svg>
-                                            </span>
-                                        </div>
-                                        <div class="img_guide d-none">
-                                            <img src="https://imagedelivery.net/6dvntJzmKU3x3sg1oVGvwA/c97c4478-fbc2-46ff-3fdb-35acc527ce00/public"
-                                                alt="">
-
-                                        </div>
-
-
-
-
                                         <div class="single_variation_wrap mt-4">
                                             <div class="lynessa-variation single_variation"></div>
                                             <div class="lynessa-variation-add-to-cart variations_button ">
-                                                <div class="quantity">
-                                                    <span class="qty-label">Quantite:</span>
-                                                    <div class="control">
-                                                        <a class="btn-number qtyminus quantity-minus" href="#">-</a>
-                                                        <input type="text" data-step="1" min="1" max="" name="quantity"
-                                                            value="1" title="Qty" class="input-qty input-text qty text"
-                                                            size="4" pattern="[0-9]*" inputmode="numeric">
-                                                        <a class="btn-number qtyplus quantity-plus" href="#">+</a>
-                                                    </div>
-                                                </div>
-                                                <a href="https://rawaabeauty.com/fr/espace-client"
-                                                    class="single_add_to_cart_button button alt lynessa-variation-selection-needed href-wishlist tajawal">
+
+                                                <a href="#"
+                                                    class="rounded p-2 button alt lynessa-variation-selection-needed href-wishlist tajawal">
+                                                    <x-cart-icon />
                                                     Ajouter au wishlist
                                                 </a>
-
-
-                                                <div class="yith-wcwl-add-button show">
-                                                    <a href="https://rawaabeauty.com/fr/espace-client" rel="nofollow"
-                                                        data-product-id="27" data-product-type="variable"
-                                                        class="add_to_wishlist tajawal">
-                                                        Ajouter à la liste de souhaits
-                                                    </a>
-                                                </div>
-                                                <div class="payment mt-2" style="  margin-bottom: 25px;">
-                                                    <div class="payment__img"></div>
-                                                </div>
-
-
                                             </div>
                                         </div>
                                     </form>
-
-                                    <div class="clear"></div>
-                                    <div class="product_meta">
-                                        <div class="wcml-dropdown product wcml_currency_switcher">
-                                            <ul>
-                                                <li class="wcml-cs-active-currency">
-                                                    <a class="wcml-cs-item-toggle">USD</a>
-                                                    <ul class="wcml-cs-submenu">
-                                                        <li>
-                                                            <a>EUR</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </div>
-
-                                    </div>
                                 </div>
-
-
                             </div>
                         </div>
 
@@ -636,5 +289,165 @@
         </div>
     </div>
 
-</div>
-@endsection
+
+    <x-footer />
+    <x-mobile-footer />
+
+
+    <a href="#" class="backtotop active">
+        <img src="https://rawaabeauty.com/assets/img/union.png" alt="">
+    </a>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script>
+        var lang = "fr";
+        window.lang = lang;
+    </script>
+    <script src="//unpkg.com/i18next@23.6.0/dist/umd/i18next.min.js"></script>
+
+    <script src="https://rawaabeauty.com/assets/js/local.js"></script>
+    <script src="https://rawaabeauty.com/assets/web/js/jquery-1.12.4.min.js"></script>
+    <script src="https://rawaabeauty.com/assets/web/js/bootstrap.min.js"></script>
+    <script src="https://rawaabeauty.com/assets/web/js/chosen.min.js"></script>
+    <script src="https://rawaabeauty.com/assets/web/js/countdown.min.js"></script>
+    <script src="https://rawaabeauty.com/assets/web/js/jquery.scrollbar.min.js"></script>
+    <script src="https://rawaabeauty.com/assets/web/js/lightbox.min.js"></script>
+    <script src="https://rawaabeauty.com/assets/web/js/magnific-popup.min.js"></script>
+    <script src="https://rawaabeauty.com/assets/web/js/slick.js"></script>
+    <script src="https://rawaabeauty.com/assets/web/js/jquery.zoom.min.js"></script>
+    <script src="https://rawaabeauty.com/assets/web/js/threesixty.min.js"></script>
+    <script src="https://rawaabeauty.com/assets/web/js/jquery-ui.min.js"></script>
+    <script src="https://rawaabeauty.com/assets/web/js/mobilemenu.js?v=0.0.1"></script>
+    <script src="https://rawaabeauty.com/assets/web/js/functions.js?v=0.0.1"></script>
+
+    <script src="https://rawaabeauty.com/assets/vendor/libs/select2/select2.js"></script>
+    <script src="https://rawaabeauty.com/assets/vendor/libs/toastr/toastr.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://rawaabeauty.com/assets/vendor/libs/formvalidation/dist/js/FormValidation.min.js"></script>
+    <script src="https://rawaabeauty.com/assets/vendor/libs/formvalidation/dist/js/plugins/Bootstrap5.min.js"></script>
+    <script src="https://rawaabeauty.com/assets/vendor/libs/block-ui/block-ui.js"></script>
+    <script src="https://rawaabeauty.com/assets/vendor/libs/formvalidation/dist/js/plugins/AutoFocus.min.js"></script>
+    <script src="https://rawaabeauty.com/assets/js/controllers/web/NewsLetterController.js"></script>
+    <script src="https://rawaabeauty.com/assets/js/custom/app.js?v=0.1.1"></script>
+    <script>
+        $('.variant').on('click', function() {
+            $('.variant').removeClass('active-variant');
+            $(this).addClass('active-variant');
+            $value = $(this).data('value');
+            $('#size').val($value);
+        });
+
+        $('.show_guide').on('click', function() {
+            $('.img_guide').removeClass('d-none');
+            $('.show_guide').addClass('d-none');
+            $('.hide_guide').removeClass('d-none');
+        });
+
+        $('.hide_guide').on('click', function() {
+            $(this).addClass('d-none');
+            $('.show_guide').removeClass('d-none');
+            $('.img_guide').addClass('d-none');
+        });
+
+        $('.matiere').on('click', function() {
+            $('.matiere_div').removeClass('d-none');
+            $('.matiere').addClass('d-none');
+            $('.hide_matiere').removeClass('d-none');
+        });
+
+        $('.hide_matiere').on('click', function() {
+            $(this).addClass('d-none');
+            $('.matiere').removeClass('d-none');
+            $('.matiere_div').addClass('d-none');
+        });
+
+        $('.schema').on('click', function() {
+            $('.schema_div').removeClass('d-none');
+            $('.schema').addClass('d-none');
+            $('.hide_schema').removeClass('d-none');
+
+        });
+
+        $('.hide_schema').on('click', function() {
+            $(this).addClass('d-none');
+            $('.schema').removeClass('d-none');
+            $('.schema_div').addClass('d-none');
+        });
+
+        function checkIfMobile() {
+            if ($(window).width() < 768) {
+                $('.lynessa-product-gallery__trigger.activeZoom').removeClass('d-none');
+                $(".activeZoom").on("click", function() {
+                    $(".lynessa-product-gallery .lynessa-product-gallery__image").zoom();
+                    $(this).addClass('d-none');
+                    $('.hide-zoom').removeClass('d-none');
+                });
+                $('.hide-zoom').on('click', function() {
+                    $(".lynessa-product-gallery .lynessa-product-gallery__image").trigger('zoom.destroy');
+                    $(this).removeClass('d-none');
+                    $('.hide-zoom').addClass('d-none');
+                    $('.activeZoom').removeClass('d-none');
+                });
+                $(".lynessa-product-gallery .lynessa-product-gallery__image").trigger('zoom.destroy');
+            } else {
+                $('.lynessa-product-gallery__trigger.activeZoom').addClass('d-none');
+                $(".lynessa-product-gallery .lynessa-product-gallery__image").zoom();
+            }
+        }
+
+        checkIfMobile();
+
+        $(window).resize(function() {
+            checkIfMobile();
+        });
+    </script>
+
+
+
+
+    <script>
+        var success = null;
+        if (success) {
+            toastr.success(success);
+        }
+
+        var error = null;
+        if (error) {
+            toastr.error(error);
+        }
+    </script>
+
+
+    <script>
+        $(document).ready(function() {
+            $('.curency').on('click', function() {
+                var curency = $(this).data('curency');
+            });
+
+
+            $('.reviews').slick({
+                slidesToShow: 3,
+                slidesToScroll: 2,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                arrows: false,
+                dots: false,
+                infinite: true,
+                speed: 500,
+
+                responsive : [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            arrows: false,
+                            dots: false,
+                            slidesToShow:1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+</body>
+
+</html>
