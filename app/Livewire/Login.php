@@ -16,6 +16,18 @@ class Login extends Component
 
     public $error = '';
 
+
+    public $is_login = true;
+
+
+    public function formSwitcher(){
+        if($this->is_long){
+            $this->is_login = false;
+        }else{
+            $this->is_login = true;
+        }
+    }
+
     public function login()
     {
         $credentials = $this->validate();

@@ -17,10 +17,6 @@
                                     style="letter-spacing: 1px;font-weight: bold;">Édition limitée</span></span>
                         </div>
 
-                        <div class="flash-rupture">
-                            <span class="onsale"><span class="number limited"
-                                    style="letter-spacing: 1px;font-weight: bold;">Rupture</span></span>
-                        </div>
                     </div>
                     <div class="product-info">
                         <h3 class="product-name product_title">
