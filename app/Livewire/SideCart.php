@@ -3,22 +3,34 @@
 namespace App\Livewire;
 
 use Illuminate\Support\Facades\Session;
+use Livewire\Attributes\On;
 use Livewire\Component;
 
 class SideCart extends Component
 {
+    public $products = [];
+    public $count_products = 0;
 
 
     public function mount(){
-        // $ids = [1, 2, 3, 4];
+        if(auth()->user()){
+            $this->products = auth()->user()->cart->products;
+            $this->count_products = $this->products->count();
+        }
 
-        // Session::put('id_array', $ids);
+    }
 
-        $products = Session::get('products');
+    #[On('product-added')]
+    public function productAdded()
+    {
+        $this->products = auth()->user()->cart->products;
     }
 
     public function render()
     {
         return view('livewire.side-cart');
     }
+
+
+
 }

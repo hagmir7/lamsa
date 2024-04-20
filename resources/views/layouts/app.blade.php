@@ -122,6 +122,7 @@
             display: none !important;
         }
     </style>
+    @livewireStyles()
     {{-- @vite('resources/css/app.css') --}}
 </head>
 
@@ -132,14 +133,18 @@
 
 
 
+
+
     {{-- @vite('resources/js/app.js') --}}
-    <a href="#" class="backtotop active">
+
+
+        @livewire('login')
+        <a href="#" class="backtotop active">
             <img src="https://rawaabeauty.com/assets/img/union.png" alt="">
         </a>
-        <script data-cfasync="false" src="https://rawaabeauty.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-        <script src="//unpkg.com/i18next@23.6.0/dist/umd/i18next.min.js"></script>
 
-        <script src="https://rawaabeauty.com/assets/js/local.js"></script>
+
+        @livewireScripts()
         <script src="https://rawaabeauty.com/assets/web/js/jquery-1.12.4.min.js"></script>
         <script src="https://rawaabeauty.com/assets/web/js/bootstrap.min.js"></script>
         <script src="https://rawaabeauty.com/assets/web/js/chosen.min.js"></script>
@@ -156,90 +161,18 @@
 
         <script src="https://rawaabeauty.com/assets/vendor/libs/select2/select2.js"></script>
         <script src="https://rawaabeauty.com/assets/vendor/libs/toastr/toastr.js"></script>
-        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-        <script src="https://rawaabeauty.com/assets/vendor/libs/formvalidation/dist/js/FormValidation.min.js"></script>
-        <script src="https://rawaabeauty.com/assets/vendor/libs/formvalidation/dist/js/plugins/Bootstrap5.min.js"></script>
+        {{-- <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script> --}}
         <script src="https://rawaabeauty.com/assets/vendor/libs/block-ui/block-ui.js"></script>
-        <script src="https://rawaabeauty.com/assets/vendor/libs/formvalidation/dist/js/plugins/AutoFocus.min.js"></script>
         <script src="https://rawaabeauty.com/assets/js/controllers/web/NewsLetterController.js"></script>
         <script src="https://rawaabeauty.com/assets/js/custom/app.js?v=0.1.1"></script>
 
-
-
-
-
-        <script>
-            var success = null;
-                if (success) {
-                    toastr.success(success);
-                }
-
-                var error = null;
-                if (error) {
-                    toastr.error(error);
-                }
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+            integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous">
         </script>
 
-
-        <script>
-            $(document).ready(function() {
-                    $('.curency').on('click', function() {
-                        var curency = $(this).data('curency');
-                    });
-
-
-                    $('.reviews').slick({
-                        slidesToShow: 3,
-                        slidesToScroll: 2,
-                        autoplay: true,
-                        autoplaySpeed: 2000,
-                        arrows: false,
-                        dots: false,
-                        infinite: true,
-                        speed: 500,
-
-                        responsive : [
-                            {
-                                breakpoint: 768,
-                                settings: {
-                                    arrows: false,
-                                    dots: false,
-                                    slidesToShow:1,
-                                    slidesToScroll: 1
-                                }
-                            }
-                        ]
-                    });
-                });
-        </script>
-
-        <script type="module">
-            // Import the functions you need from the SDKs you need
-                import {
-                    initializeApp
-                } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
-                import {
-                    getAnalytics
-                } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-analytics.js";
-                // TODO: Add SDKs for Firebase products that you want to use
-                // https://firebase.google.com/docs/web/setup#available-libraries
-
-                // Your web app's Firebase configuration
-                // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-                const firebaseConfig = {
-                    apiKey: "AIzaSyC9sLMMwkeBYa8Clwh9-j8qKdHyyUaR-3w",
-                    authDomain: "rawaabeautycom.firebaseapp.com",
-                    projectId: "rawaabeautycom",
-                    storageBucket: "rawaabeautycom.appspot.com",
-                    messagingSenderId: "351320314068",
-                    appId: "1:351320314068:web:7ed82549ec3b91ab02eb41",
-                    measurementId: "G-00655ZH3QW"
-                };
-
-                // Initialize Firebase
-                const app = initializeApp(firebaseConfig);
-                const analytics = getAnalytics(app);
-        </script>
 </body>
 
 </html>

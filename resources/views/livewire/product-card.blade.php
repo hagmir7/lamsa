@@ -34,23 +34,30 @@
                         <br>
 
 
-                        <button type="submit" wire:click='addToCart({{ $product->id }})' class="button btn-success w-100" style="cursor: pointer">
-                            <div wire:loading.remove wire:target="addToCart({{ $product->id }})">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                <path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
-                                <path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
-                                <path d="M17 17h-11v-14h-2" />
-                                <path d="M6 5l14 1l-1 7h-13" />
-                            </svg>
-                            </div>
-                            <div wire:loading wire:target="addToCart({{ $product->id }})">
-                                Saving post...
-                            </div>
+
+
+                        @if (auth()->user())
+                            <button type="submit" wire:click='addToCart({{ $product->id }})' class="button btn-success w-100"
+                                style="cursor: pointer">
+                                <div wire:loading.remove wire:target="addToCart({{ $product->id }})">
+                                    @if (in_array($product->id, $userCart))
+                                    <x-check-icon />
+                                    @else
+                                    <x-cart-icon />
+                                    @endif
+                                </div>
+                                <div class="spinner-border" role="status" wire:loading wire:target="addToCart({{ $product->id }})">
+                                    <span class="visually-hidden">Loading...</span>
+                                </div>
+                            </button>
+                        @else
+
+                        <button data-bs-toggle="modal" data-bs-target="#loginModal" class="button btn-success w-100" style="cursor: pointer">
+                            <x-cart-icon />
                         </button>
+
+                        @endif
+
                     </div>
                 </div>
             </div>
@@ -58,4 +65,11 @@
 
         @endforeach
     </ul>
+
+    <div class="d-flex justify-content-center">
+        <button class="btn btn-success" wire:click='loadMore'>Load more <div wire:loading wire:target='loadMore'>...
+            </div></button>
+    </div>
+
+
 </div>
