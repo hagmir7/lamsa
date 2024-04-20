@@ -11,9 +11,9 @@
                             <img class="img-responsive" src="{{ Storage::url($product->images[0]->path) }}"
                                 loading="lazy" alt="{{ $product->name }}T" width="270" height="350">
                         </a>
-                        <div class="flash">
+                        {{-- <div class="flash">
                             <span class="onsale"><span class="number limited fw-bold" style="letter-spacing: 1px;">{{ $product->status }}</span></span>
-                        </div>
+                        </div> --}}
 
                     </div>
                     <div class="product-info">

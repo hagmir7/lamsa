@@ -72,8 +72,7 @@
         </div>
         <div class="header-mobile-mid">
             <div class="header-logo">
-                <a href="/"><img alt="Rawaabeauty" src="https://rawaabeauty.com/assets/web/images/rb-black.png"
-                        class="logo"></a>
+                <a href="/"><img alt="Rawaabeauty" src="/assets/imgs/logo.png" class="logo"></a>
             </div>
         </div>
         <div class="header-mobile-right">

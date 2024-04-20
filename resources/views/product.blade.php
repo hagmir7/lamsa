@@ -128,7 +128,7 @@
 
 
     <div class="banner-wrapper my-wrapper has_background">
-        <img src="https://imagedelivery.net/6dvntJzmKU3x3sg1oVGvwA/2fe34ef3-fddc-4e73-7ac2-79d8a2189400/public"
+        <img src="/assets/imgs/hero-product.jpg"
             class="img-responsive attachment-1920x447 size-1920x447" alt="img">
         <div class="banner-wrapper-inner">
             <h1 class="page-title">{{ $product->name }}</h1>
@@ -209,8 +209,7 @@
                                         </span>
                                     </p>
 
-                                    <p class="stock in-stock tajawal"> Disponibilité : <span> {{ $product->status
-                                            }}</span></p>
+                                    {{-- <p class="stock in-stock tajawal"> Disponibilité : <span> {{ $product->status}}</span></p> --}}
                                     <div class="lynessa-product-details__short-description">
                                         <p class="tajawal">{{ $product->description }}</p>
                                     </div>
