@@ -2,7 +2,6 @@
 
 namespace App\Livewire;
 
-use Illuminate\Support\Facades\Session;
 use Livewire\Attributes\On;
 use Livewire\Component;
 
@@ -13,7 +12,7 @@ class SideCart extends Component
 
 
     public function mount(){
-        if(auth()->user()){
+        if(auth()->user()?->cart_id){
             $this->products = auth()->user()->cart->products;
             $this->count_products = $this->products->count();
         }

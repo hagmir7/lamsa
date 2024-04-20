@@ -10,8 +10,8 @@
                 <div class="container">
                     <div class="slide-inner">
                         {{-- <h5>Sale up to <span>40%</span> Off</h5> --}}
-                        <h1>Lamsa</h1>
-                        <h2>Osez le style décontracté,<br><br> où que vous soyez</h2>
+                        <h1 style="color: #252525!important">Lamsa</h1>
+                        <h2 style="color: #252525!important">Osez le style décontracté,<br><br> où que vous soyez</h2>
                         <a href="#" tabindex="0">Achetez maintenant</a>
                     </div>
                 </div>

@@ -25,8 +25,7 @@
                                 <div class="p-1 alert alert-danger">{{ $message }}</div>
                                 @enderror
 
-                                <form wire:submit.prevent="login" method="POST">
-                                    @csrf
+                                <form wire:submit.prevent='login' method="POST">
                                     <p
                                         class="lynessa-form-row lynessa-form-row--wide form-row form-row-wide fv-row fv-plugins-icon-container fv-plugins-bootstrap5-row-valid">
                                         <label for="username" class="tajawal">Email&nbsp;<span class="required">*</span></label>
