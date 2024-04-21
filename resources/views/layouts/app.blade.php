@@ -143,12 +143,7 @@
     <a href="#" class="backtotop active">
         <img src="/assets/imgs/arrow-small-up.svg" width="40px" alt="Top">
     </a>
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-    <script>
-        var lang = "fr";
-            window.lang = lang;
-    </script>
-    <script src="//unpkg.com/i18next@23.6.0/dist/umd/i18next.min.js"></script>
+
 
     <script src="https://rawaabeauty.com/assets/js/local.js"></script>
     <script src="https://rawaabeauty.com/assets/web/js/jquery-1.12.4.min.js"></script>
@@ -172,7 +167,7 @@
     {{-- <script src="https://rawaabeauty.com/assets/vendor/libs/formvalidation/dist/js/plugins/Bootstrap5.min.js"></script> --}}
     <script src="https://rawaabeauty.com/assets/vendor/libs/block-ui/block-ui.js"></script>
     {{-- <script src="https://rawaabeauty.com/assets/vendor/libs/formvalidation/dist/js/plugins/AutoFocus.min.js"></script> --}}
-    <script src="https://rawaabeauty.com/assets/js/controllers/web/NewsLetterController.js"></script>
+    {{-- <script src="https://rawaabeauty.com/assets/js/controllers/web/NewsLetterController.js"></script> --}}
     <script src="/assets/js/app.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" crossorigin="anonymous">
