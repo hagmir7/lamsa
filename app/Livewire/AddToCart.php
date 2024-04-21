@@ -18,18 +18,12 @@ class AddToCart extends Component
     public function mount(Product $product)
     {
         $this->id = $product->id;
-        if(auth()->user()){
+        if(auth()->user()->cart){
             $user_products = auth()->user()->cart->products->pluck("id")->toArray();
             $this->in_cart = in_array($this->id, $user_products);
         }
     }
 
-    public function dehydrate(){
-        if (auth()->user()) {
-            $user_products = auth()->user()->cart->products->pluck("id")->toArray();;
-            return $this->in_cart = in_array($this->id, $user_products);
-        }
-    }
 
     public function addToCart()
     {
