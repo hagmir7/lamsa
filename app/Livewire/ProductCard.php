@@ -18,6 +18,7 @@ class ProductCard extends Component
     public $cart;
 
     public $amount = 8;
+    public $total_products = 0;
     public $userCart = [];
 
     // protected $paginationTheme = 'bootstrap';
@@ -31,12 +32,15 @@ class ProductCard extends Component
             $user_cart = $user_products ?? [];
         }
         $this->userCart = $user_cart;
+
+        $this->total_products = Product::all()->count();
     }
 
 
     public function loadMore()
     {
         $this->amount += 8;
+        $this->total_products = Product::all()->count();
     }
 
 

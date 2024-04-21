@@ -7,7 +7,7 @@
                 <div class="product-inner tooltip-top tooltip-all-top">
                     <div class="product-thumb">
                         <a class="thumb-link" href="{{ route('product', $product->id) }}" tabindex="0">
-                            <img class="img-responsive" src="{{ Storage::url($product->images[0]->path) }}" loading="lazy" alt="{{ $product->name }}T" width="270" height="350">
+                            <img class="img-responsive product-image" src="{{ Storage::url($product->images[0]->path) }}" loading="lazy" alt="{{ $product->name }}T" width="270" height="350">
                         </a>
                         {{-- <div class="flash">
                             <span class="onsale"><span class="number limited fw-bold" style="letter-spacing: 1px;">{{ $product->status }}</span></span>
@@ -24,7 +24,7 @@
                         </span>
                         <br>
                         @if (auth()->user())
-                            <button type="submit" wire:click='addToCart({{ $product->id }})' class="button btn-success w-100"
+                            <button type="submit" wire:click='addToCart({{ $product->id }})' class="button btn-primary w-100"
                                 style="cursor: pointer">
                                 <div wire:loading.remove wire:target="addToCart({{ $product->id }})">
                                     @if (in_array($product->id, $userCart))
@@ -34,11 +34,11 @@
                                     @endif
                                 </div>
                                 <div class="pt-2" wire:loading wire:target="addToCart({{ $product->id }})">
-                                  <x-spenner-icon />
+                                  <x-spenner-icon-brown />
                                 </div>
                             </button>
                         @else
-                        <button data-bs-toggle="modal" data-bs-target="#loginModal" class="button btn-success w-100" style="cursor: pointer">
+                        <button data-bs-toggle="modal" data-bs-target="#loginModal" class="button btn-primary w-100" style="cursor: pointer">
                             <x-cart-icon />
                         </button>
                         @endif
@@ -48,10 +48,18 @@
         </li>
         @endforeach
     </ul>
+    @if ($total_products > $amount)
     <div class="d-flex justify-content-center">
-        <button class="btn btn-success"  wire:click='loadMore'>
-            <span wire:loading.remove>Voir plus</span>
-            <span wire:loading wire:target='loadMore'><x-spenner-icon /></span>
+        <button class="load-btn w-25" wire:click='loadMore' role="button">
+            <span wire:loading.remove wire:target='loadMore'>Voir plus</span>
+            <span class="mt-2" wire:loading wire:target='loadMore'>
+                <x-spenner-icon />
+            </span>
         </button>
     </div>
+
+    @endif
+
+
+
 </div>

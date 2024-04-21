@@ -20,9 +20,16 @@ class CreateOrder extends Component
     #[Validate('required|min:3')]
     public $address;
 
+    public $product_id;
 
-    public function save($id = null){
-        if(!$id){
+
+    public function mount($id = null){
+        $this->product_id = $id;
+    }
+
+
+    public function save(){
+        if(auth()->user()){
             $user = auth()->user();
             $this->validate();
             $order = Order::create([
@@ -40,6 +47,12 @@ class CreateOrder extends Component
                     'quantity' => 1,
                     'order_id' => $order->id
                 ]);
+
+            }
+
+            $items = ProductCard::where('cart_id', auth()->user()->cart->id)->get();
+            foreach($items as $item){
+                $item->delete();
             }
 
         }else{
@@ -51,11 +64,13 @@ class CreateOrder extends Component
                 'status' => 1
             ]);
             ProductOrder::create([
-                'product_id' => $id,
+                'product_id' => $this->product_id,
                 'quantity' => 1,
                 'order_id' => $order->id
             ]);
         }
+
+        return redirect('thank');
 
     }
 

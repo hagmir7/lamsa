@@ -53,7 +53,10 @@
                             <input required wire:model='address' type="text" class="input-text" >
                     </span>
                 </p>
-                <button type="submit" class="button alt w-100" style="cursor: pointer">Passer la commande</button>
+                <button type="submit" class="button alt w-100" style="cursor: pointer">
+                    <span wire:loading.remove>Passer la commande</span>
+                    <span wire:loading class="mt-1"><x-spenner-icon /></span>
+                </button>
             </form>
         </div>
     </div>

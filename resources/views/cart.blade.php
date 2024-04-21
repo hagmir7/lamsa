@@ -113,7 +113,7 @@
                                             </tr>
                                         </tbody>
                                     </table>
-                                    @if (!count($items) === 0)
+                                    @if (count($items) > 0)
                                         <div class="lynessa-proceed-to-checkout">
                                             <a href="#" data-bs-toggle="modal" data-bs-target="#checkOutModal"
                                                 class="checkout-button button alt lynessa-forward">

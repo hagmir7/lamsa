@@ -6,7 +6,7 @@
     <meta name="application-name" content="{{ config('app.name') }}">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/x-icon" href="https://rawaabeauty.com/assets/web/images/fav-icon.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/imgs/rounded-logo.png" />
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
@@ -17,10 +17,6 @@
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.4.2/chosen.min.css" />
-
-
-    {{--
-    <link rel="stylesheet" type="text/css" href="https://rawaabeauty.com/assets/web/css/font-awesome.min.css" /> --}}
     <link rel="stylesheet" type="text/css" href="https://rawaabeauty.com/assets/web/css/jquery.scrollbar.css" />
     <link rel="stylesheet" type="text/css" href="https://rawaabeauty.com/assets/web/css/lightbox.min.css" />
     <link rel="stylesheet" type="text/css" href="https://rawaabeauty.com/assets/web/css/magnific-popup.css" />
@@ -28,28 +24,22 @@
     <link rel="stylesheet" type="text/css" href="https://rawaabeauty.com/assets/web/css/megamenu.css" />
     <link rel="stylesheet" type="text/css" href="https://rawaabeauty.com/assets/web/css/dreaming-attribute.css" />
     <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
-    {{--
-    <link rel="stylesheet" type="text/css" href="https://rawaabeauty.com/assets/css/modified.css?v=0.2.4" /> --}}
-
     <link rel="stylesheet" href="https://rawaabeauty.com/assets/vendor/libs/toastr/toastr.css" />
-    {{--
-    <link rel="stylesheet"
-        href="https://rawaabeauty.com/assets/vendor/libs/formvalidation/dist/css/formValidation.min.css" /> --}}
     <meta name="robots" content="noindex">
-    <link rel="canonical" href="https://rawaabeauty.com/fr">
+    <link rel="canonical" href="{{ request()->path() }}">
 
     <meta name="description" content="#!">
-    <meta name="image" content="https://rawaabeauty.com/assets/web/images/rb-black.png">
+    <meta name="image" content="/assets/imgs/rounded-logo.png">
     <meta property="og:title" content="Accueil">
     <meta property="og:description" content="#!">
     <meta property="og:locale" content="fr">
-    <meta property="og:image" content="https://rawaabeauty.com/assets/web/images/rb-black.png">
-    <meta property="og:url" content="https://rawaabeauty.com/fr">
+    <meta property="og:image" content="/assets/imgs/rounded-logo.png">
+    <meta property="og:url" content="{{ request()->path() }}">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:image" content="https://rawaabeauty.com/assets/web/images/rb-black.png">
+    <meta name="twitter:image" content="/assets/imgs/rounded-logo.png">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://rawaabeauty.com/assets/web/images/rb-black.png">
+    <meta name="twitter:image" content="/assets/imgs/rounded-logo.png">
     <meta name="twitter:title" content="Accueil">
     <meta name="twitter:description" content="#!">
 
@@ -283,6 +273,19 @@
                     ]
                 });
             });
+    </script>
+
+    <script>
+        setTimeout(() => {
+           const arrowUp = document.querySelector('.fa-angle-up');
+           const arrowDown = document.querySelector('.fa-angle-down');
+            arrowUp.classList.remove('fa', 'fa-angle-up', 'prev');
+            arrowDown.classList.remove('fa', 'fa-angle-down', 'next');
+            arrowUp.innerHTML = "&#11165;";
+            arrowDown.innerHTML = "&#11167;";
+            console.log(arrow);
+        }, 100);
+
     </script>
 
     @livewireScripts

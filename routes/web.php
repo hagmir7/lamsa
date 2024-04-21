@@ -34,7 +34,9 @@ Route::get('/cart', function () {
     $items = ProductCart::where('cart_id', $cart?->id)->get();
     $total = 0;
 
-    foreach ($items as $item) { $total += $item->product->price;}
+    foreach ($items as $item) {
+        $total += $item->product->price;
+    }
 
     return view('cart', compact('items', 'total'));
 })->name('cart');
@@ -66,3 +68,4 @@ Route::get('/order/create', function () {
 Route::view('/about', 'about')->name('about');
 Route::view('/contact', 'contact')->name('contact');
 Route::view('/comments', 'comments')->name('comments');
+Route::view('/thank', 'thank')->name('thank');
