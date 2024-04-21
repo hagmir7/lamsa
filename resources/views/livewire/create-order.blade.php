@@ -13,7 +13,7 @@
                     </span>
                 </p>
 
-                <p class="form-row form-row-first" style="margin-left: 30px;">
+                <p class="form-row form-row-first">
                     <label><strong>Nom</strong>&nbsp;
                         <abbr class="required" title="required">*</abbr>
                     </label>
@@ -33,7 +33,7 @@
                     </span>
                 </p>
 
-                <p class="form-row form-row-first" style="margin-left: 30px;">
+                <p class="form-row form-row-first">
                     <label>
                         <Strong>Ville</Strong>
                         <abbr class="required" title="required">*</abbr>
