@@ -143,9 +143,6 @@
     <a href="#" class="backtotop active">
         <img src="/assets/imgs/arrow-small-up.svg" width="40px" alt="Top">
     </a>
-
-
-    <script src="https://rawaabeauty.com/assets/js/local.js"></script>
     <script src="https://rawaabeauty.com/assets/web/js/jquery-1.12.4.min.js"></script>
     <script src="https://rawaabeauty.com/assets/web/js/bootstrap.min.js"></script>
     <script src="https://rawaabeauty.com/assets/web/js/chosen.min.js"></script>
