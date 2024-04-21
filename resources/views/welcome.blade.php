@@ -3,28 +3,18 @@
 @section('content')
 <div class="fullwidth-template">
     <x-header />
-
-
-
-
-
-
-
     {{-- Products --}}
-    <div class="section-011 mt-5">
+    <div class="section-011 mt-5" id="new-collection">
         <div class="container">
             <div class="lynessa-heading style-01">
                 <div class="heading-inner">
-                    <h3 class="title tajawal">
-                        Nouvelle collection</h3>
+                    <h3 class="title tajawal">Nouvelle collection</h3>
                     <div class="subtitle tajawal">
                         Découvrez les derniers produits de notre boutique en ligne <strong>Lamsa</strong>
                     </div>
                 </div>
             </div>
-
             @livewire('product-card')
-
         </div>
     </div>
 

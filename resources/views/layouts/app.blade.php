@@ -140,7 +140,7 @@
 
         @livewire('login')
         <a href="#" class="backtotop active">
-            <img src="https://rawaabeauty.com/assets/img/union.png" alt="">
+            <img src="/assets/imgs/arrow-small-up.svg" width="40px" alt="Top">
         </a>
 
 

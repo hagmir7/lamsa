@@ -36,8 +36,8 @@
                                     <x-cart-icon />
                                     @endif
                                 </div>
-                                <div class="spinner-border" role="status" wire:loading wire:target="addToCart({{ $product->id }})">
-                                    <span class="visually-hidden">Loading...</span>
+                                <div class="pt-2" wire:loading wire:target="addToCart({{ $product->id }})">
+                                  <x-spenner-icon />
                                 </div>
                             </button>
                         @else
@@ -57,10 +57,9 @@
     </ul>
 
     <div class="d-flex justify-content-center">
-        <button class="btn btn-success" wire:click='loadMore'>
-            Voir plus <div wire:loading wire:target='loadMore'>... </div>
+        <button class="btn btn-success"  wire:click='loadMore'>
+            <span wire:loading.remove>Voir plus</span>
+            <span wire:loading wire:target='loadMore'><x-spenner-icon /></span>
         </button>
     </div>
-
-
 </div>

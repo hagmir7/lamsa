@@ -122,11 +122,7 @@
 </head>
 
 <body class="lynessa-zoom-on-hover">
-
-
     <x-nav />
-
-
     <div class="banner-wrapper my-wrapper has_background">
         <img src="/assets/imgs/hero-product.jpg"
             class="img-responsive attachment-1920x447 size-1920x447" alt="img">
@@ -213,11 +209,6 @@
                                     <div class="lynessa-product-details__short-description">
                                         <p class="tajawal">{{ $product->description }}</p>
                                     </div>
-
-
-                                    <form class="variations_form cart form-store" data-no-controller="true"
-                                        data-class-container=".card_header_container" action="#" method="POST">
-
                                         <table class="variations">
                                             <tbody>
                                                 <tr>
@@ -265,22 +256,15 @@
 
                                             </tbody>
                                         </table>
-                                        <div class="single_variation_wrap mt-4">
-                                            <div class="lynessa-variation single_variation"></div>
-                                            <div class="lynessa-variation-add-to-cart variations_button ">
-
-                                                <a href="#"
-                                                    class="rounded p-2 button alt lynessa-variation-selection-needed href-wishlist tajawal">
-                                                    <x-cart-icon />
-                                                    Ajouter au wishlist
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </form>
+                                        @livewire('add-to-cart', ['product' => $product->id])
                                 </div>
                             </div>
                         </div>
 
+                    </div>
+                    <div class="mb-4">
+                        <h4>Description</h4>
+                        <div>{{ $product->description }}</div>
                     </div>
                 </div>
 

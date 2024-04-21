@@ -1,11 +1,11 @@
 <footer id="footer" class="footer style-04">
-    @livewire('subscript')
+    @livewire('subscrip')
 
     <div class="section-016">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <p class="tajawal">© Copyright 2024 <a href="/">Lamsa</a>.Tous les droits sont réservés..</p>
+                    <p class="tajawal">© Copyright 2024 <a href="/">Lamsa</a>.Tous les droits sont réservés.</p>
                 </div>
                 <div class="col-md-6">
                     <div class="payment">

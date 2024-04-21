@@ -6,19 +6,18 @@
         <div class="slide-wrap">
             <img class="hero" src="/assets/imgs/hero.jpg" alt="image">
             <img class="hero_mobile d-none" src="/assets/imgs/hero.jpg" alt="image">
-            <div class="slide-info">
+            <div class="slide-info text-center sm-text-right">
                 <div class="container">
                     <div class="slide-inner">
                         {{-- <h5>Sale up to <span>40%</span> Off</h5> --}}
                         <h1 style="color: #252525!important">Lamsa</h1>
                         <h2 style="color: #252525!important">Osez le style décontracté,<br><br> où que vous soyez</h2>
-                        <a href="#" tabindex="0">Achetez maintenant</a>
+                        <a href="#new-collection" tabindex="0">Achetez maintenant</a>
                     </div>
                 </div>
             </div>
             <div class="slugon d-none">
-                <h2 class="slide-title" style="color: #252525 !important">Osez le style décontracté, où que vous soyez
-</h2>
+                <h2 class="slide-title" style="color: #252525 !important">Osez le style décontracté, où que vous soyez</h2>
             </div>
         </div>
     </div>

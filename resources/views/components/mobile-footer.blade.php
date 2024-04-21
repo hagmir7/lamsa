@@ -3,24 +3,24 @@
         <div class="footer-device-mobile-item device-home">
             <a href="/" class="tajawal">
                 <span class="icon">
-                    <span class="pe-7s-home"></span>
+                    <img width="20px" src="/assets/imgs/home.svg" alt="Accueil">
                 </span>
                 Accueil
             </a>
         </div>
         <div class="footer-device-mobile-item device-home device-wishlist">
-            <a href="https://rawaabeauty.com/fr/shop" class="tajawal">
+            <a href="/shop" class="tajawal">
                 <span class="icon">
-                    <span class="pe-7s-like"></span>
+                    <img width="20px" src="/assets/imgs/apps.svg" alt="Collection">
                 </span>
                 Collection
             </a>
         </div>
 
         <div class="footer-device-mobile-item device-home device-user">
-            <a href="https://rawaabeauty.com/fr/contact" class="tajawal">
+            <a href="/contact" class="tajawal">
                 <span class="icon">
-                    <span class="pe-7s-user"></span>
+                    <img width="20px" src="/assets/imgs/envelope.svg" alt="Contactez nous">
                 </span>
                 Contactez nous
             </a>
