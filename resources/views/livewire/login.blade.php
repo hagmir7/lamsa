@@ -28,7 +28,7 @@
                                     @endforeach
                                     @endif
                                 <h2 class="tajawal t-start">Se connecter</h2>
-                                <form wire:submit.prevent='login' method="POST">
+                                <form wire:submit.prevent='login'>
                                     <p
                                         class="lynessa-form-row lynessa-form-row--wide form-row form-row-wide fv-row fv-plugins-icon-container fv-plugins-bootstrap5-row-valid">
                                         <label for="username" class="tajawal">Email&nbsp;<span class="required">*</span></label>

@@ -18,7 +18,7 @@ class AddToCart extends Component
     public function mount(Product $product)
     {
         $this->id = $product->id;
-        if(auth()->user()->cart){
+        if(auth()->user()?->cart){
             $user_products = auth()->user()->cart->products->pluck("id")->toArray();
             $this->in_cart = in_array($this->id, $user_products);
         }
