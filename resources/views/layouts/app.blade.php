@@ -2,19 +2,25 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
-  <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="application-name" content="{{ config('app.name') }}">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/x-icon" href="https://rawaabeauty.com/assets/web/images/fav-icon.png" />
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
         rel="stylesheet">
-    <meta name="csrf-token" content="ZekuFMjCWdPb8guuSFuUkaeSLLQaJZuNc7lAxiKC" />
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://rawaabeauty.com/assets/web/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="https://rawaabeauty.com/assets/web/css/animate.css" />
     <link rel="stylesheet" type="text/css" href="https://rawaabeauty.com/assets/web/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="https://rawaabeauty.com/assets/web/css/chosen.min.css" />
-    <link rel="stylesheet" type="text/css" href="https://rawaabeauty.com/assets/web/css/font-awesome.min.css" />
-    <link rel="stylesheet" type="text/css" href="https://rawaabeauty.com/assets/web/css/pe-icon-7-stroke.css" />
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.4.2/chosen.min.css" />
+
+
+    {{--
+    <link rel="stylesheet" type="text/css" href="https://rawaabeauty.com/assets/web/css/font-awesome.min.css" /> --}}
     <link rel="stylesheet" type="text/css" href="https://rawaabeauty.com/assets/web/css/jquery.scrollbar.css" />
     <link rel="stylesheet" type="text/css" href="https://rawaabeauty.com/assets/web/css/lightbox.min.css" />
     <link rel="stylesheet" type="text/css" href="https://rawaabeauty.com/assets/web/css/magnific-popup.css" />
@@ -22,101 +28,103 @@
     <link rel="stylesheet" type="text/css" href="https://rawaabeauty.com/assets/web/css/megamenu.css" />
     <link rel="stylesheet" type="text/css" href="https://rawaabeauty.com/assets/web/css/dreaming-attribute.css" />
     <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
+    {{--
+    <link rel="stylesheet" type="text/css" href="https://rawaabeauty.com/assets/css/modified.css?v=0.2.4" /> --}}
 
     <link rel="stylesheet" href="https://rawaabeauty.com/assets/vendor/libs/toastr/toastr.css" />
+    {{--
     <link rel="stylesheet"
-        href="https://rawaabeauty.com/assets/vendor/libs/formvalidation/dist/css/formValidation.min.css" />
-
-    <title> GANDOURA - SAHARA STRIPE | RawaaBeauty </title>
+        href="https://rawaabeauty.com/assets/vendor/libs/formvalidation/dist/css/formValidation.min.css" /> --}}
     <meta name="robots" content="noindex">
-    <link rel="canonical" href="https://rawaabeauty.com/fr/products/gandoura-sahara-stripe">
+    <link rel="canonical" href="https://rawaabeauty.com/fr">
 
-    <meta name="description"
-        content="GANDOURA - SAHARA STRIPE est une création exclusive de Rawaa Beauty, définie par sa coupe moderne et ses finitions impeccables. Fabriqué à partir de matériaux de haute qualité, ce vêtement offre un équilibre parfait entre tendance et confort.">
-    <title>GANDOURA - SAHARA STRIPE</title>
-    <meta name="image" content="https://rawaabeauty.comhttps://rawaabeauty.com/assets/web/images/rb-black.png">
-    <meta property="og:title" content="GANDOURA - SAHARA STRIPE">
-    <meta property="og:description"
-        content="GANDOURA - SAHARA STRIPE est une création exclusive de Rawaa Beauty, définie par sa coupe moderne et ses finitions impeccables. Fabriqué à partir de matériaux de haute qualité, ce vêtement offre un équilibre parfait entre tendance et confort.">
+    <meta name="description" content="#!">
+    <meta name="image" content="https://rawaabeauty.com/assets/web/images/rb-black.png">
+    <meta property="og:title" content="Accueil">
+    <meta property="og:description" content="#!">
     <meta property="og:locale" content="fr">
-    <meta property="og:image" content="https://rawaabeauty.comhttps://rawaabeauty.com/assets/web/images/rb-black.png">
-    <meta property="og:url" content="https://rawaabeauty.com/fr/products/gandoura-sahara-stripe">
+    <meta property="og:image" content="https://rawaabeauty.com/assets/web/images/rb-black.png">
+    <meta property="og:url" content="https://rawaabeauty.com/fr">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:image" content="https://rawaabeauty.comhttps://rawaabeauty.com/assets/web/images/rb-black.png">
+    <meta name="twitter:image" content="https://rawaabeauty.com/assets/web/images/rb-black.png">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://rawaabeauty.comhttps://rawaabeauty.com/assets/web/images/rb-black.png">
-    <meta name="twitter:title" content="GANDOURA - SAHARA STRIPE">
-    <meta name="twitter:description"
-        content="GANDOURA - SAHARA STRIPE est une création exclusive de Rawaa Beauty, définie par sa coupe moderne et ses finitions impeccables. Fabriqué à partir de matériaux de haute qualité, ce vêtement offre un équilibre parfait entre tendance et confort.">
+    <meta name="twitter:image" content="https://rawaabeauty.com/assets/web/images/rb-black.png">
+    <meta name="twitter:title" content="Accueil">
+    <meta name="twitter:description" content="#!">
 
     <style>
-        .my-wrapper img {
-            width: 100%;
+        .myslide img {
+            width: 100% !important;
+        }
+
+        .slide-info {
+            top: 58% !important;
+        }
+
+        .slide-inner h5,
+        .slide-inner h1,
+        .slide-inner h2,
+        .slide-inner h5 span {
+            color: #fff !important;
         }
 
 
-
-        .payment__img {
-            background-image: url(https://rawaabeauty.com/assets/img/method.png);
-            height: 40px;
-            width: 100%;
-            background-repeat: no-repeat;
-            background-position: center center;
+        .black-links {
+            color: #000 !important;
         }
 
-        .variant {
-            width: 40px;
-            height: 20px;
-            background: #f4f4f4;
-            border-radius: 4px;
+        .white-links {
+            color: #fff !important;
+        }
+
+        .header.style-04 .lynessa-live-search-form .txt-livesearch {
+            min-width: 200px;
+            border-bottom: 1px solid #fff;
+        }
+
+        .searchfield {
+            color: #fff !important;
+        }
+
+        .header.style-04 .block-search-form .btn-submit {
+            color: #fff !important;
+        }
+
+        .loader {
+            width: 100%;
+            height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-right: 4px;
-            color: #000;
-            cursor: pointer;
+            position: fixed;
+            z-index: 999999999 !important;
+            background: #fff;
         }
 
-        .active-variant {
-            background: #000;
-            color: #fff;
+        @keyframes scale {
+            0% {
+                transform: scale(0);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+
+
+
         }
 
-        .entry-summary form.cart.variations_form .variations {
-            padding-bottom: 0px !important;
-            position: relative;
+        .loader img {
+            animation: scale 3s infinite;
         }
+    </style>
 
-        .input-qty.input-text.qty.text {
-            border: none !important;
-        }
+    <title>{{ config('app.name') }}</title>
 
-        .lynessa-newsletter.style-01 .email-newsletter {
-            width: 100%;
-            height: 40px;
-            line-height: 38px;
-            background-color: #fff;
-            padding-right: 145px;
-            text-align: start !important;
-        }
-
-        .main-container {
-            padding-top: 70px;
-            padding-bottom: 0px !important;
-        }
-
-        .hide-zoom {
-            position: absolute;
-            top: 16px;
-            right: 16px;
-            z-index: 9999;
-            background: #87654a;
-            width: 40px;
-            height: 40px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+    <style>
+        [x-cloak] {
+            display: none !important;
         }
     </style>
     @livewireStyles()
@@ -135,11 +143,10 @@
     {{-- @vite('resources/js/app.js') --}}
 
 
-        @livewire('login')
+    @livewire('login')
 
 
 
-        @livewireScripts()
     <a href="#" class="backtotop active">
         <img src="/assets/imgs/arrow-small-up.svg" width="40px" alt="Top">
     </a>
@@ -159,18 +166,11 @@
 
     <script src="https://rawaabeauty.com/assets/vendor/libs/select2/select2.js"></script>
     <script src="https://rawaabeauty.com/assets/vendor/libs/toastr/toastr.js"></script>
-    {{-- <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script> --}}
-    {{-- <script src="https://rawaabeauty.com/assets/vendor/libs/formvalidation/dist/js/FormValidation.min.js"></script> --}}
-    {{-- <script src="https://rawaabeauty.com/assets/vendor/libs/formvalidation/dist/js/plugins/Bootstrap5.min.js"></script> --}}
     <script src="https://rawaabeauty.com/assets/vendor/libs/block-ui/block-ui.js"></script>
-    {{-- <script src="https://rawaabeauty.com/assets/vendor/libs/formvalidation/dist/js/plugins/AutoFocus.min.js"></script> --}}
-    {{-- <script src="https://rawaabeauty.com/assets/js/controllers/web/NewsLetterController.js"></script> --}}
     <script src="/assets/js/app.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" crossorigin="anonymous">
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" crossorigin="anonymous"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" crossorigin="anonymous"> </script>
     <script>
         $('.variant').on('click', function() {
                 $('.variant').removeClass('active-variant');
@@ -291,6 +291,8 @@
                 });
             });
     </script>
+
+    @livewireScripts()
 </body>
 
 </html>
