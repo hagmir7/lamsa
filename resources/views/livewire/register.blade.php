@@ -43,7 +43,13 @@
             </div>
         </div>
         <p class="mt-3 form-row">
-            <button type="submit" class="lynessa-Button button tajawal w-100" value="S'inscrire">S'inscrire</button>
+            <button type="submit" class="lynessa-Button button tajawal w-100" value="S'inscrire">
+                <span wire:loading class="mt-1">
+                    <x-spenner-icon />
+                </span>
+
+                <span wire:loading.remove>S'inscrire</span>
+            </button>
         </p>
     </form>
 </div>

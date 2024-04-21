@@ -14,7 +14,8 @@
                     <div class="newsletter-form-inner">
                         <input class="email email-newsletter" wire:model='email' name="email" style="text-align: start " placeholder="Votre adresse e-mail" type="email">
                         <button type="submit" class="button btn-submit submit-newsletter tajawal">
-                            <span class="text">S&#039;abonner</span>
+                            <span wire:loading class="mt-1"><x-spenner-icon /></span>
+                            <span wire:loading.remove class="text">S&#039;abonner</span>
                         </button>
                     </div>
                     @if ($message)

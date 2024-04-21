@@ -16,10 +16,9 @@
         </div>
     </div>
     <div class="section-025 my-5">
-        <h2 class="text-center h3 tajawal mb-5">Capturez l'instant</h2>
+        <h2 class="text-center h3 tajawal mb-5">Que disent les clients ?</h2>
         <div class="container">
             <div class="row">
-                <h1 class="h3">Que disent les clients ?</h1>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit rerum vitae cumque non sequi ipsum
                 molestias tenetur! Veritatis soluta eos, placeat, mollitia expedita quae aperiam molestiae fugiat,
                 exercitationem laboriosam nam?

@@ -1,7 +1,7 @@
 <div>
 
     <!-- Modal -->
-    <div class="modal fade" id="loginModal" wire:ignore tabindex="-1" aria-labelledby="exampleModalLabel"
+    <div class="modal fade" style="z-index: 10000" id="loginModal" wire:ignore tabindex="-1" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -44,7 +44,13 @@
                                         @error('password') <span class="text-danger">{{ $message }}</span> @enderror
                                     </p>
                                     <p class="form-row">
-                                        <button type="submit" class="lynessa-Button button tajawal w-100" value="Se connecter">Se connecter</button>
+                                        <button type="submit" class="lynessa-Button button tajawal w-100" value="Se connecter">
+                                            <span wire:loading class="mt-1">
+                                                <x-spenner-icon />
+                                            </span>
+
+                                            <span wire:loading.remove>Se connecter</span>
+                                        </button>
                                     </p>
                                 </form>
                             </div>

@@ -17,12 +17,8 @@
     </div>
     <div class="section-025 my-5">
         <div class="container">
-            <div class="row">
-                <h1 class="h3">Contactez-nous</h1>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit rerum vitae cumque non sequi ipsum
-                molestias tenetur! Veritatis soluta eos, placeat, mollitia expedita quae aperiam molestiae fugiat,
-                exercitationem laboriosam nam?
-
+            <div class="row d-flex justify-content-center">
+                @livewire('contact')
             </div>
         </div>
     </div>
