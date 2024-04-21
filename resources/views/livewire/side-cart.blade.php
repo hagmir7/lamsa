@@ -65,16 +65,12 @@
                             <span class="lynessa-Price-amount amount"><span class="lynessa-Price-currencySymbol"> MAD </span>{{ $total }}</span>
                         </p>
                         <p class="lynessa-mini-cart__buttons buttons">
-                            <a href="//card" class="button lynessa-forward tajawal">Panier</a>
-                            <a href="//card/checkout" class="button checkout lynessa-forward tajawal">Commander
+                            <a href="/cart" class="button w-100 checkout lynessa-forward tajawal">Commander
                                 maintenant</a>
                         </p>
                     </div>
                 </div>
-
             </div>
-
-
         </div>
     </div>
 </div>

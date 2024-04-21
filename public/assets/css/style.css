@@ -2006,7 +2006,7 @@ input[type="search"],
 input[type="url"],
 textarea,
 select {
-    border: 1px solid #ebebeb;
+    border: 1px solid gray !important;
     padding: 0 20px;
     max-width: 100%;
     background-color: transparent;

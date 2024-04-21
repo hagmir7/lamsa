@@ -30,7 +30,6 @@ class SideCart extends Component
             $this->products = auth()->user()->cart->products;
             $this->count_products = $this->products->count();
             $this->total = array_sum($this->products->pluck('price')->toArray());
-
         }
     }
 
