@@ -9,7 +9,7 @@
             </a>
         </div>
         <div class="footer-device-mobile-item device-home device-wishlist">
-            <a href="/shop" class="tajawal">
+            <a href="/#new-collection" class="tajawal">
                 <span class="icon">
                     <img width="20px" src="/assets/imgs/apps.svg" alt="Collection">
                 </span>
