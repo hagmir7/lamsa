@@ -31,7 +31,7 @@ Route::get('/product/{product}', function (Product $product) {
 Route::get('/cart', function () {
     $cart = auth()->user()?->cart;
 
-    $items = ProductCart::where('cart_id', $cart->id)->get();
+    $items = ProductCart::where('cart_id', $cart?->id)->get();
     $total = 0;
 
     foreach ($items as $item) { $total += $item->product->price;}

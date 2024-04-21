@@ -46,21 +46,8 @@
                                 @endforeach
 
                             </ul>
-                            <div class="scroll-element scroll-x">
-                                <div class="scroll-element_outer">
-                                    <div class="scroll-element_size"></div>
-                                    <div class="scroll-element_track"></div>
-                                    <div class="scroll-bar" style="width: 96px;"></div>
-                                </div>
-                            </div>
-                            <div class="scroll-element scroll-y">
-                                <div class="scroll-element_outer">
-                                    <div class="scroll-element_size"></div>
-                                    <div class="scroll-element_track"></div>
-                                    <div class="scroll-bar" style="height: 96px; top: 0px;"></div>
-                                </div>
-                            </div>
                         </div>
+
                         <p class="lynessa-mini-cart__total total"><strong>Total:</strong>
                             <span class="lynessa-Price-amount amount"><span class="lynessa-Price-currencySymbol"> MAD </span>{{ $total }}</span>
                         </p>
