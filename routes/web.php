@@ -61,3 +61,8 @@ Route::get('/order/create', function () {
     }
     return redirect(route('checkout'));
 })->name('order.create');
+
+
+Route::view('/about', 'about')->name('about');
+Route::view('/contact', 'contact')->name('contact');
+Route::view('/comments', 'comments')->name('comments');

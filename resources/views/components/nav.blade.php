@@ -31,7 +31,7 @@
                                 <li id="menu-item-230"
                                     class="menu-item menu-item-type-post_type menu-item-object-megamenu menu-item-230 parent parent-megamenu item-megamenu ">
                                     <a class="lynessa-menu-item-title black-links tajawal"
-                                        href="/">Inspirations</a>
+                                        href="/comments">Inspirations</a>
                                 </li>
                                 <li id="menu-item-230"
                                     class="menu-item menu-item-type-post_type menu-item-object-megamenu menu-item-230 parent parent-megamenu item-megamenu ">
@@ -39,7 +39,7 @@
                                 </li>
                                 <li id="menu-item-230" class="menu-item menu-item-type-post_type menu-item-object-megamenu menu-item-230 item-megamenu ">
                                     <a class="lynessa-menu-item-title black-links tajawal"
-                                        href="//contact">Contactez nous</a>
+                                        href="/contact">Contactez nous</a>
                                 </li>
 
                                 <li class="menu-item lynessa-dropdown block-language menu_lang" style="display: none">

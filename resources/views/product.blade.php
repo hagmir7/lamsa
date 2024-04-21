@@ -99,7 +99,7 @@
                                                     <div class="data-val attribute-pa_color" data-attributetype="box_style"
                                                         style=" display:flex ;margin-right: 4px;">
                                                         @foreach ($product->sizes as $size)
-                                                        <div class="variant active-variant" data-value="{{ $size->name }}">
+                                                        <div class="btn bg-light mx-1 border text-uppercase" data-value="{{ $size->name }}">
                                                             {{ $size->name }}
                                                         </div>
                                                         @endforeach
@@ -119,8 +119,7 @@
                                                     <div class="data-val attribute-pa_color flex me-2"
                                                         data-attributetype="box_style">
                                                         @foreach ($product->colors as $color)
-                                                        <div class="variant active-variant" data-value="{{ $color->name }}">
-                                                            {{ $color->name }}
+                                                        <div class="btn p-3 mx-1 border text-uppercase" style="background-color: {{ $color->code }}" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="{{ $color->name }}" data-value="{{ $color->name }}">
                                                         </div>
                                                         @endforeach
                                                     </div>
@@ -132,7 +131,14 @@
 
                                         </tbody>
                                     </table>
+                                    <div class="lynessa-proceed-to-checkout mb-3">
+                                        <a href="#" data-bs-toggle="modal" data-bs-target="#checkOutModal" class="btn bg-light border w-100"
+                                            style="font-weight: bold;font-size: 17px;">
+                                            Acheter maintenant
+                                        </a>
+                                    </div>
                                     @livewire('add-to-cart', ['product' => $product->id])
+
                                 </div>
                             </div>
                         </div>
@@ -147,4 +153,18 @@
             </div>
         </div>
     </div>
+
+    <div class="modal fade" style="z-index: 10000" id="checkOutModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        @livewire('create-order')
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fermer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 @endsection

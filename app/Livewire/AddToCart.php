@@ -12,11 +12,23 @@ class AddToCart extends Component
 {
 
     public $id;
+    public $in_cart = false;
 
 
     public function mount(Product $product)
     {
         $this->id = $product->id;
+        if(auth()->user()){
+            $user_products = auth()->user()->cart->products->pluck("id")->toArray();
+            $this->in_cart = in_array($this->id, $user_products);
+        }
+    }
+
+    public function dehydrate(){
+        if (auth()->user()) {
+            $user_products = auth()->user()->cart->products->pluck("id")->toArray();;
+            return $this->in_cart = in_array($this->id, $user_products);
+        }
     }
 
     public function addToCart()
@@ -56,11 +68,14 @@ class AddToCart extends Component
         }
 
 
-        if (auth()->user()?->cart) {
+        if (auth()->user()) {
             $user_products = auth()->user()?->cart?->products->pluck("id")->toArray();
+            $this->in_cart = in_array($this->id, $user_products);
         }
 
     }
+
+
 
 
     public function render()

@@ -127,20 +127,13 @@
             display: none !important;
         }
     </style>
-    @livewireStyles()
-    {{-- @vite('resources/css/app.css') --}}
+    @livewireStyles
 </head>
 
 <body class="antialiased">
     <x-nav />
     @yield('content')
     <x-footer />
-
-
-
-
-
-    {{-- @vite('resources/js/app.js') --}}
 
 
     @livewire('login')
@@ -292,7 +285,7 @@
             });
     </script>
 
-    @livewireScripts()
+    @livewireScripts
 </body>
 
 </html>
