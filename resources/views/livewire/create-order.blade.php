@@ -29,7 +29,7 @@
                         <abbr class="required" title="required">*</abbr>
                     </label>
                     <span class="lynessa-input-wrapper">
-                        <input required wire:model='phone' type="text" class="input-text">
+                        <input required wire:model='phone' type="tel" class="input-text">
                     </span>
                 </p>
 

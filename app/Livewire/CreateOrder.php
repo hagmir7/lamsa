@@ -3,6 +3,7 @@
 namespace App\Livewire;
 
 use App\Models\Order;
+use App\Models\ProductCart;
 use App\Models\ProductOrder;
 use Livewire\Attributes\Validate;
 use Livewire\Component;
@@ -50,7 +51,7 @@ class CreateOrder extends Component
 
             }
 
-            $items = ProductCard::where('cart_id', auth()->user()->cart->id)->get();
+            $items = ProductCart::where('cart_id', auth()->user()->cart->id)->get();
             foreach($items as $item){
                 $item->delete();
             }
