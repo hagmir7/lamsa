@@ -65,6 +65,7 @@ class CategoryResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('name')
+                    ->label("Catégorie")
                     ->searchable(),
                 Tables\Columns\ImageColumn::make('image'),
                 Tables\Columns\TextColumn::make('created_at')

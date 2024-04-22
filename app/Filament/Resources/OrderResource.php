@@ -28,17 +28,6 @@ class OrderResource extends Resource
         return __("Commande");
     }
 
-    // public static $totalOrders = 0;
-
-    // public function mount(int|string $record): void
-    // {
-
-    //     dd("Work");
-    //     parent::mount($record);
-
-
-    //     static::$totalOrders = $this->where('status', 1)->count();
-    // }
 
     public static function getNavigationBadge(): ?string
     {

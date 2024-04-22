@@ -44,16 +44,14 @@ class ContactResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('full_name')
+                    ->label(__("Nom et prénom"))
                     ->searchable(),
                 Tables\Columns\TextColumn::make('email')
                     ->searchable(),
-                Tables\Columns\TextColumn::make('user_id')
-                    ->numeric()
-                    ->sortable(),
                 Tables\Columns\TextColumn::make('created_at')
+                    ->label(__("Envoyé à"))
                     ->dateTime()
-                    ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
+                    ->sortable(),
                 Tables\Columns\TextColumn::make('updated_at')
                     ->dateTime()
                     ->sortable()
