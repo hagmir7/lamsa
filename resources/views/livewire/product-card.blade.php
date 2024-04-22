@@ -24,19 +24,7 @@
                         </span>
                         <br>
                         @if (auth()->user())
-                            <button type="submit" wire:click='addToCart({{ $product->id }})' class="button btn-primary w-100"
-                                style="cursor: pointer">
-                                <div wire:loading.remove wire:target="addToCart({{ $product->id }})">
-                                    @if (in_array($product->id, $userCart))
-                                    <x-check-icon />
-                                    @else
-                                    <x-cart-icon />
-                                    @endif
-                                </div>
-                                <div class="pt-2" wire:loading wire:target="addToCart({{ $product->id }})">
-                                  <x-spenner-icon-brown />
-                                </div>
-                            </button>
+                            @livewire('add-button', ['product' => $product], key($product->id))
                         @else
                         <button data-bs-toggle="modal" data-bs-target="#loginModal" class="button btn-primary w-100" style="cursor: pointer">
                             <x-cart-icon />

@@ -140,7 +140,7 @@
                                         Acheter maintenant
                                     </a>
 
-                                    @livewire('add-to-cart', ['product' => $product->id])
+                                    @livewire('add-button', ['product' => $product], key($product->id))
 
                                 </div>
                             </div>

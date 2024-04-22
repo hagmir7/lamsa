@@ -47,4 +47,9 @@ class User extends Authenticatable
     public function cart(){
         return $this->belongsTo(Cart::class);
     }
+
+    public function hasAdded(Product $product)
+    {
+        return $this->cart->products()->where('products.id', $product->id)->exists();
+    }
 }

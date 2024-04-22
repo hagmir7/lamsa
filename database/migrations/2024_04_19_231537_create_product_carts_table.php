@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->foreignIdFor(Product::class);
             $table->foreignIdFor(Cart::class);
-            $table->float('quantity');
+            $table->float('quantity')->nullable();
             $table->timestamps();
         });
     }

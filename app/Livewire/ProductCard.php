@@ -36,15 +36,20 @@ class ProductCard extends Component
         $this->total_products = Product::all()->count();
     }
 
+    public function hydrate(){
+        if(auth()->user()){
+            $user_products = auth()->user()->cart->products->pluck("id")->toArray();
+            $this->userCart = $user_products;
+        }
+
+    }
+
 
     public function loadMore()
     {
         $this->amount += 8;
         $this->total_products = Product::all()->count();
     }
-
-
-
 
 
     public function addToCart($id)
@@ -67,6 +72,9 @@ class ProductCard extends Component
                 ]);
             }
 
+            $user_products = auth()->user()->cart->products->pluck("id")->toArray();
+            $this->userCart = $user_products;
+
         }else{
 
             $cart = Cart::create([]);
@@ -83,20 +91,7 @@ class ProductCard extends Component
             ]);
         }
 
-
-        if (auth()->user()?->cart) {
-            $user_products = auth()->user()?->cart?->products->pluck("id")->toArray();
-            $this->userCart = $user_products;
-        }
-
-        // dd($this->userCart);
-        // return $this->userCart;
-        // $this->emit('componentAUpdated');
-
-        $this->dispatch('product-added', productId: $id);
-
-
-
+        $this->dispatch('product-added');
 
     }
 
@@ -106,7 +101,8 @@ class ProductCard extends Component
     public function render()
     {
         return view('livewire.product-card', [
-            'products' => Product::take($this->amount)->get()
+            'products' => Product::take($this->amount)->get(),
+            'userCart' => $this->userCart
         ]);
     }
 }
