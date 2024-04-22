@@ -14,11 +14,13 @@ class UserSeeder extends Seeder
      */
     public function run(): void
     {
+        $cart = Cart::create([]);
         User::create([
             "name" => "Admin",
             "email" => "admin@admin.com",
             "password" => Hash::make("password"),
-            "email_verified_at" => now()
+            "email_verified_at" => now(),
+            "cart_id" => $cart->id
         ]);
     }
 }

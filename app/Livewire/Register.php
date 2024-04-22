@@ -2,6 +2,7 @@
 
 namespace App\Livewire;
 
+use App\Models\Cart;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
 use Livewire\Component;
@@ -25,11 +26,12 @@ class Register extends Component
     public function register()
     {
         $validatedData = $this->validate();
-
+        $cart = Cart::create([]);
         $user = User::create([
             'name' => $validatedData['first_name'] . " " . $validatedData['last_name'],
             'email' => $validatedData['email'],
             'password' => Hash::make($validatedData['password']),
+            'cart_id' => $cart->id
         ]);
 
         // Optionally, authenticate the user
