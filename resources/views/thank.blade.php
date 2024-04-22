@@ -24,7 +24,7 @@
                     <p class="mt-5 fs-5 h5">Votre commande est en cours de traitement un conseiller vous contactera dans le plus bref détai. <a
                             href="/contact">Contactez-nous</a>
                     </p>
-                    <a class="btn bg-light h6 border" href="/">Retour aux produits</a>
+                    <a class="btn bg-light h6 border" href="/#new-collection">Retour aux produits</a>
                     <div></div>
                 </div>
             </div>

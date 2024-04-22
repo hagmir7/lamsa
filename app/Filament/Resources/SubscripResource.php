@@ -17,7 +17,12 @@ class SubscripResource extends Resource
 {
     protected static ?string $model = Subscrip::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-user-group';
+
+    public static function getModelLabel(): string
+    {
+        return __("Les abonnés");
+    }
 
     public static function form(Form $form): Form
     {
@@ -37,13 +42,9 @@ class SubscripResource extends Resource
                 Tables\Columns\TextColumn::make('email')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('created_at')
+                    ->label(__("Abonné à"))
                     ->dateTime()
                     ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
-                Tables\Columns\TextColumn::make('updated_at')
-                    ->dateTime()
-                    ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
             ])
             ->filters([
                 //
