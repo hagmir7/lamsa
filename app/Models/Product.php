@@ -13,18 +13,10 @@ class Product extends Model
 
     protected $fillable = ["name", "price", "text", "description", "status", "body","slug", 'created_at', 'created_at'];
 
-
-    public $timestamps = true;
-
-
     protected $casts = [
         'status' => ProductStatusEnum::class,
     ];
 
-    public function getRouteKeyName()
-    {
-        return 'slug';
-    }
 
 
 
@@ -49,14 +41,20 @@ class Product extends Model
         return $this->hasMany(Image::class);
     }
 
-    public function newQuery($ordered = true)
+    // public function newQuery($ordered = true)
+    // {
+    //     $query = parent::newQuery();
+    //     if ($ordered) {
+    //         $query->orderBy('created_at', 'desc');
+    //     }
+    //     return $query;
+    // }
+
+    public function getRouteKeyName()
     {
-        $query = parent::newQuery();
-        if ($ordered) {
-            $query->orderBy('created_at', 'desc');
-        }
-        return $query;
+        return 'slug';
     }
+
 
 
 

@@ -38,10 +38,11 @@ class ProductCard extends Component
     public function render()
     {
         $products = $this->category->name
-            ? $this->category->products->take($this->amount)
-            : Product::take($this->amount)->get();
+            ? $this->category->products()->take($this->amount)->orderBy('created_at', 'desc')->get()
+            : Product::take($this->amount)->orderBy('created_at', 'desc')->get();
         return view('livewire.product-card', [
             'products' => $products,
         ]);
     }
+
 }
