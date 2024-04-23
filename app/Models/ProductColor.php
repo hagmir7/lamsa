@@ -9,11 +9,20 @@ class ProductColor extends Pivot
 {
     use HasFactory;
 
-    protected $fillable = ['product_id', 'color_id'];
+    protected $fillable = ['product_id','color_id', 'created_at', 'created_at'];
 
 
     public function products()
     {
         return $this->belongsToMany(Color::class, 'product_color');
+    }
+
+    public function newQuery($ordered = true)
+    {
+        $query = parent::newQuery();
+        if ($ordered) {
+            $query->orderBy('created_at', 'desc');
+        }
+        return $query;
     }
 }

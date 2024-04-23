@@ -10,10 +10,19 @@ class ProductCart extends Pivot
 {
     use HasFactory;
 
-    protected $fillable = ['product_id', 'cart_id', 'quantity'];
+    protected $fillable = ['product_id', 'cart_id','quantity', 'created_at', 'created_at'];
 
 
     public function product(){
         return $this->belongsTo(Product::class);
+    }
+
+    public function newQuery($ordered = true)
+    {
+        $query = parent::newQuery();
+        if ($ordered) {
+            $query->orderBy('created_at', 'desc');
+        }
+        return $query;
     }
 }

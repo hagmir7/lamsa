@@ -9,7 +9,7 @@ class Comment extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['full_name', 'user_id', 'image', 'description'];
+    protected $fillable = ['full_name', 'user_id', 'image','description', 'created_at', 'created_at'];
 
 
     public function user(){
@@ -19,5 +19,14 @@ class Comment extends Model
     public function product()
     {
         return $this->belongsTo(Product::class);
+    }
+
+    public function newQuery($ordered = true)
+    {
+        $query = parent::newQuery();
+        if ($ordered) {
+            $query->orderBy('created_at', 'desc');
+        }
+        return $query;
     }
 }

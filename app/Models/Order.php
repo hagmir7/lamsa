@@ -10,7 +10,7 @@ class Order extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['full_name', 'city', 'address', 'phone', 'status', 'user_id'];
+    protected $fillable = ['full_name', 'city', 'address', 'phone', 'status','user_id', 'created_at', 'created_at'];
 
 
     protected $casts = [
@@ -24,5 +24,14 @@ class Order extends Model
 
     public function products(){
         return $this->belongsToMany(Product::class, 'product_order');
+    }
+
+    public function newQuery($ordered = true)
+    {
+        $query = parent::newQuery();
+        if ($ordered) {
+            $query->orderBy('created_at', 'desc');
+        }
+        return $query;
     }
 }

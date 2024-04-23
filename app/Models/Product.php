@@ -11,7 +11,11 @@ class Product extends Model
 {
     use HasFactory;
 
-    protected $fillable = ["name", "price", "text", "description", "status", "body", "slug"];
+    protected $fillable = ["name", "price", "text", "description", "status", "body","slug", 'created_at', 'created_at'];
+
+
+    public $timestamps = true;
+
 
     protected $casts = [
         'status' => ProductStatusEnum::class,
@@ -20,15 +24,6 @@ class Product extends Model
     public function getRouteKeyName()
     {
         return 'slug';
-    }
-
-    protected static function boot()
-    {
-        parent::boot();
-
-        parent::creating(function ($product) {
-            $product->slug = Str::slug($product->name);
-        });
     }
 
 
@@ -52,6 +47,15 @@ class Product extends Model
 
     public function images(){
         return $this->hasMany(Image::class);
+    }
+
+    public function newQuery($ordered = true)
+    {
+        $query = parent::newQuery();
+        if ($ordered) {
+            $query->orderBy('created_at', 'desc');
+        }
+        return $query;
     }
 
 

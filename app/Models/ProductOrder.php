@@ -10,5 +10,15 @@ class ProductOrder extends Pivot
 {
     use HasFactory;
 
-    protected $fillable = ['product_id', 'order_id', 'quantity'];
+    protected $fillable = ['product_id', 'order_id','quantity', 'created_at', 'created_at'];
+
+
+    public function newQuery($ordered = true)
+    {
+        $query = parent::newQuery();
+        if ($ordered) {
+            $query->orderBy('created_at', 'desc');
+        }
+        return $query;
+    }
 }

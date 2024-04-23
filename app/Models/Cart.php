@@ -10,7 +10,7 @@ class Cart extends Model
     use HasFactory;
 
 
-    protected $fillable = ['user_id'];
+    protected $fillable = ['user_id', 'created_at', 'created_at'];
 
     public function user()
     {
@@ -19,5 +19,14 @@ class Cart extends Model
 
     public function products(){
         return $this->belongsToMany(Product::class, 'product_cart')->withTimestamps();
+    }
+
+    public function newQuery($ordered = true)
+    {
+        $query = parent::newQuery();
+        if ($ordered) {
+            $query->orderBy('created_at', 'desc');
+        }
+        return $query;
     }
 }

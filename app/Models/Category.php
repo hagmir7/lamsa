@@ -9,7 +9,7 @@ use Illuminate\Support\Str;
 class Category extends Model
 {
 
-    protected $fillable = ["name", "image", "description", "slug"];
+    protected $fillable = ["name", "image", "description","slug", 'created_at', 'created_at'];
     use HasFactory;
 
 
@@ -20,6 +20,15 @@ class Category extends Model
 
     public function products(){
         return $this->hasMany(Product::class);
+    }
+
+    public function newQuery($ordered = true)
+    {
+        $query = parent::newQuery();
+        if ($ordered) {
+            $query->orderBy('created_at', 'desc');
+        }
+        return $query;
     }
 
 

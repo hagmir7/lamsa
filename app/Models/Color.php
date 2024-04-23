@@ -9,10 +9,19 @@ class Color extends Model
 {
     use HasFactory;
 
-    protected $fillable = ["name", "code"];
+    protected $fillable = ["name","code", 'created_at', 'created_at'];
 
     public function products()
     {
         return $this->belongsToMany(Color::class, 'product_color');
+    }
+
+    public function newQuery($ordered = true)
+    {
+        $query = parent::newQuery();
+        if ($ordered) {
+            $query->orderBy('created_at', 'desc');
+        }
+        return $query;
     }
 }

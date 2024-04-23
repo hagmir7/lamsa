@@ -16,14 +16,18 @@
         </div>
     </div>
     <div class="section-025 my-5">
-        <h2 class="text-center h3 tajawal mb-5">Que disent les clients ?</h2>
         <div class="container">
-            <div class="row">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit rerum vitae cumque non sequi ipsum
-                molestias tenetur! Veritatis soluta eos, placeat, mollitia expedita quae aperiam molestiae fugiat,
-                exercitationem laboriosam nam?
-
-            </div>
+            {{-- <div class="lynessa-heading style-01">
+                <div class="heading-inner">
+                    <h3 class="title">
+                        Blog Grid</h3>
+                    <div class="subtitle">
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit erat vehicula ad, mollis viverra
+                        vulputate
+                    </div>
+                </div>
+            </div> --}}
+            @livewire('comments')
         </div>
     </div>
     <x-serveces />
