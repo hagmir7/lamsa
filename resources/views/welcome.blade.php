@@ -18,7 +18,7 @@
         </div>
     </div>
 
-    {{-- Comuting --}}
+    @livewire('category-card')
 
     <div class="section-025 my-5">
         <h2 class="text-center h3 tajawal mb-5">Capturez l'instant</h2>

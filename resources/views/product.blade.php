@@ -61,7 +61,6 @@
                                         <ol class="flex-control-nav flex-control-thumbs">
                                             @foreach ($product->images as $image)
                                             <li>
-
                                                 <img src="{{ Storage::url($image->path) }}" alt="img">
                                             </li>
                                             @endforeach
@@ -140,7 +139,9 @@
                                         Acheter maintenant
                                     </a>
 
-                                    @livewire('add-button', ['product' => $product], key($product->id))
+                                    @auth
+                                        @livewire('add-button', ['product' => $product], key($product->id))
+                                    @endauth
 
                                 </div>
                             </div>

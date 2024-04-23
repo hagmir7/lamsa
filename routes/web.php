@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Category;
 use App\Models\Product;
 use App\Models\ProductCart;
 use Illuminate\Support\Facades\Route;
@@ -26,6 +27,13 @@ Route::get('/product/{product}', function (Product $product) {
         'product' => $product
     ]);
 })->name('product');
+
+
+Route::get('/category/{category}', function (Category $category) {
+    return view('category', [
+        'category' => $category
+    ]);
+})->name('category');
 
 
 Route::get('/cart', function () {

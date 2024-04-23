@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Str;
 
 class ProductSeeder extends Seeder
 {
@@ -19,6 +20,7 @@ class ProductSeeder extends Seeder
                 'description' => 'A casual dress suitable for everyday wear.',
                 'status' => 1, // 1 for available, 0 for out of stock, etc.
                 'body' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
+                'slug' => Str::slug("Casual Dress")
             ],
             [
                 'name' => 'Leather Jacket',
@@ -27,6 +29,7 @@ class ProductSeeder extends Seeder
                 'description' => 'A stylish leather jacket to keep you warm in style.',
                 'status' => 1,
                 'body' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
+                'slug' => Str::slug("Leather Jacket")
             ],
             [
                 'name' => 'Denim Skirt',
@@ -35,6 +38,7 @@ class ProductSeeder extends Seeder
                 'description' => 'A trendy denim skirt for a fashionable look.',
                 'status' => 1,
                 'body' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
+                'slug' => Str::slug("Denim Skirt")
             ],
             [
                 'name' => 'Striped Sweater',
@@ -43,6 +47,7 @@ class ProductSeeder extends Seeder
                 'description' => 'A cozy sweater with stylish stripes.',
                 'status' => 1,
                 'body' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
+                'slug' => Str::slug("Striped Sweater")
             ],
             [
                 'name' => 'Cargo Shorts',
@@ -51,6 +56,7 @@ class ProductSeeder extends Seeder
                 'description' => 'Comfortable cargo shorts for outdoor activities.',
                 'status' => 1,
                 'body' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
+                'slug' => Str::slug("Cargo Shorts")
             ],
             [
                 'name' => 'Silk Blouse',
@@ -59,6 +65,7 @@ class ProductSeeder extends Seeder
                 'description' => 'An elegant silk blouse for a sophisticated look.',
                 'status' => 1,
                 'body' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
+                'slug' => Str::slug("Silk Blouse")
             ],
             // Add more product data as needed
         ];

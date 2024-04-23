@@ -35,6 +35,7 @@ class CategoryResource extends Resource
                 Grid::make(3)->schema([
                     Section::make()->schema([
                         Forms\Components\TextInput::make('name')
+                            ->unique(ignoreRecord: true)
                             ->label("Catégorie")
                             ->required()
                             ->maxLength(255),

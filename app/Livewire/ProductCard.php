@@ -3,6 +3,7 @@
 namespace App\Livewire;
 
 use App\Models\Cart;
+use App\Models\Category;
 use App\Models\Product;
 use App\Models\ProductCart;
 use App\Models\User;
@@ -19,9 +20,12 @@ class ProductCard extends Component
     public $amount = 8;
     public $total_products = 0;
 
+    public Category $category;
 
-    public function mount()
+
+    public function mount(Category $category)
     {
+        $this->category = $category;
         $this->total_products = Product::all()->count();
     }
 
@@ -33,8 +37,11 @@ class ProductCard extends Component
 
     public function render()
     {
+        $products = $this->category->name
+            ? $this->category->products->take($this->amount)
+            : Product::take($this->amount)->get();
         return view('livewire.product-card', [
-            'products' => Product::take($this->amount)->get(),
+            'products' => $products,
         ]);
     }
 }

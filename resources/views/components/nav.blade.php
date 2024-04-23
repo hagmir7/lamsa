@@ -47,6 +47,8 @@
                                     <ul class="sub-menu">
                                     </ul>
                                 </li>
+
+                                @livewire('category-menu')
                             </ul>
                         </div>
                     </div>

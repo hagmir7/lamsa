@@ -20,6 +20,7 @@ return new class extends Migration
             $table->text("description");
             $table->integer("status");
             $table->text("body");
+            $table->string('slug')->nullable();
             $table->timestamps();
         });
     }
