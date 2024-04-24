@@ -148,10 +148,12 @@
                         </div>
 
                     </div>
-                    <div class="mb-4">
-                        <h4>Description</h4>
-                        <div>{{ $product->body }}</div>
-                    </div>
+                    @if ($product->body)
+                        <div class="mb-4">
+                            <h4>Description</h4>
+                            <div>{!! $product->body !!}</div>
+                        </div>
+                    @endif
                 </div>
 
             </div>
