@@ -17,7 +17,7 @@ class ProductOrder extends Pivot
     {
         $query = parent::newQuery();
         if ($ordered) {
-            $query->orderBy('created_at', 'desc');
+            $query->orderBy('created_at', 'asc');
         }
         return $query;
     }

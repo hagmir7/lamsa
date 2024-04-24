@@ -21,7 +21,7 @@ class Image extends Model
     {
         $query = parent::newQuery();
         if ($ordered) {
-            $query->orderBy('created_at', 'desc');
+            $query->orderBy('created_at', 'asc');
         }
         return $query;
     }
