@@ -4,15 +4,15 @@
         data-responsive="[{&quot;breakpoint&quot;:480,&quot;settings&quot;:{&quot;slidesToShow&quot;:1,&quot;slidesMargin&quot;:&quot;0&quot;}},{&quot;breakpoint&quot;:768,&quot;settings&quot;:{&quot;slidesToShow&quot;:1,&quot;slidesMargin&quot;:&quot;0&quot;}},{&quot;breakpoint&quot;:992,&quot;settings&quot;:{&quot;slidesToShow&quot;:1,&quot;slidesMargin&quot;:&quot;0&quot;}},{&quot;breakpoint&quot;:1200,&quot;settings&quot;:{&quot;slidesToShow&quot;:1,&quot;slidesMargin&quot;:&quot;0&quot;}},{&quot;breakpoint&quot;:1500,&quot;settings&quot;:{&quot;slidesToShow&quot;:1,&quot;slidesMargin&quot;:&quot;0&quot;}}]">
 
         <div class="slide-wrap">
-            <img class="hero" src="/assets/imgs/hero.jpg" alt="image">
+            <img class="hero" src="/assets/imgs/bg-hero.png" alt="image">
             <img class="hero_mobile d-none" src="/assets/imgs/hero.jpg" alt="image">
             <div class="slide-info text-center sm-text-right">
                 <div class="container">
                     <div class="slide-inner">
                         {{-- <h5>Sale up to <span>40%</span> Off</h5> --}}
-                        <h1 style="color: #252525!important">Lamsa</h1>
+                        <h1 style="color: #252525!important">Lamssa Fashion</h1>
                         <h2 style="color: #252525!important">Osez le style décontracté,<br><br> où que vous soyez</h2>
-                        <a href="#new-collection" tabindex="0">Achetez maintenant</a>
+                        <a href="#new-collection" class="button" tabindex="0">Achetez maintenant</a>
                     </div>
                 </div>
             </div>

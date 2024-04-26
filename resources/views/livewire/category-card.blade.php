@@ -2,9 +2,9 @@
         <div class="container">
             <div class="lynessa-heading style-01">
                 <div class="heading-inner">
-                    <h3 class="title tajawal">Nos catégories</h3>
+                    <h3 class="title tajawal">Catégories</h3>
                     <div class="subtitle tajawal">
-                        Découvrez les derniers catégories de notre boutique en ligne <strong>Lamsa</strong>
+                        Découvrez nos catégories et trouvez ce qui vous inspire
                     </div>
                 </div>
             </div>

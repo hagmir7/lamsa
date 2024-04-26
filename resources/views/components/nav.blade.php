@@ -20,24 +20,22 @@
                             </a>
                         </div>
                         <div class="box-header-nav menu-nocenter" style="margin: auto">
-                            <ul id="menu-primary-menu"
-                                class="clone-main-menu lynessa-clone-mobile-menu lynessa-nav main-menu">
-                                <li id="menu-item-230"
-                                    class="menu-item menu-item-type-post_type menu-item-object-megamenu menu-item-230 parent parent-megamenu item-megamenu ">
+                            <ul class="clone-main-menu lynessa-clone-mobile-menu lynessa-nav main-menu">
+                                @livewire('category-menu')
+                                <li class="menu-item menu-item-type-post_type menu-item-object-megamenu menu-item-230 parent parent-megamenu item-megamenu ">
                                     <a class="lynessa-menu-item-title black-links tajawal"
                                         href="/">Accueil</a>
                                 </li>
 
-                                <li id="menu-item-230"
-                                    class="menu-item menu-item-type-post_type menu-item-object-megamenu menu-item-230 parent parent-megamenu item-megamenu ">
+                                <li class="menu-item menu-item-type-post_type menu-item-object-megamenu menu-item-230 parent parent-megamenu item-megamenu ">
                                     <a class="lynessa-menu-item-title black-links tajawal"
                                         href="/comments">Inspirations</a>
                                 </li>
-                                <li id="menu-item-230"
-                                    class="menu-item menu-item-type-post_type menu-item-object-megamenu menu-item-230 parent parent-megamenu item-megamenu ">
+                                <li class="menu-item menu-item-type-post_type menu-item-object-megamenu menu-item-230 parent parent-megamenu item-megamenu ">
                                     <a class="lynessa-menu-item-title black-links tajawal" title="Collections"  href="/about">À propos</a>
                                 </li>
-                                <li id="menu-item-230" class="menu-item menu-item-type-post_type menu-item-object-megamenu menu-item-230 item-megamenu ">
+
+                                <li class="menu-item menu-item-type-post_type menu-item-object-megamenu menu-item-230 item-megamenu ">
                                     <a class="lynessa-menu-item-title black-links tajawal"
                                         href="/contact">Contactez nous</a>
                                 </li>
@@ -48,7 +46,7 @@
                                     </ul>
                                 </li>
 
-                                @livewire('category-menu')
+
                             </ul>
                         </div>
                     </div>

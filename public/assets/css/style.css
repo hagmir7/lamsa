@@ -99,7 +99,22 @@ img {
 }
 
 
+.bg-brown{
+    background-color: #d8c5b4!important;
+}
+
+
+.bg-img-brown{
+    background-image: url('/assets/imgs/bg-brown.jpg');
+}
+.bg-img-brown-1 {
+    background-image: url('/assets/imgs/bg-brown-1.jpg');
+}
+
 /* Btns */
+.bg-primary{
+    background-color: #e7c3c3 !important;
+}
 
 
 .arrow-top {
@@ -16310,9 +16325,9 @@ body .az_toggle_default .az_toggle_content p:last-child {
 }
 
 .slide-home-04 .slide-wrap .slide-info h1 {
-    font-size: 90px;
-    font-family: "Kaushan Script", sans-serif;
-    font-weight: 400;
+    font-size: 70px;
+    /* font-family: "Kaushan Script", sans-serif; */
+    font-weight: bold;
     margin: 0 0 60px 0;
     color: #87654a;
 }
