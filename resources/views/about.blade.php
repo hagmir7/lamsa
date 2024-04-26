@@ -40,9 +40,9 @@
                             margin-top: 20px;
                         }
                     </style>
-                    <h1>Bienvenue chez Lamsa - Où l'Élégance Rencontre le Confort !</h1>
+                    <h1>Bienvenue chez Lamssa Fashion - Où l'Élégance Rencontre le Confort !</h1>
                     <p>
-                        Chez Lamsa, nous croyons que chaque femme mérite de se sentir confiante, épanouie et belle dans
+                        Chez Lamssa Fashion, nous croyons que chaque femme mérite de se sentir confiante, épanouie et belle dans
                         sa peau.
                         Notre mission est de vous offrir une collection de vêtements pour femmes soigneusement
                         sélectionnée, qui
@@ -62,7 +62,7 @@
                         reflète votre
                         personnalité unique et vous encourage à embrasser votre vraie nature. Que vous vous habilliez
                         pour un brunch
-                        décontracté entre amies, une journée au bureau ou une soirée spéciale, Lamsa propose une gamme
+                        décontracté entre amies, une journée au bureau ou une soirée spéciale, Lamssa Fashion propose une gamme
                         diversifiée
                         d'options pour chaque occasion et chaque humeur.
                     </p>
@@ -78,7 +78,7 @@
                         temps.
                     </p>
                     <p>
-                        Mais Lamsa est plus qu'une simple marque de vêtements ; c'est une communauté de femmes fortes et
+                        Mais Lamssa Fashion est plus qu'une simple marque de vêtements ; c'est une communauté de femmes fortes et
                         confiantes
                         qui s'inspirent et se soutiennent mutuellement dans leur quête d'expression de soi et
                         d'autonomisation. Nous
@@ -87,10 +87,10 @@
                         avec un but et une passion.
                     </p>
                     <p class="signature">
-                        Merci d'avoir choisi Lamsa. À la célébration de la beauté de la féminité, un ensemble élégant à
+                        Merci d'avoir choisi Lamssa Fashion. À la célébration de la beauté de la féminité, un ensemble élégant à
                         la fois.<br>
                         Avec amour et gratitude,<br>
-                        LAMSA
+                        Lamssa Fashion
                     </p>
 
 

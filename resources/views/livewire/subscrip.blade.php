@@ -4,7 +4,7 @@
             <div class="newsletter-inner">
                 <div class="newsletter-info">
                     <div class="newsletter-wrap">
-                        <h3 class="title"><span>Lamsa</span></h3>
+                        <h3 class="title"><span>Lamssa Fashion</span></h3>
                         <h4 class="subtitle tajawal">Obtenez les dernières offres</h4>
                         <p class="desc tajawal">Découvrez les nouveautés et obtenez plus d’informations en vous inscrivant à notre newsletter</p>
                     </div>

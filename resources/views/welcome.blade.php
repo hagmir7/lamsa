@@ -14,7 +14,7 @@
                 <div class="heading-inner">
                     <h3 class="title">Nouvelle collection</h3>
                     <div class="subtitle">
-                        Découvrez les derniers produits de notre boutique en ligne <strong>Lamsa</strong>
+                        Découvrez les derniers produits de notre boutique en ligne <strong>Lamssa Fashion</strong>
                     </div>
                 </div>
             </div>
@@ -27,7 +27,7 @@
             <h2 class="text-center h3 mb-5" style='font-family: "Manrope", sans-serif;!important'>Capturez l'instant</h2>
             <div class="row d-flex align-items-center">
                 <div class="col-md-7" style='font-family: "Manrope", sans-serif;!important'>
-                    <p class="h5" style="line-height: 40px;">Vivez pleinement l'esprit de lamsa en portant nos
+                    <p class="h5" style="line-height: 40px;">Vivez pleinement l'esprit de Lamssa Fashion en portant nos
                     ensembles lors de vos escapades. Que ce soit sur la plage,
                     dans un café confortable ou en explorant de nouveaux
                     horizons, nos tenues sont parfaites pour créer des
