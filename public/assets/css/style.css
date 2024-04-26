@@ -1346,12 +1346,12 @@ GALLERY
     color: inherit;
 }
 
-article.sticky .post-title a::before {
+/* article.sticky .post-title a::before {
     font-family: "FontAwesome", sans-serif;
     content: "\f097";
     font-size: 30px;
     padding-right: 10px;
-}
+} */
 
 .post-title,
 .widget {
@@ -1728,7 +1728,7 @@ article.sticky .post-title a::before {
     display: none;
 }
 
-.widget_categories .cat-item a:hover::before,
+/* .widget_categories .cat-item a:hover::before,
 .widget_product_categories .cat-item label input:checked+span::before,
 .lynessa-widget-layered-nav .lynessa-widget-layered-nav-list__item label input:checked+span::before,
 .widget_product_categories .cat-item label input+span:hover::before,
@@ -1738,9 +1738,9 @@ article.sticky .post-title a::before {
     content: "\f00c";
     font-family: "FontAwesome", sans-serif;
     font-weight: normal;
-}
+} */
 
-.widget_categories .cat-item.current-cat a::before,
+/* .widget_categories .cat-item.current-cat a::before,
 .widget_product_categories .cat-item.current-cat label input+span::before,
 .lynessa-widget-layered-nav .lynessa-widget-layered-nav-list__item.chosen a::before {
     background-color: #87654a;
@@ -1748,7 +1748,7 @@ article.sticky .post-title a::before {
     content: "\f00c";
     font-family: "FontAwesome", sans-serif;
     font-weight: normal;
-}
+} */
 
 /*---------------------------
 1.4 LOADING AJAX
@@ -2633,12 +2633,12 @@ td {
     margin: -2px 3px 0 0;
 }
 
-.block-language>a::after {
+/* .block-language>a::after {
     display: inline-block;
     vertical-align: top;
     font-family: "FontAwesome", sans-serif;
     content: "\f107";
-}
+} */
 
 /* CURENCY */
 .wcml-dropdown {
@@ -2690,14 +2690,14 @@ td {
     display: block;
 }
 
-.wcml-dropdown a.wcml-cs-item-toggle::after {
+/* .wcml-dropdown a.wcml-cs-item-toggle::after {
     vertical-align: top;
     position: static;
     font-family: FontAwesome, sans-serif;
     content: "\f107";
     border: none;
     margin-left: 4px;
-}
+} */
 
 .wcml-dropdown .wcml-cs-submenu li {
     border: none;
@@ -2989,7 +2989,7 @@ td {
 }
 
 /*.toggle-submenu*/
-.box-header-nav .main-menu .toggle-submenu::before {
+/* .box-header-nav .main-menu .toggle-submenu::before {
     display: block;
     content: "\f107";
     font-family: "FontAwesome", sans-serif;
@@ -2999,19 +2999,19 @@ td {
     text-align: center;
     font-size: 18px;
     z-index: 10;
-}
+} */
 
 .box-header-nav .main-menu .submenu .toggle-submenu {
     display: block;
 }
 
-.box-header-nav .main-menu .submenu .toggle-submenu::before {
+/* .box-header-nav .main-menu .submenu .toggle-submenu::before {
     height: 30px;
     line-height: 30px;
     width: 30px;
     font-size: 14px;
     content: "\f105";
-}
+} */
 
 .box-header-nav .main-menu>.menu-item.menu-item-right {
     float: right;
@@ -3820,11 +3820,11 @@ td {
     font-size: 0;
 }
 
-.block-minicart .widget_shopping_cart .product_list_widget li .remove_from_cart_button::before {
+/* .block-minicart .widget_shopping_cart .product_list_widget li .remove_from_cart_button::before {
     font-size: 24px;
     content: "\e609";
     font-family: "Pe-icon-7-stroke";
-}
+} */
 
 .block-minicart .widget_shopping_cart .lynessa-mini-cart__total {
     height: 67px;
@@ -4275,13 +4275,13 @@ td {
         pointer-events: none;
     }
 
-    .vertical-menu.default .menu-item.parent>a::after {
+    /* .vertical-menu.default .menu-item.parent>a::after {
         font-size: 18px;
         content: "\f105";
         font-family: FontAwesome, sans-serif;
         display: inline-block;
         float: right;
-    }
+    } */
 }
 
 @media (max-width: 1024px) {
@@ -4319,12 +4319,12 @@ td {
         cursor: pointer;
     }
 
-    .vertical-menu.default .menu-item>.toggle-submenu::before {
+    /* .vertical-menu.default .menu-item>.toggle-submenu::before {
         display: block;
         font-family: "FontAwesome", sans-serif;
         content: "\f107";
         font-size: 18px;
-    }
+    } */
 
     .vertical-menu.default .menu-item.show-submenu>.toggle-submenu {
         -webkit-transform: rotate(90deg);
@@ -5271,14 +5271,14 @@ a.backtotop:hover::before {
     font-weight: 600;
 }
 
-.blog-grid .post-comment a::before {
+/* .blog-grid .post-comment a::before {
     content: "\f113";
     font-family: "Flaticon", sans-serif;
     font-size: 15px;
     margin-right: 4px;
     vertical-align: middle;
     font-weight: normal;
-}
+} */
 
 @media (max-width: 1199px) {
     .post-footer .lynessa-share-socials {
@@ -5464,7 +5464,7 @@ a.backtotop:hover::before {
     right: 0;
 }
 
-.comment-text .comment-edit-link::before {
+/* .comment-text .comment-edit-link::before {
     font-family: "FontAwesome", sans-serif;
     content: "\f044";
     font-size: 14px;
@@ -5474,7 +5474,7 @@ a.backtotop:hover::before {
     font-family: "FontAwesome", sans-serif;
     content: "\f112";
     font-size: 14px;
-}
+} */
 
 /*.pingback*/
 .pingback {
@@ -5489,11 +5489,11 @@ a.backtotop:hover::before {
     display: inline-block;
 }
 
-.pingback .edit-link:before {
+/* .pingback .edit-link:before {
     content: "\002f";
     display: inline-block;
     padding: 0 5px;
-}
+} */
 
 /*.comment-respond*/
 .commentlist~.comment-respond,
@@ -5746,13 +5746,13 @@ body.single .breadcrumbs {
     color: #666666;
 }
 
-.breadcrumbs .breadcrumb li+li::before {
+/* .breadcrumbs .breadcrumb li+li::before {
     font-family: "FontAwesome", sans-serif;
     content: "\f105";
     color: #666666;
     padding-left: 13px;
     padding-right: 10px;
-}
+} */
 
 .breadcrumbs .breadcrumb li a:not(:hover) {
     color: #000;
@@ -5912,12 +5912,12 @@ body.single-product .lynessa-breadcrumb {
     color: #000;
 }
 
-.widget_product_search .lynessa-product-search button[type="submit"]::before,
+/* .widget_product_search .lynessa-product-search button[type="submit"]::before,
 .widget_search .search-form button::before {
     content: "\f100";
     font-family: "Flaticon", sans-serif;
     font-size: 21px;
-}
+} */
 
 .widget_product_search .lynessa-product-search button[type="submit"]:hover,
 .widget_search .search-form button:hover {
@@ -6020,13 +6020,13 @@ body.single-product .lynessa-breadcrumb {
     overflow: hidden;
 }
 
-.widget-lynessa-mailchimp .newsletter-form-wrap .submit-newsletter::after {
+/* .widget-lynessa-mailchimp .newsletter-form-wrap .submit-newsletter::after {
     font-family: "FontAwesome", sans-serif;
     content: "\f105";
     font-size: 18px;
     margin-left: 5px;
     vertical-align: top;
-}
+} */
 
 .widget-lynessa-mailchimp .newsletter-form-wrap .submit-newsletter::before {
     position: absolute;
@@ -6393,7 +6393,7 @@ body #widget-area .select2-container--default .select2-selection--single {
     display: none;
 }
 
-.lynessa_widget_layered_nav .color-group .term-color input:checked~i::before,
+/* .lynessa_widget_layered_nav .color-group .term-color input:checked~i::before,
 .lynessa_widget_layered_nav .color-group .term-color:hover i::before,
 .lynessa_widget_layered_nav .color-group .term-color.selected i::before {
     content: "\f00c";
@@ -6405,7 +6405,7 @@ body #widget-area .select2-container--default .select2-selection--single {
     font-weight: normal;
     position: relative;
     left: -1px;
-}
+} */
 
 .lynessa_widget_layered_nav .color-group .term-color:hover i[style="color: #ffffff"],
 .lynessa_widget_layered_nav .color-group .term-color.selected i[style="color: #FFFFFF"] {
@@ -6575,22 +6575,22 @@ body #widget-area .select2-container--default .select2-selection--single {
     font-size: 0;
 }
 
-.lynessa-pagination .page-numbers.prev::before,
+/* .lynessa-pagination .page-numbers.prev::before,
 .comments-pagination .page-numbers.prev::before,
 .pagination .page-numbers.prev::before {
     font-family: "FontAwesome", sans-serif;
     content: "\f104";
     font-size: 20px;
-}
+} */
 
-.lynessa-pagination .page-numbers.next::before,
+/* .lynessa-pagination .page-numbers.next::before,
 .comments-pagination .page-numbers.next::before,
 .pagination .page-numbers.next::before {
     font-family: "FontAwesome", sans-serif;
     content: "\f105";
     font-size: 20px;
     line-height: 40px;
-}
+} */
 
 .post-pagination>span.title {
     line-height: 44px;
@@ -6954,13 +6954,13 @@ ul.products li.product-category a .lynessa-loop-category__title mark {
     color: inherit;
 }
 
-.yith-wcqv-button::before {
+/* .yith-wcqv-button::before {
     font-family: "Pe-icon-7-stroke", sans-serif;
     content: "\e618";
     font-size: 22px;
     font-weight: normal;
     vertical-align: middle;
-}
+} */
 
 body.admin-bar #yith-quick-view-modal {
     top: 32px;
@@ -7347,19 +7347,19 @@ body.admin-bar #yith-quick-view-modal {
     color: inherit;
 }
 
-.add-to-cart a::before {
+/* .add-to-cart a::before {
     font-family: "Pe-icon-7-stroke", sans-serif;
     content: "\e66e";
     font-size: 24px;
     font-weight: normal;
     position: relative;
     top: -2px;
-}
+} */
 
 .add_to_cart_button.loading {
     cursor: wait;
 }
-
+/*
 .add_to_cart_button.loading::before {
     font-family: "FontAwesome", sans-serif;
     font-weight: normal;
@@ -7368,17 +7368,17 @@ body.admin-bar #yith-quick-view-modal {
     content: "\f110";
     font-size: 18px;
     display: inline-block;
-}
+} */
 
 .add-to-cart a.added {
     display: none;
 }
 
-.add-to-cart a.added_to_cart::before {
+/* .add-to-cart a.added_to_cart::before {
     font-family: "Flaticon", sans-serif;
     font-size: 14px;
     content: "\f130";
-}
+} */
 
 /*wishlist*/
 .yith-wcwl-add-to-wishlist {
@@ -7409,18 +7409,18 @@ body.admin-bar #yith-quick-view-modal {
     display: none !important;
 }
 
-.add_to_wishlist::before {
+/* .add_to_wishlist::before {
     font-family: "FontAwesome", sans-serif;
     content: "\f08a";
     font-weight: normal;
     font-size: 19px;
-}
+} */
 
 .add_to_wishlist.loading {
     cursor: wait;
 }
 
-.add_to_wishlist.loading::before {
+/* .add_to_wishlist.loading::before {
     font-family: "FontAwesome", sans-serif;
     font-weight: normal;
     -webkit-animation: fa-spin 1s infinite steps(8);
@@ -7429,15 +7429,15 @@ body.admin-bar #yith-quick-view-modal {
     font-size: 18px;
     display: inline-block;
     vertical-align: middle;
-}
+} */
 
-.yith-wcwl-wishlistaddedbrowse a::before,
+/* .yith-wcwl-wishlistaddedbrowse a::before,
 .yith-wcwl-wishlistexistsbrowse a::before {
     font-family: "FontAwesome", sans-serif;
     font-weight: normal;
     content: "\f004";
     font-size: 18px;
-}
+} */
 
 #yith-wcwl-popup-message {
     margin: 0 !important;
@@ -7479,7 +7479,7 @@ body.admin-bar #yith-quick-view-modal {
     color: inherit;
 }
 
-.compare::before {
+/* .compare::before {
     font-family: "Pe-icon-7-stroke", sans-serif;
     content: "\e614";
     font-size: 24px;
@@ -7489,7 +7489,7 @@ body.admin-bar #yith-quick-view-modal {
     font-family: "Flaticon", sans-serif;
     font-size: 18px;
     content: "\f130";
-}
+} */
 
 .product-item.style-04 .yith-wcqv-button .blockOverlay,
 .compare .blockOverlay {
@@ -7498,7 +7498,7 @@ body.admin-bar #yith-quick-view-modal {
     border-radius: 50%;
 }
 
-.product-item.style-01 .yith-wcqv-button .blockOverlay::before,
+/* .product-item.style-01 .yith-wcqv-button .blockOverlay::before,
 .product-item.style-04 .yith-wcqv-button .blockOverlay::before,
 .compare .blockOverlay::before {
     font-family: "FontAwesome", sans-serif;
@@ -7509,7 +7509,7 @@ body.admin-bar #yith-quick-view-modal {
     font-size: 21px;
     display: inline-block;
     vertical-align: middle;
-}
+} */
 
 .product-item.style-05 .yith-wcqv-button .blockOverlay,
 .product-item.style-05 .compare .blockOverlay,
@@ -7548,7 +7548,7 @@ body.admin-bar #yith-quick-view-modal {
     line-height: 100%;
 }
 
-.star-rating::before {
+/* .star-rating::before {
     content: "\f006\f006\f006\f006\f006";
     color: #cfcfcf;
 }
@@ -7556,7 +7556,7 @@ body.admin-bar #yith-quick-view-modal {
 .star-rating>span::before {
     content: "\f005\f005\f005\f005\f005";
     color: #eebe19;
-}
+} */
 
 .rating-wapper .star-rating {
     display: inline-block;
@@ -8952,12 +8952,12 @@ body.admin-bar #yith-quick-view-modal {
     background-color: #000;
 }
 
-.lynessa-product-gallery .lynessa-product-gallery__trigger::before {
+/* .lynessa-product-gallery .lynessa-product-gallery__trigger::before {
     font-family: "Pe-icon-7-stroke", sans-serif;
     font-weight: normal;
     content: "\e657";
     font-size: 20px;
-}
+} */
 
 .lynessa-product-gallery .lynessa-product-gallery__trigger img.emoji {
     display: none !important;
@@ -9104,14 +9104,14 @@ body.admin-bar #yith-quick-view-modal {
     color: #999;
 }
 
-.lynessa-product-details__short-description li::before {
+/* .lynessa-product-details__short-description li::before {
     content: "\f111";
     font-family: "FontAwesome", sans-serif;
     font-size: 9px;
     vertical-align: top;
     margin-right: 5px;
     color: #87654a;
-}
+} */
 
 .lynessa-product-details__short-description p {
     margin-bottom: 6px;
@@ -9175,7 +9175,7 @@ body.admin-bar #yith-quick-view-modal {
     background-color: #87654a;
 }
 
-.entry-summary .cart .single_add_to_cart_button::before {
+/* .entry-summary .cart .single_add_to_cart_button::before {
     font-weight: normal;
     display: inline-block;
     vertical-align: top;
@@ -9183,13 +9183,13 @@ body.admin-bar #yith-quick-view-modal {
     font-family: "Pe-icon-7-stroke", sans-serif;
     content: "\e66e";
     font-size: 21px;
-}
+} */
 
 .entry-summary .cart .single_add_to_cart_button.loading {
     cursor: wait;
 }
 
-.entry-summary .cart .single_add_to_cart_button.loading::before {
+/* .entry-summary .cart .single_add_to_cart_button.loading::before {
     font-family: "FontAwesome", sans-serif;
     font-weight: normal;
     -webkit-animation: fa-spin 1s infinite steps(8);
@@ -9199,7 +9199,7 @@ body.admin-bar #yith-quick-view-modal {
     display: inline-block;
     vertical-align: middle;
     margin-right: 9px;
-}
+} */
 
 .entry-summary .cart .single_add_to_cart_button span,
 .entry-summary .cart .added_to_cart {
@@ -16175,7 +16175,7 @@ body .az_toggle_default .az_toggle_content p:last-child {
 }
 
 .slide-wrap img {
-    min-height: 800px;
+    min-height: 550px;
     object-fit: cover;
 }
 
@@ -18563,7 +18563,7 @@ body .lynessa-mapper .text__area {
 }
 
 .block-menu-bar .menu-bar {
-    color: #fff !important;
+    color: black !important;
 }
 
 .header-search .link-dropdown,
@@ -18573,6 +18573,6 @@ body .lynessa-mapper .text__area {
     color: #fff !important;
 }
 
-.pe-7s-like::before {
+/* .pe-7s-like::before {
     content: "\e66e" !important;
-}
+} */

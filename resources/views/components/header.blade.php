@@ -4,7 +4,7 @@
         data-responsive="[{&quot;breakpoint&quot;:480,&quot;settings&quot;:{&quot;slidesToShow&quot;:1,&quot;slidesMargin&quot;:&quot;0&quot;}},{&quot;breakpoint&quot;:768,&quot;settings&quot;:{&quot;slidesToShow&quot;:1,&quot;slidesMargin&quot;:&quot;0&quot;}},{&quot;breakpoint&quot;:992,&quot;settings&quot;:{&quot;slidesToShow&quot;:1,&quot;slidesMargin&quot;:&quot;0&quot;}},{&quot;breakpoint&quot;:1200,&quot;settings&quot;:{&quot;slidesToShow&quot;:1,&quot;slidesMargin&quot;:&quot;0&quot;}},{&quot;breakpoint&quot;:1500,&quot;settings&quot;:{&quot;slidesToShow&quot;:1,&quot;slidesMargin&quot;:&quot;0&quot;}}]">
 
         <div class="slide-wrap">
-            <img class="hero" src="/assets/imgs/bg-hero.png" alt="image">
+            <img class="hero" src="/assets/imgs/banner-category.jpg" alt="image">
             <img class="hero_mobile d-none" src="/assets/imgs/hero.jpg" alt="image">
             <div class="slide-info text-center sm-text-right">
                 <div class="container">
