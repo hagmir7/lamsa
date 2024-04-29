@@ -15,7 +15,7 @@
                             <div class="banner-inner">
                                 <figure class="banner-thumb">
                                     <img src="{{ Storage::url($category->image) }}"
-                                        class="attachment-full size-full " style="opacity: .5!important;" alt="img">
+                                        class="attachment-full size-full" style="opacity: .5!important;" alt="img">
                                 </figure>
                                 <div class="banner-info ">
                                     <div class="banner-content">
