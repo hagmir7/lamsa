@@ -3,15 +3,11 @@
 @section('content')
 <div class="fullwidth-template">
     <div class="banner-wrapper my-wrapper has_background">
-        <img src="/assets/imgs/hero-product.jpg" class="img-responsive attachment-1920x447 size-1920x447" alt="img">
+        <img src="/assets/imgs/cart-hore.jpeg" style="width: 100%;max-height: 300px;" class="img-responsive attachment-1920x447 size-1920x447 hero-bg-img" alt="img">
         <div class="banner-wrapper-inner">
             <h1 class="page-title">Demande de commande</h1>
             <div role="navigation" aria-label="Breadcrumbs" class="breadcrumb-trail breadcrumbs">
-                <ul class="trail-items d-flex justify-content-center" style="list-style: none">
-                    <li class="trail-item trail-begin tajawal"><a href="/"><span>Accueil</span></a></li>
-                    <li> &#xa0; > &#xa0; </li>
-                    <li class="trail-item trail-end active"><span>Demande de commande </span></li>
-                </ul>
+                <p class="h4">Lamssa, la touche d'élégance qui sublime votre vie!</p>
             </div>
         </div>
     </div>
@@ -94,10 +90,10 @@
                                     <table class="shop_table shop_table_responsive" cellspacing="0">
                                         <tbody>
                                             <tr class="cart-subtotal">
-                                                <th>Total</th>
+                                                <th>Prix de livraison</th>
                                                 <td data-title="Subtotal">
                                                     <span class="lynessa-Price-amount amount">
-                                                        <span class="lynessa-Price-currencySymbol"> MAD </span>{{ $total }}
+                                                        <span class="lynessa-Price-currencySymbol"> MAD </span> 25
                                                     </span>
                                                 </td>
                                             </tr>
@@ -106,7 +102,7 @@
                                                 <td data-title="Total">
                                                     <strong>
                                                         <span class="lynessa-Price-amount amount">
-                                                            <span class="lynessa-Price-currencySymbol"> MAD </span>{{ $total }}
+                                                            <span class="lynessa-Price-currencySymbol"> MAD </span>{{ $total + 25 }}
                                                         </span>
                                                     </strong>
                                                 </td>
