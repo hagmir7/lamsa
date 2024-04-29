@@ -44,7 +44,7 @@
     </div>
 
     <!-- Hero 1 - Bootstrap Brain Component -->
-<section class="bsb-hero-1 px-3 bsb-overlay bsb-hover-pull" style="background-image: url('./assets/imgs/communaute.jpg');height:400px;background-position: center;">
+<section class="bsb-hero-1 px-3 bsb-overlay bsb-hover-pull hero-bg-img" style="background-image: url('./assets/imgs/communaute.jpg');opacity: .7!important;height:400px;background-position: center;">
   <div class="container-lg">
     <div class="row">
       <div class="col-12 col-md-10 col-lg-8 col-xl-6 col-xxl-5">
