@@ -3,7 +3,7 @@
 @section('content')
 <div class="fullwidth-template">
     <div class="banner-wrapper my-wrapper has_background">
-        <img src="/assets/imgs/banner-category.jpg" class="img-responsive attachment-1920x447 size-1920x447" alt="img">
+        <img src="/assets/imgs/about-hreo.png" class="hero-bg-img img-responsive attachment-1920x447 size-1920x447" alt="img">
         <div class="banner-wrapper-inner">
             <div class="page-title h4">À propos</div>
             <div role="navigation" aria-label="Breadcrumbs" class="breadcrumb-trail breadcrumbs">

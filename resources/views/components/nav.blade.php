@@ -20,13 +20,13 @@
                             </a>
                         </div>
                         <div class="box-header-nav menu-nocenter" style="margin: auto">
-                            <ul class="clone-main-menu lynessa-clone-mobile-menu lynessa-nav main-menu">
-                                @livewire('category-menu')
+                            <ul class="clone-main-menu lynessa-clone-mobile-menu fw-bold lynessa-nav main-menu">
+
                                 <li class="menu-item menu-item-type-post_type menu-item-object-megamenu menu-item-230 parent parent-megamenu item-megamenu ">
                                     <a class="lynessa-menu-item-title black-links tajawal"
                                         href="/">Accueil</a>
                                 </li>
-
+                                @livewire('category-menu')
                                 <li class="menu-item menu-item-type-post_type menu-item-object-megamenu menu-item-230 parent parent-megamenu item-megamenu ">
                                     <a class="lynessa-menu-item-title black-links tajawal"
                                         href="/comments">Inspirations</a>
