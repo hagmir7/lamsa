@@ -7,7 +7,7 @@
         <div class="banner-wrapper-inner">
             <h1 class="page-title">Galerie d'Inspirations</h1>
             <div role="navigation" aria-label="Breadcrumbs" class="breadcrumb-trail breadcrumbs">
-              <div class="fw-bold h5" style="line-height: 29px">
+              <div class="fw-bold h5 text-black" style="line-height: 29px">
                 Bienvenue dans notre galerie d'inspirations! <br> Nous adorons voir nos clientes
                 rayonner dans nos créations. <br> Chaque photo partagée ici est une source
                 d'inspiration pour nous et pour toute la communauté.

@@ -15,7 +15,8 @@ class Subscrip extends Component
     public function save()
     {
         $this->validate();
-        if(!ModelsSubscrip::where('email', $this->email)->first()){
+
+        if(!ModelsSubscrip::where('email', $this->email)->exists()){
             ModelsSubscrip::create(['email' => $this->email]);
         }
         $this->reset();
