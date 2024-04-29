@@ -24,7 +24,7 @@
 
     <div class="section-025 py-5">
         <div class="container">
-            <h2 class="text-center h3 mb-5" style='font-family: "Manrope", sans-serif;!important'>Capturez l'instant</h2>
+            <h2 class="text-center h3 mb-5 fw-bold" style='font-family: "Manrope", sans-serif;!important'>Capturez l'instant</h2>
             <div class="row d-flex align-items-center">
                 <div class="col-md-7" style='font-family: "Manrope", sans-serif;!important'>
                     <p class="h5 fw-bold" style="line-height: 40px;">Vivez pleinement l'esprit de Lamssa Fashion en portant nos
@@ -49,7 +49,7 @@
     <div class="row">
       <div class="col-12 col-md-10 col-lg-8 col-xl-6 col-xxl-5">
         <h2 class="display-3 fw-bold mb-3 h4">Joignez-vous à la communauté</h2>
-        <p class="lead mb-5 fs-3 fw-bold">Rejoignez notre communauté qui embrassent le confort
+        <p class="lead mb-5 fs-3 fw-bold" style="line-height: 38px">Rejoignez notre communauté qui embrassent le confort
         et le style au quotidien. Partagez vos moments avec nous
         sur instagram pour avoir la chance d'être présentée sur
         notre page et inspirer d'autres personnes avec votre
@@ -63,7 +63,7 @@
 
     <div class="section-025 py-4">
         <div class="container">
-            <h2 class="text-center h3 mb-5" style='font-family: "Manrope", sans-serif;!important'>Joignez-vous à la communauté</h2>
+            <h2 class="text-center h3 mb-5 fw-bold" style='font-family: "Manrope", sans-serif;!important'>Joignez-vous à la communauté</h2>
             <div class="row d-flex align-items-center">
                 <div class="col-md-5">
                    <img class="rounded" src="/assets/imgs/image-3.jpg" alt="">

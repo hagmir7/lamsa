@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
 <div class="banner-wrapper my-wrapper has_background">
-    <img src="/assets/imgs/banner-category.jpg" class="img-responsive attachment-1920x447 size-1920x447" alt="img">
+    <img src="{{ Storage::url($category->image) }}" style="width: 100%;max-height: 300px;" class="img-responsive attachment-1920x447 size-1920x447" alt="img">
     <div class="banner-wrapper-inner">
         <h1 class="page-title">{{ $category->name }}</h1>
         <div role="navigation" aria-label="Breadcrumbs" class="breadcrumb-trail breadcrumbs">
