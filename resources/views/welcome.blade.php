@@ -42,24 +42,7 @@
             </div>
         </div>
     </div>
-
-    <!-- Hero 1 - Bootstrap Brain Component -->
-<section class="bsb-hero-1 mt-3 px-3 bsb-overlay bsb-hover-pull hero-bg-img" style="background-image: url('./assets/imgs/communaute.jpg');opacity: .7!important;height:400px;background-position: center;">
-  <div class="container-lg">
-
-    <div class="row d-flex justify-content-cneter">
-      <div class="col-12 col-md-10 col-lg-8 col-xl-6 col-xxl-5">
-        <h2 class="display-4 fw-bold mb-3 h4">Joignez-vous à la communauté</h2>
-        <p class="lead mb-5 fs-3 fw-bold" style="line-height: 38px">Rejoignez notre communauté qui embrassent le confort
-        et le style au quotidien. Partagez vos moments avec nous
-        sur instagram pour avoir la chance d'être présentée sur
-        notre page et inspirer d'autres personnes avec votre
-        style authentique.</p>
-
-      </div>
-    </div>
-  </div>
-</section>
+    <x-bottom-hero />
 
 
     <div class="section-025 py-4">
