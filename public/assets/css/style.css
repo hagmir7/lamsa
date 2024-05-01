@@ -18380,6 +18380,10 @@ body .lynessa-mapper .text__area {
     .lynessa-menu-item-title {
         color: #959595 !important;
     }
+
+    .hero-buttom{
+        background-image: url('/assets/imgs/communaute.png')!important;
+    }
 }
 
 .container-video {

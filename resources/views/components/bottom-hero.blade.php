@@ -1,6 +1,6 @@
 <div class="section-033">
     <div class="container">
-        <div class="section-034" style="background-image: url('/assets/imgs/communaute.jpg')">
+        <div class="section-034 hero-buttom" style="background-image: url('/assets/imgs/communaute.jpg')">
             <div class="row">
                 <div class="col-xs-12 col-sm-10 col-md-6 offset-sm-1 col-xl-5 col-lg-5">
                     <div class="lynessa-slide">
