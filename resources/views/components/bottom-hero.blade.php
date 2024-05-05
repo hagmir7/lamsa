@@ -1,15 +1,16 @@
-{{-- <div class="section-033 mb-4">
+<div class="section-033 mb-4">
     <div class="container">
-        <div class="section-034 hero-buttom" style="background-image: url('/assets/imgs/communaute.jpg')">
-            <div class="row">
-                <div class="col-xs-12 col-sm-10 col-md-6 offset-sm-1 col-xl-5 col-lg-5">
+        <div class="section-034 p-0" style="background-color: rgba(207, 145, 99, 0.2);">
+            <div class="row p-4">
+
+                <div class="col-md-6">
                     <div class="lynessa-slide">
                         <div class="owl-slick equal-container better-height">
                             <div class="lynessa-testimonial style-02">
                                 <div class="testimonial-inner">
                                     <div>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#cf9163"
-                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
+                                            stroke="#cf9163" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                             class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-bag">
                                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                             <path
@@ -17,21 +18,30 @@
                                             <path d="M9 11v-5a3 3 0 0 1 6 0v5" />
                                         </svg>
                                     </div>
-                                    <p class="desc h5">Joignez-vous à la communauté</p>
-                                    <p class="fw-bold" style="line-height: 35px;">Rejoignez notre communauté qui embrassent le confort et le style au quotidien. Partagez vos moments avec nous sur
-                                    instagram pour avoir la chance d'être présentée sur notre page et inspirer d'autres personnes avec votre style
-                                    authentique.</p>
+                                    <p class="desc h5">Capturez l'instant</p>
+                                    <p class="fw-bold h5" style="line-height: 35px;">
+                                        Vivez pleinement l'esprit de Lamssa Fashion en portant nos
+                                        ensembles lors de vos escapades. Que ce soit sur la plage,
+                                        dans un café confortable ou en explorant de nouveaux
+                                        horizons, nos tenues sont parfaites pour créer des
+                                        souvenirs inoubliables et prendre de magnifiques photos
+                                        qui reflètent votre style unique.
+                                    </p>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex justify-content-center">
+                    <div>
+                        <img src="/assets/imgs/bottom-hero.jpeg" style="border-radius: 60% 40% 40% 20%;max-height: 350px;object-fit: cover;" alt="">
                     </div>
                 </div>
 
             </div>
         </div>
     </div>
-</div> --}}
-
+</div>
 
 
 <div>
@@ -52,7 +62,7 @@
                                         authentique.</p>
                                     </div>
                                 </div>
-                                <div class="lynessa-testimonial style-02">
+                                {{-- <div class="lynessa-testimonial style-02">
                                     <div class="testimonial-inner text-center">
                                         <h3>Capturez l'instant</h3>
                                         <p class="desc">Vivez pleinement l'esprit de Lamssa Fashion en portant nos
@@ -62,7 +72,7 @@
                                         souvenirs inoubliables et prendre de magnifiques photos
                                         qui reflètent votre style unique.</p>
                                     </div>
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
                     </div>

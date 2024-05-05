@@ -11,13 +11,13 @@
                     <div class="slide-inner">
                         {{-- <h5>Sale up to <span>40%</span> Off</h5> --}}
                         <h1 style="color: #252525!important">Lamssa Fashion</h1>
-                        <h2 style="color: #252525!important">Osez le style décontracté,<br><br> où que vous soyez</h2>
+                        <h2 style="color: #252525!important">Le luxe à petit prix !</h2>
                         <a href="#new-collection" class="button" tabindex="0">Achetez maintenant</a>
                     </div>
                 </div>
             </div>
             <div class="slugon d-none">
-                <h2 class="slide-title" style="color: #252525 !important">Osez le style décontracté, où que vous soyez</h2>
+                <h2 class="slide-title" style="color: #252525 !important">Le luxe à petit prix !</h2>
             </div>
         </div>
     </div>
