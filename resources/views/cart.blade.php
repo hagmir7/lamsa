@@ -5,9 +5,8 @@
     <div class="banner-wrapper my-wrapper has_background">
         <img src="/assets/imgs/cart-hore.jpeg" style="width: 100%;max-height: 300px;" class="img-responsive attachment-1920x447 size-1920x447 hero-bg-img" alt="img">
         <div class="banner-wrapper-inner">
-            <h1 class="page-title">Demande de commande</h1>
             <div role="navigation" aria-label="Breadcrumbs" class="breadcrumb-trail breadcrumbs">
-                <p class="h4">Lamssa, la touche d'élégance qui sublime votre vie!</p>
+                <p class="h4"><strong>Lamssa</strong> <br><br> La touche d'élégance qui sublime votre vie!</p>
             </div>
         </div>
     </div>
@@ -86,7 +85,7 @@
                             </form>
                             <div class="cart-collaterals">
                                 <div class="cart_totals ">
-                                    <h2>Totaux du panier</h2>
+                                    <h2>Total du panier</h2>
                                     <table class="shop_table shop_table_responsive" cellspacing="0">
                                         <tbody>
                                             <tr class="cart-subtotal">
