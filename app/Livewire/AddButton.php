@@ -3,26 +3,49 @@
 namespace App\Livewire;
 
 use App\Models\Product;
+use Gloudemans\Shoppingcart\Facades\Cart;
 use Livewire\Component;
 
 class AddButton extends Component
 {
     public Product $product;
+
+    public function mount() {
+
+    }
+
+
     public function toggelAdd()
     {
-
-        $user = auth()->user();
-        if ($user->hasAdded($this->product)) {
-            $user->cart->products()->detach($this->product);
-            $this->dispatch('product-added');
-            return;
+        $cart = Cart::content()->toArray();
+        foreach($cart as $item){
+            if($item['id'] == $this->product->id){
+                Cart::remove($item['rowId']);
+            }else{
+                Cart::add(
+                    $this->product->id,
+                    $this->product->name,
+                    1,
+                    $this->product->price,
+                    [
+                        'size' => '',
+                        'color' => '',
+                        'image' => $this->product->images[0]
+                    ]
+                );
+            }
         }
-        $user->cart->products()->attach($this->product);
-        $this->dispatch('product-added');
+
+        return $this->dispatch('itemAdded');
+
+
+
     }
 
     public function render()
     {
-        return view('livewire.add-button');
+        return view('livewire.add-button', [
+            'cart' => Cart::content()
+        ]);
     }
 }

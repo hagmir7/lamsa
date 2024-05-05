@@ -21,15 +21,8 @@
                             <span class="lynessa-Price-amount amount">
                                 <span class="lynessa-Price-currencySymbol">MAD </span> {{ $product->price }}
                             </span>
-                        </span>
-                        <br>
-                        @if (auth()->user())
+                        </span><br>
                             @livewire('add-button', ['product' => $product], key($product->id))
-                        @else
-                        <button data-bs-toggle="modal" data-bs-target="#loginModal" class="button btn-primary w-100" style="cursor: pointer">
-                            <x-cart-icon />
-                        </button>
-                        @endif
                     </div>
                 </div>
             </div>

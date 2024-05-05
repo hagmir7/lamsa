@@ -19,7 +19,6 @@ class RemoveButton extends Component
         if ($user->hasAdded($this->product)) {
             $user->cart->products()->detach($this->product);
         }
-        $this->dispatch('product-added');
     }
     public function render()
     {

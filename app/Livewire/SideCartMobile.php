@@ -13,7 +13,7 @@ class SideCartMobile extends Component
     public $total = 0;
 
 
-    #[On('product-added')]
+    // #[On('product-added')]
     public function productAdded()
     {
         $this->products = auth()->user()->cart->products;

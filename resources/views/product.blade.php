@@ -85,50 +85,58 @@
                                     <div class="lynessa-product-details__short-description">
                                         <p class="tajawal">{{ $product->description }}</p>
                                     </div>
-                                    <table class="variations">
-                                        <tbody>
-                                            <tr>
-                                                <td class="label tajawal">
-                                                    <label>Taille</label>
-                                                </td>
 
-                                                <td class="value">
-                                                    <div class="data-val attribute-pa_color" data-attributetype="box_style"
-                                                        style=" display:flex ;margin-right: 4px;">
-                                                        @foreach ($product->sizes as $size)
-                                                        <div class="btn bg-light mx-1 border text-uppercase" data-value="{{ $size->name }}">
-                                                            {{ $size->name }}
+
+
+                                        <table class="variations">
+                                            <tbody>
+
+                                                @if ($product->sizes->count())
+                                                <tr>
+                                                    <td class="label tajawal">
+                                                        <label>Taille</label>
+                                                    </td>
+                                                    <td class="value">
+                                                        <div class="data-val attribute-pa_color" data-attributetype="box_style"
+                                                            style=" display:flex ;margin-right: 4px;">
+                                                            @foreach ($product->sizes as $size)
+                                                            <div class="btn bg-light mx-1 border text-uppercase" data-value="{{ $size->name }}">
+                                                                {{ $size->name }}
+                                                            </div>
+                                                            @endforeach
                                                         </div>
-                                                        @endforeach
-                                                    </div>
 
-                                                </td>
+                                                    </td>
+                                                </tr>
+                                                @endif
 
+                                                @if ($product->colors->count())
+                                                <tr>
+                                                    <td class="label tajawal">
+                                                        <label>Colours</label>
+                                                    </td>
 
-                                            </tr>
-
-                                            <tr>
-                                                <td class="label tajawal">
-                                                    <label>Colours</label>
-                                                </td>
-
-                                                <td class="value">
-                                                    <div class="data-val attribute-pa_color flex me-2"
-                                                        data-attributetype="box_style">
-                                                        @foreach ($product->colors as $color)
-                                                        <div class="btn p-3 mx-1 border text-uppercase" style="background-color: {{ $color->code }}" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="{{ $color->name }}" data-value="{{ $color->name }}">
+                                                    <td class="value">
+                                                        <div class="data-val attribute-pa_color flex me-2" data-attributetype="box_style">
+                                                            @foreach ($product->colors as $color)
+                                                            <div class="btn p-3 mx-1 border text-uppercase" style="background-color: {{ $color->code }}"
+                                                                data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="{{ $color->name }}"
+                                                                data-value="{{ $color->name }}">
+                                                            </div>
+                                                            @endforeach
                                                         </div>
-                                                        @endforeach
-                                                    </div>
 
-                                                </td>
+                                                    </td>
+                                                </tr>
+                                                @endif
+
+                                            </tbody>
+                                        </table>
 
 
-                                            </tr>
 
-                                        </tbody>
-                                    </table>
 
+                                    @livewire('detail-add-to-cart', ['product' => $product], key($product->id))
                                     <a href="#" data-bs-toggle="modal" data-bs-target="#checkOutModal" class="btn btn-primary m-2 w-100">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -139,9 +147,7 @@
                                         Acheter maintenant
                                     </a>
 
-                                    @auth
-                                        @livewire('add-button', ['product' => $product], key($product->id))
-                                    @endauth
+
 
                                 </div>
                             </div>

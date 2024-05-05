@@ -50,10 +50,32 @@
                             </ul>
                         </div>
                     </div>
-                   @livewire('side-cart')
+                   @livewire('cart-contet')
                 </div>
             </div>
         </div>
     </div>
-    @livewire('side-cart-mobile')
+
+    {{-- Mobile menu --}}
+    <div class="header-mobile">
+        <div class="d-flex justify-content-between w-100">
+
+            <div class="header-mobile-left text-right">
+                <div class="block-menu-bar">
+                    <a class="menu-bar menu-toggle" href="#">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="header-mobile-mid">
+                <div class="header-logo">
+                    <a href="/"><img alt="Rawaabeauty" src="/assets/imgs/logo.png" class="logo"></a>
+                </div>
+            </div>
+            <div class="">@livewire('cart-contet')</div>
+        </div>
+    </div>
 </header>

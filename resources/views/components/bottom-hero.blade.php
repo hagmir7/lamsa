@@ -1,4 +1,4 @@
-<div class="section-033">
+<div class="section-033 mb-4">
     <div class="container">
         <div class="section-034 hero-buttom" style="background-image: url('/assets/imgs/communaute.jpg')">
             <div class="row">

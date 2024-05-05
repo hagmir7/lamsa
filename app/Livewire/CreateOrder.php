@@ -5,20 +5,21 @@ namespace App\Livewire;
 use App\Models\Order;
 use App\Models\ProductCart;
 use App\Models\ProductOrder;
+use Gloudemans\Shoppingcart\Facades\Cart;
 use Livewire\Attributes\Validate;
 use Livewire\Component;
 
 class CreateOrder extends Component
 {
-    #[Validate('required|min:3')]
+    #[Validate('required|min:3|max:40')]
     public $first_name;
-    #[Validate('required|min:3')]
+    #[Validate('required|min:3|max:40')]
     public $last_name;
-    #[Validate('required|min:3')]
+    #[Validate('required|min:3|max:40')]
     public $city;
-    #[Validate('required|min:3')]
+    #[Validate('required|min:3|max:16')]
     public $phone;
-    #[Validate('required|min:3')]
+    #[Validate('required|min:3|max:100')]
     public $address;
 
     public $product_id;
@@ -30,46 +31,37 @@ class CreateOrder extends Component
 
 
     public function save(){
-        if(auth()->user()){
-            $user = auth()->user();
-            $this->validate();
-            $order = Order::create([
-                'full_name' => $this->first_name . " " . $this->last_name,
-                'city' => $this->city,
-                'phone' => $this->phone,
-                'address' => $this->address,
-                'user_id' => $user->id,
-                'status' => 1
-            ]);
-            $products = $user->cart->products;
-            foreach($products as $item){
-                ProductOrder::create([
-                    'product_id' => $item->id,
-                    'quantity' => 1,
-                    'order_id' => $order->id
-                ]);
+        if(!Cart::content()->count()){
+            $this->addError('cart', "Votre panier est vide");
+        }
+        $order = Order::create([
+            'full_name' => $this->first_name . " " . $this->last_name,
+            'city' => $this->city,
+            'phone' => $this->phone,
+            'address' => $this->address,
+            'status' => 1
+        ]);
 
-            }
-
-            $items = ProductCart::where('cart_id', auth()->user()->cart->id)->get();
-            foreach($items as $item){
-                $item->delete();
-            }
-
-        }else{
-            $order = Order::create([
-                'full_name' => $this->first_name . " " . $this->last_name,
-                'city' => $this->city,
-                'phone' => $this->phone,
-                'address' => $this->address,
-                'status' => 1
-            ]);
+        if($this->product_id){
             ProductOrder::create([
                 'product_id' => $this->product_id,
                 'quantity' => 1,
                 'order_id' => $order->id
             ]);
+        }else{
+            foreach (Cart::content()->toArray() as $product) {
+                ProductOrder::create([
+                    'product_id' => $product['id'],
+                    'quantity' => 1,
+                    'order_id' => $order->id
+                ]);
+            }
+            Cart::destroy();
         }
+
+
+
+
 
         return redirect('thank');
 

@@ -42,23 +42,23 @@
                                         @foreach ($items as $item)
                                         <tr class="lynessa-cart-form__cart-item cart_item">
                                             <td class="product-remove">
-                                                <a href="{{ route('cart.remove', $item->id) }}"
+                                                <a href="{{ route('cart.remove', $item['rowId']) }}"
                                                     onclick="return confirm('Etes-vous sûr de vouloir supprimer ce panier de formulaire de produit')">
                                                     <x-delete-icon />
                                                 </a>
                                             </td>
                                             <td class="product-thumbnail">
-                                                <a href="{{ route('product', $item->product->id) }}">
-                                                    <img src="{{ Storage::url($item->product->images[0]->path) }}"
-                                                        class="attachment-lynessa_thumbnail size-lynessa_thumbnail" alt="img" width="600"
-                                                        height="778"></a>
+                                                <a href="#!">
+                                                    <img src="{{ Storage::url($item['options']['image']['path']) }}"
+                                                        class="attachment-lynessa_thumbnail size-lynessa_thumbnail" alt="img" width="600" height="778"></a>
                                             </td>
                                             <td class="product-name" data-title="Product">
-                                                <a href="{{ route('product', $item->product->id) }}">{{ $item->product->name }}</a>
+                                                <a href="#!">{{ $item['name'] }}</a>
                                             </td>
                                             <td class="product-price" data-title="Price">
-                                                <span class="lynessa-Price-amount amount"><span class="lynessa-Price-currencySymbol"> MAD </span>{{
-                                                    $item->product->price }}</span>
+                                                <span class="lynessa-Price-amount amount">
+                                                    <span class="lynessa-Price-currencySymbol"> MAD </span>{{ $item['price'] }} <strong> &#xa0; x &#xa0;  {{ $item['qty'] }} </strong>
+                                                </span>
                                             </td>
                                             {{-- <td class="product-quantity" data-title="Quantity">
                                                 <div class="quantity">
@@ -72,7 +72,7 @@
                                             </td> --}}
                                             <td class="product-subtotal" data-title="Total">
                                                 <span class="lynessa-Price-amount amount">
-                                                    <span class="lynessa-Price-currencySymbol"> MAD </span>{{ $item->product->price }}
+                                                    <span class="lynessa-Price-currencySymbol"> MAD </span>{{ $item['price'] }}
                                                 </span>
                                             </td>
                                         </tr>
@@ -93,7 +93,7 @@
                                                 <th>Prix de livraison</th>
                                                 <td data-title="Subtotal">
                                                     <span class="lynessa-Price-amount amount">
-                                                        <span class="lynessa-Price-currencySymbol"> MAD </span> 25
+                                                        <span class="lynessa-Price-currencySymbol"> MAD </span> {{ count($items) ? 24 : 0 }}
                                                     </span>
                                                 </td>
                                             </tr>
@@ -102,7 +102,7 @@
                                                 <td data-title="Total">
                                                     <strong>
                                                         <span class="lynessa-Price-amount amount">
-                                                            <span class="lynessa-Price-currencySymbol"> MAD </span>{{ $total + 25 }}
+                                                            <span class="lynessa-Price-currencySymbol"> MAD </span>{{ $total + count($items) ? 24 : 0 }}
                                                         </span>
                                                     </strong>
                                                 </td>

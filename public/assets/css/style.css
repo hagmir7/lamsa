@@ -4676,7 +4676,7 @@ td {
 
     .header-mobile .header-mobile-left,
     .header-mobile .header-mobile-right {
-        width: calc(50% - 65px);
+        /* width: calc(50% - 65px); */
     }
 
     .header-mobile .header-logo {

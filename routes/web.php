@@ -3,6 +3,7 @@
 use App\Models\Category;
 use App\Models\Product;
 use App\Models\ProductCart;
+use Gloudemans\Shoppingcart\Facades\Cart;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -39,26 +40,32 @@ Route::get('/category/{category}', function (Category $category) {
 
 
 Route::get('/cart', function () {
-    $cart = auth()->user()?->cart;
+    $cartContent = Cart::content();
 
-    $items = ProductCart::where('cart_id', $cart?->id)->get();
-    $total = 0;
 
-    foreach ($items as $item) {
-        $total += $item->product->price;
-    }
+    $items = $cartContent->map(function ($item) {
+        return [
+            'rowId' => $item->rowId,
+            'id' => $item->id,
+            'name' => $item->name,
+            'qty' => $item->qty,
+            'price' => $item->price,
+            'options' => $item->options->toArray(), // Convert options to array
+        ];
+    })->toArray();
+
+
+
+    $cartCount = count($cartContent);
+    $total = Cart::total();
     $title = "Lamssa Fashion";
     return view('cart', compact('items', 'total', 'title'));
 })->name('cart');
 
 
 
-Route::get('/cart/remove/{productCart}', function (ProductCart $productCart) {
-
-    $cart = auth()->user()?->cart;
-    if($productCart->cart_id == $cart->id){
-        $productCart->delete();
-    }
+Route::get('/cart/remove/{id}', function ($id) {
+    Cart::remove($id);
     return redirect(route('cart'));
 })->name('cart.remove');
 

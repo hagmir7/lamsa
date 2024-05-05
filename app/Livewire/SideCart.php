@@ -13,7 +13,7 @@ class SideCart extends Component
     public $total = 0;
 
 
-    #[On('product-added')]
+    // #[On('product-added')]
     public function productAdded()
     {
         $this->products = auth()->user()->cart->products;
@@ -26,6 +26,8 @@ class SideCart extends Component
 
 
     public function mount(){
+
+
         if(auth()->user()?->cart_id){
             $this->products = auth()->user()->cart->products;
             $this->count_products = $this->products->count();
