@@ -1,4 +1,4 @@
-<div class="section-033 mb-4">
+{{-- <div class="section-033 mb-4">
     <div class="container">
         <div class="section-034 hero-buttom" style="background-image: url('/assets/imgs/communaute.jpg')">
             <div class="row">
@@ -21,6 +21,47 @@
                                     <p class="fw-bold" style="line-height: 35px;">Rejoignez notre communauté qui embrassent le confort et le style au quotidien. Partagez vos moments avec nous sur
                                     instagram pour avoir la chance d'être présentée sur notre page et inspirer d'autres personnes avec votre style
                                     authentique.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div> --}}
+
+
+
+<div>
+    <div class="section-033" style="background-image: url(https://brandbyab.ma/wp-content/uploads/2021/12/bg-testi-02-1.jpg)">
+        <div class="container">
+            <div class="section-034">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="lynessa-slide">
+                            <div class="owl-slick equal-container better-height"
+                                data-slick="{&quot;arrows&quot;:false,&quot;slidesMargin&quot;:0,&quot;dots&quot;:true,&quot;infinite&quot;:false,&quot;speed&quot;:300,&quot;slidesToShow&quot;:1,&quot;rows&quot;:1}"
+                                data-responsive="[{&quot;breakpoint&quot;:480,&quot;settings&quot;:{&quot;slidesToShow&quot;:1,&quot;slidesMargin&quot;:&quot;0&quot;}},{&quot;breakpoint&quot;:768,&quot;settings&quot;:{&quot;slidesToShow&quot;:1,&quot;slidesMargin&quot;:&quot;0&quot;}},{&quot;breakpoint&quot;:992,&quot;settings&quot;:{&quot;slidesToShow&quot;:1,&quot;slidesMargin&quot;:&quot;0&quot;}},{&quot;breakpoint&quot;:1200,&quot;settings&quot;:{&quot;slidesToShow&quot;:1,&quot;slidesMargin&quot;:&quot;0&quot;}},{&quot;breakpoint&quot;:1500,&quot;settings&quot;:{&quot;slidesToShow&quot;:1,&quot;slidesMargin&quot;:&quot;0&quot;}}]">
+                                <div class="lynessa-testimonial style-02">
+                                    <div class="testimonial-inner text-center">
+                                        <h3>Joignez-vous à la communauté</h3>
+                                        <p class="desc">Rejoignez notre communauté qui embrassent le confort et le style au quotidien. Partagez vos moments avec nous sur
+                                        instagram pour avoir la chance d'être présentée sur notre page et inspirer d'autres personnes avec votre style
+                                        authentique.</p>
+                                    </div>
+                                </div>
+                                <div class="lynessa-testimonial style-02">
+                                    <div class="testimonial-inner text-center">
+                                        <h3>Capturez l'instant</h3>
+                                        <p class="desc">Vivez pleinement l'esprit de Lamssa Fashion en portant nos
+                                        ensembles lors de vos escapades. Que ce soit sur la plage,
+                                        dans un café confortable ou en explorant de nouveaux
+                                        horizons, nos tenues sont parfaites pour créer des
+                                        souvenirs inoubliables et prendre de magnifiques photos
+                                        qui reflètent votre style unique.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
