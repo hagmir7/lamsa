@@ -70,9 +70,9 @@
                 </div>
             </div>
 
-            <div class="header-mobile-mid">
-                <div class="header-logo">
-                    <a href="/"><img alt="Rawaabeauty" src="/assets/imgs/logo.png" class="logo"></a>
+            <div class="header-mobile-mid text-center">
+                <div class="header-logo text-center">
+                    <a href="/"><img alt="LamasaFishion" src="/assets/imgs/logo.png" class="logo text-center"></a>
                 </div>
             </div>
             <div class="">@livewire('cart-contet')</div>
