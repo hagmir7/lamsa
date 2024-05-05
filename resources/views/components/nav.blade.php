@@ -60,7 +60,7 @@
     <div class="header-mobile">
         <div class="d-flex justify-content-between w-100">
 
-            <div class="header-mobile-left text-right">
+            <div class="header-mobile-left">
                 <div class="block-menu-bar">
                     <a class="menu-bar menu-toggle" href="#">
                         <span></span>
