@@ -65,7 +65,7 @@
                                                 <path d="M9 11v-5a3 3 0 0 1 6 0v5" />
                                             </svg>
                                         </div>
-                                        <p class="desc text-white h5" style="text-shadow: 12px 12px 12px white;">Capturez l'instant</p>
+                                        <p class="desc h5" style="text-shadow: 12px 12px 12px white; color:#87654a">Capturez l'instant</p>
                                         <p class="fw-bold h5 text-white" style="line-height: 35px;text-shadow: 12px 12px 12px white;">Vivez pleinement l'esprit de Lamssa Fashion en portant nos
                                         ensembles lors de vos escapades. Que ce soit sur la plage,
                                         dans un café confortable ou en explorant de nouveaux
