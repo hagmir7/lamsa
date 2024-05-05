@@ -93,7 +93,7 @@
                                                 <th>Prix de livraison</th>
                                                 <td data-title="Subtotal">
                                                     <span class="lynessa-Price-amount amount">
-                                                        <span class="lynessa-Price-currencySymbol"> MAD </span> {{ count($items) ? 24 : 0 }}
+                                                        <span class="lynessa-Price-currencySymbol"> MAD </span> {{ $total > 0 ? + 25 : 0 }}
                                                     </span>
                                                 </td>
                                             </tr>
@@ -102,7 +102,7 @@
                                                 <td data-title="Total">
                                                     <strong>
                                                         <span class="lynessa-Price-amount amount">
-                                                            <span class="lynessa-Price-currencySymbol"> MAD </span>{{ $total + count($items) ? 24 : 0 }}
+                                                            <span class="lynessa-Price-currencySymbol"> MAD </span>{{ $total > 0 ? $total +  25 : 0}}
                                                         </span>
                                                     </strong>
                                                 </td>

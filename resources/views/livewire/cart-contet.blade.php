@@ -50,12 +50,15 @@
                         </div>
 
                         <p class="lynessa-mini-cart__total total"><strong>Total:</strong>
-                            <span class="lynessa-Price-amount amount"><span class="lynessa-Price-currencySymbol"> MAD
-                                </span>{{ $total }}</span>
+                            <span class="lynessa-Price-amount amount">
+                                <span class="lynessa-Price-currencySymbol"> MAD </span>
+                                {{ $total }}
+                            </span>
                         </p>
                         <p class="lynessa-mini-cart__buttons buttons">
-                            <a href="/cart" class="button w-100 checkout lynessa-forward tajawal">Commander
-                                maintenant</a>
+                            <a href="/cart" class="button w-100 checkout lynessa-forward tajawal">
+                                Commander maintenant
+                            </a>
                         </p>
                     </div>
                 </div>

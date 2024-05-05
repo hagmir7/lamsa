@@ -42,6 +42,8 @@ Route::get('/category/{category}', function (Category $category) {
 Route::get('/cart', function () {
     $cartContent = Cart::content();
 
+    // dd(Cart::subtotal());
+
 
     $items = $cartContent->map(function ($item) {
         return [
@@ -57,7 +59,7 @@ Route::get('/cart', function () {
 
 
     $cartCount = count($cartContent);
-    $total = Cart::total();
+    $total = Cart::subtotal();
     $title = "Lamssa Fashion";
     return view('cart', compact('items', 'total', 'title'));
 })->name('cart');

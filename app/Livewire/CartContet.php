@@ -34,7 +34,7 @@ class CartContet extends Component
 
 
         $this->cartCount = count($cartContent);
-        $this->total = Cart::total();
+        $this->total = Cart::subtotal();
     }
 
 
