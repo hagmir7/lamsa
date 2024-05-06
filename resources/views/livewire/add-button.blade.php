@@ -1,5 +1,5 @@
 <div>
-    <button wire:click.prevent='toggleAdd()' type="submit" class="button btn-primary w-100"
+    <button wire:click.prevent='toggleAdd()' type="button" class="button btn-primary w-100"
         style="cursor: pointer">
         <div wire:loading.remove>
             @if ($cart->where('id', $product->id)->count())

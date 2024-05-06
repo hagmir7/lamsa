@@ -1,6 +1,5 @@
 <div>
-    <form wire:submit.prevent='save' action="{{ route('livewire.update') }}" method="post">
-        @csrf
+    <form wire:submit.prevent='save'>
         <div class="d-block d-inline d-md-flex gp-2 gp-2">
             @if ($product->colors->count())
                 <div class="ml-2 ms-2">
@@ -25,7 +24,6 @@
                     </select>
                 </div>
             @endif
-
             <div class="ml-2 ms-2">
                 <div><label>{{ __("Quantity") }}<label></div>
                 <input type="text" wire:model='quantity' class="col-sm-12">
