@@ -1,5 +1,5 @@
 <div>
-    <form wire:submit.prevent='save' action="/livewire/update">
+    <form wire:submit.prevent='save' action="/livewire/update" method="POST">
         <div class="d-block d-inline d-md-flex gp-2 gp-2">
             @if ($product->colors->count())
                 <div class="ml-2 ms-2">
