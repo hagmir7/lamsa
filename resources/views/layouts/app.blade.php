@@ -117,7 +117,6 @@
             display: none !important;
         }
     </style>
-    @livewireStyles
 </head>
 
 <body class="antialiased">
@@ -287,8 +286,6 @@
         }, 100);
 
     </script>
-
-    @livewireScripts
 </body>
 
 </html>
