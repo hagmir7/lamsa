@@ -125,7 +125,7 @@
     <x-footer />
 
 
-    @livewire('login')
+    {{-- @livewire('login')
 
 
 
@@ -285,7 +285,7 @@
             console.log(arrow);
         }, 100);
 
-    </script>
+    </script> --}}
 </body>
 
 </html>
