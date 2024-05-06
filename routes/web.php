@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get('/livewire/update', function(){
+Route::get('livewire/update', function(){
     return redirect()->back();
 });
 
