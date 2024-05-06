@@ -16,6 +16,7 @@ class ProductCard extends Component
 {
     use WithPagination;
 
+    protected $paginationTheme = 'bootstrap';
 
     public $amount = 8;
     public $total_products = 0;
