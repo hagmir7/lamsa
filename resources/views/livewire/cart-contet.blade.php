@@ -31,7 +31,7 @@
                             <li wire:key='{{ $product['rowId'] }}' class="lynessa-mini-cart-item mini_cart_item position-relative">
                                 <button wire:loading.attr="disabled" wire:click='removeItem("{{ $product['rowId'] }}")' class="position-absolute" style="right: 10px;">
                                     <span wire:loading wire:target="removeItem('{{ $product['rowId'] }}')"> <x-spenner-icon /> </span>
-                                    <span wire:loading.remove wire:target="removeItem('{{ $product['rowId'] }}')"><x-delete-icon /></span>
+                                    <span class="mt-2" wire:loading.remove wire:target="removeItem('{{ $product['rowId'] }}')"><x-delete-icon /></span>
                                 </button>
                                 @if(isset($product['options']['image']))
                                 <a href="">
