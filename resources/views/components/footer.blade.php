@@ -9,7 +9,7 @@
                 <div class="col-md-6">
                     <a href="https://www.instagram.com/fashion.bylamsa" target="__blank">
                         <div class="content-socials d-flex align-items-center justify-content-center fw-bold">
-                            Suis nous sur instagram &#xa0; &#10140; &#xa0;
+                            Suivez-nous sur instagram &#xa0; &#10140; &#xa0;
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-instagram"
                                 viewBox="0 0 16 16">
                                 <path

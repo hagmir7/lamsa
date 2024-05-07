@@ -16015,7 +16015,7 @@ body .az_toggle_default .az_toggle_content p:last-child {
 }
 
 .slide-wrap img {
-    min-height: 550px;
+    min-height: 466px;
     object-fit: cover;
     opacity: .3;
 }
@@ -16166,7 +16166,7 @@ body .az_toggle_default .az_toggle_content p:last-child {
 }
 
 .slide-home-04 .slide-wrap .slide-info h1 {
-    font-size: 70px;
+    font-size: 58px;
     /* font-family: "Kaushan Script", sans-serif; */
     font-weight: bold;
     margin: 0 0 60px 0;

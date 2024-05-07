@@ -18,14 +18,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get('livewire/update', function(){
+Route::get('/livewire/update', function(){
     return redirect()->back();
 });
 
 Route::get('/', function () {
     return view('welcome', ['title' => "Lamssa Fashion"]);
 });
-
 
 
 Route::get('/product/{product}', function (Product $product) {
