@@ -18,16 +18,20 @@
                 </div>
                 <div class="widget lynessa widget_shopping_cart" id="card_container">
                     <div class="widget_shopping_cart_content">
-                        <h3 class="minicart-title tajawal">Mon panier<span class="minicart-number-items">
-                            {{ $cartCount }}</span></h3>
+                        <h3 class="minicart-title tajawal">
+                            Mon panier
+                            <span class="minicart-number-items">
+                            {{ $cartCount }}
+                            </span>
+                        </h3>
                         <div class="scroll-wrapper lynessa-mini-cart cart_list product_list_widget"
                             style="position: relative;">
-                            <ul class="lynessa-mini-cart cart_list me-0 mt-0 h-vh product_list_widget scroll-content"
-                                style="0px; max-height: none;">
+                            <ul class="lynessa-mini-cart cart_list me-0 mt-0 h-vh product_list_widget scroll-content"  style="0px; max-height: none;">
                             @foreach ($products as $product)
-                            <li class="lynessa-mini-cart-item mini_cart_item position-relative">
-                                <button wire:click='removeItem("{{ $product['rowId'] }}")' class="position-absolute" style="right: 10px;">
-                                    <x-delete-icon />
+                            <li wire:key='{{ $product['rowId'] }}' class="lynessa-mini-cart-item mini_cart_item position-relative">
+                                <button wire:loading.attr="disabled" wire:click='removeItem("{{ $product['rowId'] }}")' class="position-absolute" style="right: 10px;">
+                                    <span wire:loading wire:target="removeItem('{{ $product['rowId'] }}')"> <x-spenner-icon /> </span>
+                                    <span wire:loading.remove wire:target="removeItem('{{ $product['rowId'] }}')"><x-delete-icon /></span>
                                 </button>
                                 @if(isset($product['options']['image']))
                                 <a href="">
