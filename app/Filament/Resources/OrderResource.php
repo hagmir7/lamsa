@@ -124,17 +124,28 @@ class OrderResource extends Resource
                 TextEntry::make('address')->label(__("Adress")),
                 TextEntry::make('phone')->label(__("Téléphone")),
                 TextEntry::make('status')->label(__("État")),
-                TextEntry::make('user.name')->label(__('Utilisateur')),
-                RepeatableEntry::make('products')
+                TextEntry::make('user.name')->label(__('Utilisateur'))
+                    ->placeholder("__"),
+                RepeatableEntry::make('items')
                     ->label('Produits')
                     ->schema([
-                        TextEntry::make("name")
+                        TextEntry::make("product.name")
                             ->label("Nom de produit"),
-                        TextEntry::make("price")
+                        TextEntry::make("product.price")
                             ->label("Prix"),
-                        TextEntry::make("status")
-                            ->label("Etat")
-                    ])->columns(3)
+                        TextEntry::make("color")
+                            ->placeholder("__")
+                            ->label("Couleur"),
+                        TextEntry::make("size")
+                            ->placeholder("__")
+                            ->label("Taille"),
+                        TextEntry::make("quantity")
+                            ->label("Quantity"),
+                        TextEntry::make("product.status")
+                            ->label("Etat"),
+                    ])->columns(6)
+                    ->columnSpanFull()
+
             ]);
     }
 

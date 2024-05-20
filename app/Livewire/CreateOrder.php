@@ -34,6 +34,7 @@ class CreateOrder extends Component
         if(!Cart::content()->count()){
             $this->addError('cart', "Votre panier est vide");
         }
+
         $order = Order::create([
             'full_name' => $this->first_name . " " . $this->last_name,
             'city' => $this->city,
@@ -50,10 +51,13 @@ class CreateOrder extends Component
             ]);
         }else{
             foreach (Cart::content()->toArray() as $product) {
+
                 ProductOrder::create([
                     'product_id' => $product['id'],
-                    'quantity' => 1,
-                    'order_id' => $order->id
+                    'quantity' => $product['qty'],
+                    'order_id' => $order->id,
+                    'color' => $product['options']['color'],
+                    'size' => $product['options']['size'],
                 ]);
             }
             Cart::destroy();

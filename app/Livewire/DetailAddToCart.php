@@ -41,9 +41,6 @@ class DetailAddToCart extends Component
         );
 
         return $this->dispatch('itemAdded');
-
-
-
     }
 
     public function render()

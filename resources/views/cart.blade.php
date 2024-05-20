@@ -8,8 +8,8 @@
             data-responsive="[{&quot;breakpoint&quot;:480,&quot;settings&quot;:{&quot;slidesToShow&quot;:1,&quot;slidesMargin&quot;:&quot;0&quot;}},{&quot;breakpoint&quot;:768,&quot;settings&quot;:{&quot;slidesToShow&quot;:1,&quot;slidesMargin&quot;:&quot;0&quot;}},{&quot;breakpoint&quot;:992,&quot;settings&quot;:{&quot;slidesToShow&quot;:1,&quot;slidesMargin&quot;:&quot;0&quot;}},{&quot;breakpoint&quot;:1200,&quot;settings&quot;:{&quot;slidesToShow&quot;:1,&quot;slidesMargin&quot;:&quot;0&quot;}},{&quot;breakpoint&quot;:1500,&quot;settings&quot;:{&quot;slidesToShow&quot;:1,&quot;slidesMargin&quot;:&quot;0&quot;}}]">
 
             <div class="slide-wrap">
-                <img style="height: 280px;" class="hero" src="/assets/imgs/cart-hore.jpeg" alt="image">
-                <img style="height: 280px;" class="hero_mobile d-none" src="/assets/imgs/cart-hore.jpeg" alt="image">
+                <img style="height: 280px; width:100%" class="hero" src="/assets/imgs/cart-hore.jpeg" alt="image">
+                <img style="height: 280px; width:100%" class="hero_mobile d-none" src="/assets/imgs/cart-hore.jpeg" alt="image">
                 <div class="slide-info text-center sm-text-right">
                     <div class="container">
                         <div class="slide-inner">

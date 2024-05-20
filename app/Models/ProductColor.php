@@ -21,7 +21,7 @@ class ProductColor extends Pivot
     {
         $query = parent::newQuery();
         if ($ordered) {
-            $query->orderBy('created_at', 'asc');
+            $query->orderBy('created_at', 'desc');
         }
         return $query;
     }

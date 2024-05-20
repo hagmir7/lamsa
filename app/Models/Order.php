@@ -22,15 +22,20 @@ class Order extends Model
         return $this->belongsTo(User::class);
     }
 
-    public function products(){
-        return $this->belongsToMany(Product::class, 'product_order');
+    public function products()
+    {
+        return $this->belongsToMany(Product::class, 'product_order')->withPivot('color', 'size');
+    }
+
+    public function items(){
+        return $this->hasMany(ProductOrder::class);
     }
 
     public function newQuery($ordered = true)
     {
         $query = parent::newQuery();
         if ($ordered) {
-            $query->orderBy('created_at', 'asc');
+            $query->orderBy('created_at', 'desc');
         }
         return $query;
     }
