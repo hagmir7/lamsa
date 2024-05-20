@@ -33,11 +33,11 @@ class ColorResource extends Resource
             ->schema([
                 Forms\Components\TextInput::make('name')
                     ->label(__("Couleur"))
-                    ->unique(ignoreRecord:false)
+                    ->unique(ignoreRecord:true)
                     ->required()
                     ->maxLength(255),
                 Forms\Components\ColorPicker::make('code')
-                    ->unique(ignoreRecord: false)
+                    ->unique(ignoreRecord: true)
                     ->required(),
             ]);
     }
