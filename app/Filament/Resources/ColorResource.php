@@ -7,7 +7,6 @@ use App\Filament\Resources\ColorResource\RelationManagers;
 use App\Models\Color;
 use Filament\Forms;
 use Filament\Forms\Form;
-use Filament\Resources\Pages\EditRecord;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
@@ -34,11 +33,11 @@ class ColorResource extends Resource
             ->schema([
                 Forms\Components\TextInput::make('name')
                     ->label(__("Couleur"))
-                    ->uniqid(EditRecord:false)
+                    ->unique(ignoreRecord:false)
                     ->required()
                     ->maxLength(255),
                 Forms\Components\ColorPicker::make('code')
-                     ->uniqid(EditRecord: false)
+                    ->unique(ignoreRecord: false)
                     ->required(),
             ]);
     }
