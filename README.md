@@ -1,10 +1,9 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
-Sure! Here's a comprehensive `README.md` file for your project, "Lamssa Fashion," which is a Laravel store for women's clothing.
-
-
+<p align="center"><a href="https://lamssafashion.com" target="_blank">
+    <img src="https://lamssafashion.com/assets/imgs/rounded-logo.png" width="400" alt="Lamssa Fashion"></a>
+</p>
 # Lamssa Fashion
 
-Welcome to **Lamssa Fashion** - your go-to Laravel-powered online store for the latest in women's clothing. Visit us at [lamssafashion.com](https://lamssafashion.com).
+Welcome to **Lamssa Fashion** - your go-to Laravel-powered online store for the latest women's clothing. Visit us at [lamssafashion.com](https://lamssafashion.com).
 
 ## Table of Contents
 
@@ -134,11 +133,11 @@ We welcome contributions from the community! To contribute:
 
 1. Fork the repository.
 2. Create a new branch: `git checkout -b feature-branch-name`.
-3. Make your changes and commit them: `git commit -m 'Add new feature'`.
+3. Make and commit your changes: `git commit -m 'Add new feature'`.
 4. Push to the branch: `git push origin feature-branch-name`.
 5. Open a pull request.
 
-Please read our [CONTRIBUTING.md](CONTRIBUTING.md) for more details.
+Please read our [SECURITY.md](SECURITY.md) for more details.
 
 ## License
 
@@ -146,9 +145,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-For any inquiries, please contact us at [support@lamssafashion.com](mailto:support@lamssafashion.com).
+For any inquiries, please get in touch with us at [support@freewsad.com](mailto:support@freewsad.com).
 
 Thank you for choosing Lamssa Fashion!
 ```
-
-Feel free to customize any sections of this `README.md` file according to your specific project needs and details.
