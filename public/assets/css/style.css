@@ -16020,6 +16020,21 @@ body .az_toggle_default .az_toggle_content p:last-child {
     opacity: .3;
 }
 
+.btn-warning {
+    background-color: transparent;
+    border: 2px solid #000;
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 20px;
+    padding: 0 15px;
+    height: 47px;
+    line-height: 43px;
+    min-width: 210px;
+    text-align: center;
+    border-radius: 47px;
+}
+
 .slide-wrap .slide-info a {
     display: inline-block;
     height: 44px;

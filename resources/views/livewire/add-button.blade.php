@@ -7,8 +7,6 @@
             @else
                 <x-cart-icon />
             @endif
-
-
         </div>
         <div class="pt-2" wire:loading>
             <x-spenner-icon-brown />

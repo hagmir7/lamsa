@@ -72,7 +72,22 @@
                                         <span class="onnew"><span class="text">New</span></span>
                                     </div>
 
-
+                                    @if ($product->status->value > 1)
+                                        <button class="btn btn-warning mb-2 w-100" disabled>
+                                            @switch($product->status->value)
+                                            @case(2)
+                                            Cacher
+                                            @break
+                                            @case(3)
+                                            En rupture de stock
+                                            @break
+                                            @case(3)
+                                            À venir
+                                            @break
+                                            @default
+                                            @endswitch
+                                        </button>
+                                    @endif
                                     <h1 class="product_title entry-title">{{ $product->name }}</h1>
                                     <p class="price">
                                         <span class="lynessa-Price-amount amount">
@@ -135,17 +150,34 @@
 
 
 
+                                    @if ($product->status->value == 1)
+                                        @livewire('detail-add-to-cart', ['product' => $product], key($product->id))
+                                        <a href="#" data-bs-toggle="modal" data-bs-target="#checkOutModal" class="btn btn-primary m-2 w-100">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                class="icon icon-tabler icons-tabler-outline icon-tabler-brand-telegram">
+                                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                <path d="M15 10l-4 4l6 6l4 -16l-18 7l4 2l2 6l3 -4" />
+                                            </svg>
+                                            Acheter maintenant
+                                        </a>
+                                    @else
+                                    <button class="btn btn-warning mt-2 w-100" disabled>
+                                        @switch($product->status->value)
+                                            @case(2)
+                                                Cacher
+                                                @break
+                                            @case(3)
+                                                En rupture de stock
+                                                @break
+                                            @case(3)
+                                                À venir
+                                                @break
+                                            @default
+                                        @endswitch
+                                    </button>
+                                    @endif
 
-                                    @livewire('detail-add-to-cart', ['product' => $product], key($product->id))
-                                    <a href="#" data-bs-toggle="modal" data-bs-target="#checkOutModal" class="btn btn-primary m-2 w-100">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                            class="icon icon-tabler icons-tabler-outline icon-tabler-brand-telegram">
-                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                            <path d="M15 10l-4 4l6 6l4 -16l-18 7l4 2l2 6l3 -4" />
-                                        </svg>
-                                        Acheter maintenant
-                                    </a>
 
 
 
