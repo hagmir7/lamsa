@@ -1,5 +1,8 @@
-<p align="center"><a href="https://lamssafashion.com" target="_blank">
-    <img src="https://lamssafashion.com/assets/imgs/rounded-logo.png" width="400" alt="Lamssa Fashion"></a>
+
+<p align="center">
+    <a href="https://lamssafashion.com" target="_blank">
+        <img src="https://lamssafashion.com/assets/imgs/rounded-logo.png" width="400" alt="Lamssa Fashion">
+    </a>
 </p>
 
 # Lamssa Fashion
@@ -35,8 +38,8 @@ Lamssa Fashion is an online store dedicated to bringing the latest trends in wom
 
 ## Screenshots
 
-![Homepage](screenshots/homepage.png)
-![Product Page](screenshots/product-page.png)
+![Homepage](screenshots/home.png)
+![Product Page](screenshots/product.png)
 ![Cart](screenshots/cart.png)
 
 ## Demo
@@ -50,6 +53,7 @@ Check out our live demo at [lamssafashion.com](https://lamssafashion.com).
 - **Database**: MySQL
 - **Version Control**: Git
 - **Payment Gateway**: Stripe/PayPal
+- **Admin Panel**: Filament PHP
 
 ## Installation
 
@@ -57,7 +61,7 @@ Follow these steps to clone and set up Lamssa Fashion locally.
 
 ### Prerequisites
 
-- PHP >= 7.4
+- PHP >= 8.x
 - Composer
 - MySQL
 - Node.js & npm
@@ -91,7 +95,8 @@ php artisan key:generate
 ```
 
 3. Update the `.env` file with your database and other configurations:
-```
+
+```env
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
@@ -124,7 +129,7 @@ Visit `http://localhost:8000` in your browser to see the application.
 
 ## Usage
 
-- **Admin Panel**: Accessible at `http://localhost:8000/admin` (default login credentials are in the seeder file).
+- **Admin Panel**: Accessible at `http://localhost:8000/admin` (default login credentials are in the seeder file). Powered by [Filament PHP](https://filamentphp.com/).
 - **User Registration**: Users can sign up and start shopping immediately.
 - **Product Management**: Admins can add, edit, and delete products via the admin panel.
 
@@ -149,4 +154,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 For any inquiries, please get in touch with us at [support@freewsad.com](mailto:support@freewsad.com).
 
 Thank you for choosing Lamssa Fashion!
-```
+
+This `README.md` file includes a detailed description of your project, installation instructions, usage details, and additional sections for contributing, licensing, and contact information. It also highlights the use of Filament PHP for the admin panel.
