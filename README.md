@@ -1,6 +1,7 @@
 <p align="center"><a href="https://lamssafashion.com" target="_blank">
     <img src="https://lamssafashion.com/assets/imgs/rounded-logo.png" width="400" alt="Lamssa Fashion"></a>
 </p>
+
 # Lamssa Fashion
 
 Welcome to **Lamssa Fashion** - your go-to Laravel-powered online store for the latest women's clothing. Visit us at [lamssafashion.com](https://lamssafashion.com).
