@@ -16,4 +16,13 @@ class EditProduct extends EditRecord
             Actions\DeleteAction::make(),
         ];
     }
+
+    protected function mutateFormDataBeforeSave(array $data): array
+    {
+        $data['updated_at'] = now();
+        return $data;
+    }
+
+
+
 }

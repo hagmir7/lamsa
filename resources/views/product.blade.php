@@ -15,8 +15,6 @@
             </div>
         </div>
     </div>
-
-
     <div class="single-thumb-vertical main-container shop-page no-sidebar">
         <div class="container">
             <div class="row">
@@ -26,8 +24,6 @@
                         class="post-27 product type-product status-publish has-post-thumbnail product_cat-table product_cat-new-arrivals product_cat-lamp product_tag-table product_tag-sock first instock shipping-taxable purchasable product-type-variable has-default-attributes">
                         <div class="main-contain-summary">
                             <div class="contain-left has-gallery">
-
-
                                 <div class="single-left" style="float: left">
                                     <div
                                         class="lynessa-product-gallery lynessa-product-gallery--with-images lynessa-product-gallery--columns-4 images">
