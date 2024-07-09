@@ -10,21 +10,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://rawaabeauty.com/assets/web/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="https://rawaabeauty.com/assets/web/css/animate.css" />
-    <link rel="stylesheet" type="text/css" href="https://rawaabeauty.com/assets/web/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="https://rawaabeauty.com/assets/web/css/chosen.min.css" />
+    <link rel="stylesheet" type="text/css" href="/css/web/animate.css" />
+    <link rel="stylesheet" type="text/css" href="/css/web/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/css/web/chosen.min.css" />
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.4.2/chosen.min.css" />
-    <link rel="stylesheet" type="text/css" href="https://rawaabeauty.com/assets/web/css/jquery.scrollbar.css" />
-    <link rel="stylesheet" type="text/css" href="https://rawaabeauty.com/assets/web/css/lightbox.min.css" />
-    <link rel="stylesheet" type="text/css" href="https://rawaabeauty.com/assets/web/css/magnific-popup.css" />
-    <link rel="stylesheet" type="text/css" href="https://rawaabeauty.com/assets/web/css/slick.min.css" />
-    <link rel="stylesheet" type="text/css" href="https://rawaabeauty.com/assets/web/css/megamenu.css" />
-    <link rel="stylesheet" type="text/css" href="https://rawaabeauty.com/assets/web/css/dreaming-attribute.css" />
+    <link rel="stylesheet" type="text/css" href="/css/web/jquery.scrollbar.css" />
+    <link rel="stylesheet" type="text/css" href="/css/web/lightbox.min.css" />
+    <link rel="stylesheet" type="text/css" href="/css/web/magnific-popup.css" />
+    <link rel="stylesheet" type="text/css" href="/css/web/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="/css/web/megamenu.css" />
+    <link rel="stylesheet" type="text/css" href="/css/web/dreaming-attribute.css" />
     <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
-    <link rel="stylesheet" href="https://rawaabeauty.com/assets/vendor/libs/toastr/toastr.css" />
+    <link rel="stylesheet" href="/css/web/toastr.css" />
     <meta name="robots" content="noindex">
     <link rel="canonical" href="{{ request()->path() }}">
 

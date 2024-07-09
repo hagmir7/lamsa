@@ -30,6 +30,12 @@ class ProductResource extends Resource
         return __("Produits");
     }
 
+
+    public static function getEloquentQuery(): Builder
+    {
+        return parent::getEloquentQuery()->orderBy('updated_at', 'desc');
+    }
+
     public static function form(Form $form): Form
     {
         return $form
