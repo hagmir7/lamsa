@@ -24,8 +24,7 @@
     <link rel="stylesheet" type="text/css" href="/css/web/dreaming-attribute.css" />
     <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
     <link rel="stylesheet" href="/css/web/toastr.css" />
-    <meta name="robots" content="noindex">
-    <link rel="canonical" href="{{ request()->path() }}">
+    <link rel="canonical" href="{{ request()->url() }}">
 
     <meta name="description" content="#!">
     <meta name="image" content="/assets/imgs/rounded-logo.png">

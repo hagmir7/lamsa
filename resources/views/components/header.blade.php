@@ -10,7 +10,7 @@
                 <div class="container">
                     <div class="slide-inner">
                         {{-- <h5>Sale up to <span>40%</span> Off</h5> --}}
-                        <h1 style="color: #252525!important">Lamssa Fashion</h1>
+                        <h1 style="color: #252525!important">Lamssa Fashion <span class="d-none">Le luxe à petit prix !</span></h1>
                         <h2 style="color: #252525!important">Le luxe à petit prix !</h2>
                         <a href="#new-collection" class="button" tabindex="0">Achetez maintenant</a>
                     </div>
