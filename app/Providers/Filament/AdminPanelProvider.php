@@ -29,7 +29,7 @@ class AdminPanelProvider extends PanelProvider
             ->profile()
             ->login()
             ->brandLogoHeight('75px')
-            ->brandLogo('/assets/imgs/lamsa.png')
+            ->brandLogo('/assets/imgs/rounded-logo.png')
             ->colors([
                 'primary' => Color::Amber,
             ])
