@@ -28,7 +28,7 @@ class AdminPanelProvider extends PanelProvider
             ->path('admin')
             ->profile()
             ->login()
-            ->brandLogoHeight('75px')
+            ->brandLogoHeight('60px')
             ->brandLogo('/assets/imgs/rounded-logo.png')
             ->colors([
                 'primary' => Color::Amber,
