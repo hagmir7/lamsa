@@ -20,7 +20,7 @@ class DetailAddToCart extends Component
 
     public function mount()
     {
-        // dd($this->product);
+
     }
 
 
