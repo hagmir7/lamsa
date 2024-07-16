@@ -8,9 +8,6 @@ use Livewire\Component;
 
 class DetailAddToCart extends Component
 {
-
-
-
     public Product $product;
 
     public $quantity = 1;
@@ -18,16 +15,13 @@ class DetailAddToCart extends Component
     public $color;
 
 
-    public function mount()
-    {
+    public function mount(){
 
     }
 
 
-
     public function save()
     {
-
         Cart::add(
             $this->product->id,
             $this->product->name,
