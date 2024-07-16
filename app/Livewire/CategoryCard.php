@@ -26,7 +26,7 @@ class CategoryCard extends Component
     public function render()
     {
         return view('livewire.category-card', [
-            'categories' => Category::take($this->amount)->get(),
+            'categories' => Category::take($this->amount)->orderBy('updated_at', 'desc')->get(),
         ]);
     }
 }
